@@ -1,13 +1,45 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@font-face {
+  font-family: "Akrobat";
+  src: local("Akrobat"),
+    url(./fonts/Akrobat/Akrobat-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Akrobat";
+  font-weight: 100;
+  src: local("Akrobat"),
+    url(./fonts/Akrobat/Akrobat-Light.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Akrobat";
+  font-weight: 900;
+  src: local("Akrobat"),
+    url(./fonts/Akrobat/Akrobat-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Akrobat";
+  font-weight: 1100;
+  src: local("Akrobat"),
+    url(./fonts/Akrobat/Akrobat-ExtraBold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Avenger";
+  src: local("Avenger"), url(./fonts/Avenger/Avenger.otf) format("opentype");
 }

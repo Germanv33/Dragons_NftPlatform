@@ -1,0 +1,78 @@
+header
+    position: fixed
+    width: 100%
+    z-index: 10
+    box-shadow: 0 0 12.3px 2.2px rgba(0, 0, 0, 0.41)
+    backdrop-filter: blur(40px)
+    height: 42px
+    top: 0
+    left: 0
+    right: 0
+    transition: all 0.2s
+    
+
+    .main_container
+
+        display: flex
+        align-items: center
+        justify-content: space-between
+        height: 100%
+        margin: 0 auto
+        @media (min-width: 1400px)
+            max-width: 1400px
+            
+        @media (min-width: 1300px) and (max-width: 1399px) 
+            max-width: 1300px
+
+        @media (min-width: 1200px) and (max-width: 1299px) 
+            max-width: 1200px
+        
+        @media (min-width: 992px) and (max-width: 1199px) 
+            max-width: 992px
+        
+        @media (min-width: 768px) and (max-width: 991px)
+            max-width: 768px
+
+        @media (min-width: 480px) and (max-width: 767px)
+            max-width: 480px
+
+        @media (min-width: 320px) and (max-width: 479px)
+            max-width: 343px
+
+        @media (max-width: 320px) 
+            max-width: 320px
+        ul
+            display: flex
+            flex-direction: row
+            margin: 0px
+            list-style-type: none
+            li
+                margin-right: 90px
+                font-family: Akrobat
+                font-size: 20px
+                font-weight: bold
+                font-stretch: normal
+                font-style: normal
+                line-height: 0.99
+                letter-spacing: normal
+                text-align: center
+                color: #fff
+                cursor: pointer
+            li:hover
+                color: #ca2c92
+
+            .first
+                margin: 0px
+        button
+            font-style: normal
+            font-weight: 600
+            font-size: 13px
+            line-height: 20px
+            color: #FFFFFF
+            background: linear-gradient(100.13deg, #FF007A 1.78%, #FFC700 139.38%)
+            border-radius: 24px
+            border: none
+            padding: 2px 18px
+            transition: all .3s ease !important
+            cursor: pointer
+        

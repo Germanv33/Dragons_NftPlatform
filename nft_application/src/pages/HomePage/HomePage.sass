@@ -1,0 +1,342 @@
+body
+    background: radial-gradient(#ca2c92,  #240935)
+    
+    
+    
+.full_container
+    max-width: 100%
+    overflow: hidden
+
+.hero
+    height: fit-content
+    width: 100%
+    position: relative
+    background: radial-gradient(#ca2c92,  #240935)
+    margin-top: 41px
+
+    @media (max-width: 1780px)
+        .islands
+            height: 100%
+
+    .container
+        margin: 0 auto
+        padding-bottom: calc(100em - 280px)
+        display: flex
+        justify-content: right
+
+        @media (min-width: 1400px)
+            max-width: 1400px
+            padding-bottom: 780px
+
+        @media (min-width: 1300px) and (max-width: 1399px) 
+            max-width: 1300px
+
+
+        @media (min-width: 1200px) and (max-width: 1299px) 
+            max-width: 1200px
+ 
+        
+        @media (min-width: 992px) and (max-width: 1199px) 
+            max-width: 992px
+
+        
+        @media (min-width: 768px) and (max-width: 991px)
+            max-width: 768px
+
+
+        @media (min-width: 480px) and (max-width: 767px)
+            max-width: 480px
+  
+
+        @media (min-width: 320px) and (max-width: 479px)
+            max-width: 343px
+
+
+        @media (max-width: 320px) 
+            max-width: 320px
+
+        .text_area
+                margin-right: 100px
+                display: flex
+                flex-direction: column
+                align-items: center
+                margin-top: 41px
+                padding: 0px 7px
+                z-index: 6
+                margin-right: 0px
+
+                // @media  (min-width: 2100px) and (max-width: 3000px)
+                //     margin-right: -10%
+                //     margin-top: 80px
+
+                // @media  (min-width: 1750px) and (max-width: 2100px)
+                //     margin-right: -1%
+
+
+                // @media  (max-width: 1199px)
+                //     margin-right: 0px
+
+                h1, h2
+                    letter-spacing: normal
+                    text-align: center
+                    color: #fff  
+
+                h1
+                    margin: 0px
+                    font-family: Avenger
+                    font-size: 34.3px
+                    font-weight: normal
+                    font-stretch: expanded
+                    font-style: italic
+                    line-height: 0.85
+                    
+
+                h2
+                    margin: 0px
+                    margin-top: 14px
+                    font-family: Akrobat
+                    font-size: 33px
+                    font-weight: bold
+                    font-stretch: normal
+                    font-style: normal
+                    line-height: 0.87
+
+                    @media (min-width: 1200px)
+                        font-size: calc(40px + (100vw - 1400px)/100*2)
+                       
+                        
+                    @media (max-width: 1099px)
+                        font-size: 28px
+
+                .crypto_h1
+                    font-size: 70px
+
+                    @media (min-width: 1200px)
+                        font-size: calc(80px + (100vw - 1400px)/100*2)
+
+                    @media (max-width: 1099px)
+                        font-size: 60px
+
+                .gotchies_h1
+                    font-size: 53px
+                    font-weight: normal
+                    @media (min-width: 1200px)
+                        font-size: calc(63px + (100vw - 1400px)/100*2)
+
+                    @media (max-width: 1099px)
+                        font-size: 43px
+
+                button
+                    margin-top: 35px
+                    width: 50%
+                    cursor: pointer
+                    
+                    // padding: 3px 21px
+                    // border-radius: 10.3px
+                    // box-shadow: 0px 4.5px 12px 2.5px rgba(0, 0, 0, 0.38)
+                    // background-image: linear-gradient(to right, #2481d8, #0de3cc)
+                    // border: 0px
+
+                    font-family: Akrobat
+                    font-size: 28px
+                    font-weight: 900
+                    text-align: center
+                    white-space: nowrap
+                    color: #fff
+                    transition: all 5s ease
+                    @media (max-width: 1099px)
+                        font-size: 23px
+
+                button:hover
+                    background-image: linear-gradient(to left, #2481d8, #0de3cc)
+                    
+.islands
+    position: absolute
+    width: 52%
+    height: 80%
+
+
+.dragon-img
+    position: absolute
+    max-width: 80%
+    height: auto 
+    // left: 20%
+    // top: 300px
+    z-index: 4
+    bottom: 0
+    right: 0
+    // top: 55%
+    // @media  (max-width: 991px)
+    //     top: 55%
+
+.smokes
+    height: 100%
+    width: 100%
+    position: absolute
+    bottom: 0
+
+.smoke
+    width: 1000px
+    position: absolute
+    opacity: 0.6
+    filter: blur(5 px)
+
+
+.right_below
+    left: -30%
+    opacity: 1
+    z-index: 7
+
+    
+
+.left_below
+    right: -10%
+    opacity: 1
+    z-index: 7
+
+    
+.left_below, .right_below
+    width: 86%
+    bottom: 0
+    transform: translateY(65%)
+
+    // @media (min-width: 1400px)
+    //     // top: calc(820px + (((100vw - 1400px) / 100) * 40))
+    
+    // @media (min-width: 1300px) and (max-width: 1399px) 
+
+
+    // @media (min-width: 1200px) and (max-width: 1299px) 
+  
+
+    // @media (min-width: 1100px) and (max-width: 1199px) 
+
+
+    // @media  (min-width: 992px) and (max-width: 1099px)
+       
+
+    // @media (min-width: 768px) and (max-width: 991px)
+
+
+    // @media (max-width: 767px)
+
+    
+
+.dragon_above
+    left: 45%
+    top: 300px
+    width: 80%
+    opacity: 0.9
+    z-index: 2
+
+
+.dragon_left
+
+    opacity: 0.9
+    width: 90% 
+    left: -22%
+    bottom: 0
+    z-index: 3
+    transform: translateY(41%)
+
+    // @media  (max-width: 991px)
+    //     width: 70%
+    //     left: -5%
+    //     top: 390px
+
+.island_first
+    width: 110%
+    z-index: 2
+    opacity: 0.55
+    left: -35%  
+    top: 2%
+    transform: rotate(10deg)
+
+    // @media (min-width: 1400px)
+    //     top: 0px
+    //     left: -480px
+    //     width: 100%
+
+    // @media (min-width: 1300px) and (max-width: 1399px) 
+    //     top: 10px
+    //     left: -450px
+
+    // @media (min-width: 1200px) and (max-width: 1299px) 
+    //     top: 10px
+    //     left: -450px
+
+    // @media (min-width: 1100px) and (max-width: 1199px) 
+    //     top: 30px
+    //     left: -390px
+
+    // @media  (max-width: 1099px) 
+    //     top: 80px
+    //     left: -250px
+    //     width: 100%
+
+    // @media (min-width: 768px) and (max-width: 991px)
+    //     top: 100px
+    //     left: -290px
+        
+    
+
+        
+
+.island_second
+    width: 120%
+    z-index: 0
+    opacity: 0.20 
+    left: -50%  
+    top: -35%
+
+    @media  (max-width: 991px)
+        opacity: 0.26 
+    
+.header_smoke
+    left: calc(100% - 150px)
+    top: -400px
+
+    @media (max-width: 1099px) 
+        top: -360px
+        left: calc(100% - 250px)
+
+.island4, .island3, .island2, .island1
+    position: absolute
+    z-index: 1
+
+
+
+
+
+
+.island1
+
+    width: 18%
+    right: 0
+    z-index: 2
+    top: 3%
+
+
+
+
+
+.island2
+    width: 36%
+    left: 1%
+    top: -2%
+
+  
+
+.island3
+    z-index: 3
+    left: -14%
+    top: 25%
+    width: 90%
+
+
+.island4
+    top: -4%
+    left: 50%
+    width: 54%
+    transform: translateX(-50%)
+ 
