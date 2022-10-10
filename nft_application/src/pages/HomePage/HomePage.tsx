@@ -364,6 +364,164 @@ export function HomePage() {
             </div>
           </div>
         </section>
+
+        <section className="platform">
+            <div className="container">
+              <img src="" alt="sky" className="sky"/>
+              <div className="island"><img src="" alt="island"/></div>
+             
+              <div className="right-content-side">
+                <div className="text-block">
+                  <h2>We want to create not just a game, <br> but a social platform for people</></h2>
+                  <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, necessitatibus possimus, facilis cupiditate vero quibusdam optio dolore culpa aperiam autem nesciunt. Amet veniam qui unde cumque molestiae id totam eos.</h3>
+                </div>
+
+                <div className="dark-tips-area">
+                  <div className="first-tips-row">
+                    <div className="tip">
+                      <span>Personal profilies<br/>Avatars & Ranks</span>
+                      <img src="" alt="profile img-logo" />
+                    </div>
+                    <div className="tip">
+                      <span>Guilds</span>
+                      <img src="" alt="shield img-logo" />
+                    </div>
+                    <div className="tip">
+                      <span>In-Game<br/>Chats</span>
+                      <img src="" alt="message img-logo" />
+                    </div>
+                  </div>
+                  <div className="second-tips-row">
+                    <div className="tip">
+                      <img src="" alt="like img-logo" />
+                      <span>Votings</span>
+                    </div>
+                    <div className="tip">
+                      <img src="" alt="task img-logo" />
+                      <span>Achievements <br/> Daily Tasks</span>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+        </section>
+
+
+        <section className="crafting">
+          <div className="container">
+            <img src="" alt="tech-border" />
+            <h1>Resources & Crafting</h1>
+            <div className="cards">
+              <div className="card">
+                <img src="" alt="collection logo" />
+                <h2>Collect</h2>
+                <h3>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere fuga neque provident dignissimos magnam laborum nostrum maiores quibusdam voluptatum. Culpa praesentium sapiente repellendus itaque doloribus soluta at, animi eligendi nihil!
+                </h3>
+              </div>
+
+              <div className="card">
+                <img src="" alt="trade logo" />
+                <h2>Trade</h2>
+                <h3>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere fuga neque provident dignissimos magnam laborum nostrum maiores quibusdam voluptatum. Culpa praesentium sapiente repellendus itaque doloribus soluta at, animi eligendi nihil!
+                </h3>
+              </div>
+
+              <div className="card">
+                <img src="" alt="craft logo" />
+                <h2>Craft</h2>
+                <h3>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere fuga neque provident dignissimos magnam laborum nostrum maiores quibusdam voluptatum. Culpa praesentium sapiente repellendus itaque doloribus soluta at, animi eligendi nihil!
+                </h3>
+              </div>
+
+            </div>
+            <img src="" alt="bottom-tech-border" />
+          </div>
+        </section>
+
+        <section className="adventures">
+            <div className="sky-images">
+
+            </div>
+            <div className="container">
+              <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, praesentium voluptas, temporibus, qui consequuntur dolor dolorem numquam aperiam dicta debitis eum ipsa nostrum odit rerum non! Repudiandae ipsum repellat corporis.</h3>
+              <button>Explore The World</button>
+            </div>
+        </section>
+        <section className="housing">
+          <div className="container">
+            <h1>Housing</h1>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae architecto quam eos, quod quo non ipsam dignissimos culpa molestiae veniam enim excepturi, laborum dolorum saepe similique laudantium doloremque ipsa? Ipsa.</h3>
+              <img src="" alt="Rooms-IMG" />
+              <button>Learn More</button>
+          </div>
+        </section>
+        <section className="roulette">
+          <div className="container">
+            <div className="text-side">
+              <h1>Gotchie Roulette</h1>
+              <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa accusantium amet dignissimos quo, et fugiat nisi debitis placeat perferendis eveniet. Itaque, quod aut nulla expedita nam maiores animi optio placeat.</h3>
+              <button>Learn More</button>
+            </div>
+            <img src="" alt="roulette img" />
+
+          </div>
+        </section>
+        <section className="pvp">
+          <div className="container">
+            <h1>PVP Coming This Winter</h1>
+            <img src="" alt="pvp await img" />
+          </div>
+        </section>
+        <section className="tokens">
+          <div className="container">
+            <h1>Tokens</h1>
+            <div className="bsts-token">
+              <div className="token-header">
+                <img src="" alt="head" />
+                <h2>BSTS Token</h2>
+              </div>
+              <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem aut placeat minima rem tempora, ullam debitis ad quasi culpa iusto velit voluptatibus officiis nam voluptates fugiat suscipit minus rerum consequatur.</h3>
+              <h3>Token Name: <span>Magic Beasties</span></h3>
+              <h3>Token Ticker: <span>BSTS</span></h3>
+              <h3>Decimals: <span>9</span></h3>
+              <h3>Contract address: <br/> 0xc234423fg2fhg423fh2442h3f4fg2234f243gfg</h3>
+              <div className="info-btns">
+                <button>Documentation</button>
+                <button>Audits</button>
+              </div>
+              <a href="">
+                <img src="" alt="rabbit logo" />
+                <span className="title">Buy BSTS on PancakeSwap</span>
+                <span className="slippage">Slippage = 8%</span>
+              </a>
+            </div>
+
+            <div className="cookies-token">
+              <div className="token-header">
+                <img src="" alt="head" />
+                <h2>COOKIES Token</h2>
+              </div>
+              <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem aut placeat minima rem tempora, ullam debitis ad quasi culpa iusto velit voluptatibus officiis nam voluptates fugiat suscipit minus rerum consequatur.</h3>
+              <h3>Token Name: <span>Cookies</span></h3>
+              <h3>Token Ticker: <span>COOKIES</span></h3>
+              <h3>Decimals: <span>18</span></h3>
+              <h3>Contract address: <br/> 0xc234423fg2fhg423fh2442h3f4fg2234f243gfg</h3>
+              <div className="info-btns">
+                <button>Documentation</button>
+              </div>
+              <a href="">
+                <img src="" alt="rabbit logo" />
+                <span className="title">Buy BSTS on PancakeSwap</span>
+                <span className="slippage">Slippage = 0.5%</span>
+              </a>
+            </div>
+          </div>
+
+        </section>
       </div>
     </>
   );
