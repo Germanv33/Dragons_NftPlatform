@@ -8,9 +8,16 @@
     padding-bottom: 10px
     width: 20%
 
-    img
-        max-width: 100%
+
+    .gotchie-img
+        width: 100%
+        img
+            width: 100%
+
+            object-fit: cover
+            object-position: center
         
+
     .description
         display: flex
         flex-direction: column
@@ -87,3 +94,9 @@
                 text-align: left
                 color: #d8a1ff
                 text-decoration: none
+
+@media ( max-width: 800px )
+    .gotchie_card
+        margin: 0
+        width: 80%
+        margin: 0 auto

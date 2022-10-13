@@ -18,7 +18,9 @@ export const Gotchie_card: React.FC<GotchieCardI> = ({
 }) => {
   return (
     <div className="gotchie_card">
-      <img src={img} alt="nft_img" />
+      <div className="gotchie-img">
+        <img src={img} alt="nft_img" />
+      </div>
       <div className="description">
         <div className="first_line">
           <span className="title">{title}</span>
