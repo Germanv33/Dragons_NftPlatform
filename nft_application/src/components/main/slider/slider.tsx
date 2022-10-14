@@ -37,7 +37,7 @@ export const Slider: FunctionComponent = () => {
               <Gotchie_card
                 img={g_girl}
                 title="Gotcha Girl"
-                supply={50}
+                supply="Child: 50"
                 rarety="rare"
                 market_url="/"
               />
@@ -46,7 +46,7 @@ export const Slider: FunctionComponent = () => {
               <Gotchie_card
                 img={g_boy2}
                 title="Gotcha Boy"
-                supply={100}
+                supply="Teen: 100"
                 rarety="common"
                 market_url="/"
               />
@@ -55,7 +55,7 @@ export const Slider: FunctionComponent = () => {
               <Gotchie_card
                 img={g_boy}
                 title="Trendy Gotch"
-                supply={10}
+                supply="Adult: 10"
                 rarety="epic"
                 market_url="/"
               />
@@ -65,7 +65,7 @@ export const Slider: FunctionComponent = () => {
               <Gotchie_card
                 img={g_boy1}
                 title="Beachy gotch"
-                supply={70}
+                supply="Child: 70"
                 rarety="uncommon"
                 market_url="/"
               />
@@ -75,7 +75,7 @@ export const Slider: FunctionComponent = () => {
               <Gotchie_card
                 img={g_dragon}
                 title="Gotcha Dragon"
-                supply={5}
+                supply="Baby: 5"
                 rarety="legendary"
                 market_url="/"
               />

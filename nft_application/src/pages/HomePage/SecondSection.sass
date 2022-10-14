@@ -1,10 +1,69 @@
-.container, .squared-container
-        max-width: 1200px
-        margin: 0 auto
+$maxWidth: 1280
+@mixin adaptiv-font($pcSize, $mobSize) 
+    $addSize: $pcSize - $mobSize
+    $maxWidth: $maxWidth - 320
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}))
+
+.gotchies, .avatars, .features, .housing, .roulette, .pvp, .tokens, .team, .team, .special, .sales, .partners, .roadmap
+    h1
+        @include adaptiv-font(48, 32)
+
+    .container, .squared-container
+
+            margin: 0 auto
+            @media (min-width: 1400px)
+                max-width: 1400px
+
+            @media (min-width: 1300px) and (max-width: 1399px) 
+                max-width: 1300px
+
+
+            @media (min-width: 1200px) and (max-width: 1299px) 
+                max-width: 1200px
     
+            
+            @media (min-width: 992px) and (max-width: 1199px) 
+                max-width: 992px
+
+            
+            @media (min-width: 768px) and (max-width: 991px)
+                max-width: 768px
+
+
+            @media (min-width: 480px) and (max-width: 767px)
+                max-width: 480px
     
+
+            @media (min-width: 320px) and (max-width: 479px)
+                max-width: 343px
+
+
+            @media (max-width: 320px) 
+                max-width: 320px
+    
+
+.housing, .adventures ,.roulette
+    button
+        box-shadow: 0px 0px 10.66px 2.34px rgba(0, 0, 0, 0.41)
+        width: fit-content
+        text-align: center
+        min-width: 90px
+        border-radius: 10px 
+        white-space: nowrap
+        outline: none
+        padding: 0% 3% 0.5% 3%
+        border: 0
+        font-family: Akrobat
+        font-size: 24.5px
+        font-weight: 1100
+        color: #fffeff
+    
+        margin-right: 10px
+        background-image: linear-gradient(to right, #f18e1a, #f11aad)
+
+
 .video_title
-    margin-top: 300px
+    margin-top: 30%
     margin-bottom: 100px
     overflow: hidden
     
@@ -25,8 +84,8 @@
         h2
             width: 90%
             font-family: Akrobat
-            font-size: 38px
-            font-weight: bold
+            @include adaptiv-font(38, 32)
+            font-weight: 900
             font-stretch: normal
             font-style: normal
             line-height: 0.85
@@ -41,22 +100,20 @@
             margin: 0px
             margin-bottom: 40px
             font-family: Akrobat
-            font-size: 26px
-            font-weight: normal
+            @include adaptiv-font(22, 16)
+            font-weight: 500
             font-stretch: normal
             font-style: normal
             line-height: 1.39
             letter-spacing: normal
             text-align: center
             color: white
-
-
-        
+  
 
 .gotchies
 
-    margin-top: 100px
-    margin-bottom: 100px
+   
+    
     position: relative
 
     .gotchies_island1, .gotchies_island2
@@ -150,8 +207,20 @@
                 display: block
 
 
+@keyframes pulse 
+  from 
+    transform: scale(.85)
+  
+  50% 
+    transform: scale(1)
+  
+  to 
+    transform: scale(.85)
+  
+
 
 .avatars
+    margin-top: 10%
     .container
         max-width: 1200px
         display: flex
@@ -164,7 +233,10 @@
             width: 35%
             display: flex
             flex-wrap: wrap
-
+            margin: auto
+            @media (max-width: 600px)
+                flex-direction: column
+                
         
             
             img
@@ -181,64 +253,64 @@
 
             .first, .second, .third, .fourth, .last
                 transition: 0.8s 
+            
+            @keyframes pulse 
+                from 
+                    transform: scale(1)
+    
+                50% 
+                    transform: scale(1.5)
+                
+                to 
+                    transform: scale(1)
+                
 
             .first
                 width: 50%
-
                 margin-top: auto
                 margin-left: auto
-
-            // .first:hover
-            //     width: 56%
-      
-            // .first:hover + .second
-            //     width: 35%
-
-            // .first:hover ~ .third
-            //     width: 35%
-
-            // .first:hover ~ .fourth
-            //     width: 28%
-
-            // .first:hover ~ .last
-            //     .last_img
-            //         width: 25%
-
-
-            // .second:hover
-            //     width: 50%
-      
-            // .second:hover > .screen_img
-                
-            //         width: 55%
-
-            // .second:hover ~ .third
-            //     width: 35%
-
-            // .second:hover ~ .fourth
-            //     width: 28%
-
-            // .second:hover ~ .last
-            //     .last_img
-            //         width: 25%
-
+                @media (max-width: 600px)
+                    margin-right: 30%
+                    animation-delay: -5s
+                    
             .second
                 width: 45%
                 margin-top: auto
                 margin-right: auto
+                @media (max-width: 600px)
+                    animation-delay: 5s
 
             .third
                 width: 45%
                 margin-bottom: auto
                 margin-left: auto
+                @media (max-width: 600px)
+                    margin-right: 30%
+                    animation-delay: 10s
 
             .fourth
                 width: 38%
                 margin-bottom: auto
                 margin-right: auto
-                
+                @media (max-width: 600px)
+                    animation-delay: 15s
 
-        .text
+            .first, .second, .third, .fourth, .last
+                @media (max-width: 600px)
+                    margin: 0
+                    width: auto
+                    animation: pulse 10s ease-in-out 
+                    
+
+            @media (max-width: 600px)
+                .last
+                    img
+                        margin: 0
+                        width: auto
+                        animation: pulse 10s ease-in-out 
+                        animation-delay: 20s
+
+        .text           
             margin: auto 0
             padding-bottom: 10%
             width: 50%
@@ -248,6 +320,8 @@
             text-align: right
             color: #fff
             height: fit-content
+            padding-right: 5%
+         
 
 
 
@@ -285,7 +359,6 @@
                 padding: 0px 15px 26px 15px
                 height: 0px
                 background-image: linear-gradient(to right, #f11aad, #d46013)
-
 
 .features
     margin-top: 150px
@@ -334,12 +407,11 @@
                     font-weight: 100
                     line-height: 1.3
 
-
-
 .platform
     .container
         position: relative
-        
+        max-width: 1200px
+        margin: 0 auto
 
         .sky
             display: none
@@ -438,9 +510,10 @@
                             line-height: 1.167
                             text-align: center
 
-
 .crafting
     .squared-container
+        max-width: 1200px
+        margin: 0 auto
         background-color: rgba(0, 0, 0,0.2 )
         padding-top: 5%
         position: relative
@@ -457,20 +530,35 @@
         .bot-border
             bottom: 0
             left: 0
+            @media (min-width: 501px) and (max-width: 906px)
+                width: 100%
+                height: 20%
+
+
+            @media (max-width: 500px)
+                width: 100%
+                height: 20%
 
         .top-border
             // top: 5%
             left: 0
-  
+            @media (max-width: 500px)
+                width: 100%
+                height: 15%
+                transform: translateY(10%)
 
         .container
             align-items: center
             position: relative
+            max-width: 1200px
+            margin: 0 auto
 
             clip-path: polygon(0.00% 11.95%,100% 1.75%, 100.00% 85.9%,0% 96.1%)
             background-color: #8e4c83
             padding: 10px 0 20px 0
             z-index: 2
+             
+
 
             h1
                 text-align: center
@@ -480,28 +568,52 @@
                 color: rgb(255, 255, 255)
                 line-height: 0.729
                 transform: rotate(-5deg)
-            
+                
+
+                @media (max-width: 500px)
+                    padding-top: 10%
+                    transform: rotate(-7deg)
+
             .cards
                 width: 90%
                 display: flex
                 justify-content: space-between
                 margin: 0 auto
                 padding-bottom: 15%
+                @media (min-width: 501px) and (max-width: 607px)
+                    padding-bottom: 25%
+                @media (max-width: 500px)
+                    flex-direction: column
+                    row-gap: 15px
+                    padding-bottom: 25%
+                    
 
             .card
                 width: 25%
+                @media (min-width: 501px) and (max-width: 906px)
+                    width: 30%
+
+                @media (max-width: 500px)
+                    display: flex
+                    width: 100%
+                    
 
                 .icon-handler
+    
                     width: 100%
+                    height: 40%
                     display: inline-flex
                     background: radial-gradient(ellipse at center,  rgba(0, 0, 0, 0.3) 0%,rgba(0, 0, 0, 0.3) 49%,rgba(0, 0, 0, 0.3) 47%,rgba(1, 1, 1, 0) 47%,rgba(1, 1, 1, 0) 48%)
-                    
+                    @media (max-width: 500px)
+                        width: 30%
+                        margin: auto 0
 
                     img
                         display: inline-flex
-                        max-width: 80%
+                        max-width: 100%
                         margin: 0 auto
-
+                        object-fit: contain
+                        
                 
 
         .text
@@ -509,79 +621,115 @@
             border-radius: 10px
             clip-path: polygon(0.00% 0%,100% 0%, 100.00% 85.9%,0% 96.1%)
 
+            @media (max-width: 500px)
+                clip-path: none
+                padding-left: 4%
+                width: 70%
+                margin-left: 5%
+
+
             h2
                 padding-top: 5%
                 text-align: center
                 color: #fff
                 font-weight: 600
+                @media (max-width: 500px)
+                    padding-top: 3%
+                    text-align: left
+                    margin: 0
+                    padding-bottom: 3%
 
             h3
                 margin: 0 auto
                 width: 70%
                 letter-spacing: 0.7px
-                font-size: 16px
+                @include adaptiv-font(16, 13)
                 font-family: "Akrobat"
                 color: rgb(255, 255, 255)
                 text-align: left
                 font-weight: 300
 
+
+                @media (min-width: 501px) and (max-width: 906px)
+                    width: 85%
+
+                @media (max-width: 500px)
+                    text-align: left
+                    margin: 0 
+                    width: 100%
+
         .first
             padding-bottom: 45%
+            @media (min-width: 501px) and (max-width: 906px)
+                padding-bottom: 55%
 
         .second
             padding-bottom: 29%
+            @media (min-width: 501px) and (max-width: 906px)
+                padding-bottom: 29%
 
         .thirst
             padding-bottom: 15%
+            @media (min-width: 501px) and (max-width: 906px)
+                padding-bottom: 20%
+        .first, .second, .thirst
+            @media (max-width: 500px)
+                padding-bottom: 4%
 
-    
 .adventures
-
-    
-
     h1
         text-align: center
-        font-size: 48px
+        @include adaptiv-font(48, 32)
         font-family: "Akrobat"
         color: rgb(255, 255, 255)
         line-height: 0.729
 
-    .container
-        position:  relative
+    button
+        z-index: 11
+        @include adaptiv-font(24.5, 16)
+    
+    .right-area-mobile
+        
+        @media (min-width: 600px)
+            display: none
 
-        .right-area
-            width: 29%
-            margin-left: auto   
+        width: 80%
+        margin: 0 auto
+        text-align: center
+        z-index: 10
 
-            padding-bottom: 500px
+    
 
-            h3
+        h3
                 font-weight: 100
-                font-size: 18px
+                @include adaptiv-font(18, 12)
          
                 color: #fff
 
-            button
-                text-align: center
-                min-width: 90px
-                border-radius: 10px 
-                box-shadow: 0 0 3.4px 0.6px rgba(0, 0, 0, 0.41)
-                outline: none
-                background: none
-                border: 0
-                font-family: Akrobat
-                font-size: 24.5px
-                font-weight: 1100
-                font-stretch: normal
-                font-style: normal
-                vertical-align: top
-                line-height: 20px
-                letter-spacing: normal
-                color: #fffeff
-                padding-bottom: 24.5px 
-                margin-right: 10px
-                height: 0px
-                background-image: linear-gradient(to right, #f18e1a, #f11aad)
+    .container
+        position:  relative
+        max-width: 1200px
+        margin: 0 auto
+        height: 900px
+
+
+
+        .right-area
+            margin-left: auto
+            width: 40%
+            margin-right: 3%
+            
+            @media (max-width: 600px)
+                display: none
+
+
+            h3
+                font-weight: 100
+                @include adaptiv-font(18, 12)
+         
+                color: #fff
+
+            
 
         .islands
             width: 100%
@@ -626,6 +774,7 @@
             height: 100%
             top: 0
             left: 0
+
             img
                 position: absolute
 
@@ -645,7 +794,7 @@
                 width: 58%
                 right: 0
                 top: 50%
-                transform: translate(100%, -40%) scaleX(-1)
+                transform: translate(99.9999%, -40%) scaleX(-1)
 
             .left-sky
                 
@@ -655,7 +804,6 @@
                 left: 0
                 top: 50%
                 transform: translate(0, -20%)
-
 
             .left-sky-inversed
                 
@@ -753,9 +901,6 @@
                 opacity: 1
                 transform: translate(0, 0%)
 
-
-            
-
 .housing
     .container
         display: flex
@@ -782,34 +927,8 @@
         img
             padding: 40px 0 40px 0
             display: inline-flex
-            max-width: 70%
+            max-width: 90%
             margin: 0 auto
-
-
-        button
-                box-shadow: 0px 0px 10.66px 2.34px rgba(0, 0, 0, 0.41)
-                width: 15%
-                text-align: center
-                min-width: 90px
-                border-radius: 10px 
-         
-                outline: none
-                background: none
-                border: 0
-                font-family: Akrobat
-                font-size: 24.5px
-                font-weight: 1100
-                font-stretch: normal
-                font-style: normal
-                vertical-align: top
-                line-height: 20px
-                letter-spacing: normal
-                color: #fffeff
-                padding-bottom: 24.5px 
-                margin-right: 10px
-                height: 0px
-                background-image: linear-gradient(to right, #f18e1a, #f11aad)
-
 
 .roulette
     margin-top: 10%
@@ -817,10 +936,11 @@
         display: flex
         align-items: center
         .text-side
-            width: 45%
+            padding-left: 5%
+            width: 50%
 
         img
-            width: 54%
+            width: 50%
 
     h1
        
@@ -843,29 +963,7 @@
         margin-bottom: 5%
 
     button
-        box-shadow: 0px 0px 10.66px 2.34px rgba(0, 0, 0, 0.41)
-       
-        text-align: center
-        min-width: 90px
-        border-radius: 10px 
-    
-        outline: none
-        background: none
-        border: 0
-        font-family: Akrobat
-        font-size: 24.5px
-        font-weight: 1100
-        font-stretch: normal
-        font-style: normal
-        vertical-align: top
-        line-height: 20px
-        letter-spacing: normal
-        color: #fffeff
-        padding-bottom: 24.5px 
-        margin-right: 10px
-        height: 0px
-        background-image: linear-gradient(to right, #f18e1a, #f11aad)
-
+        padding: 0% 2% 1% 2%
 
 .pvp
     margin-top: 10%
@@ -887,12 +985,12 @@
             max-width: 70%
             margin: 0 auto
             
-
 .tokens
     display: none
 
 .team
     margin-top: 10%
+
     .members
         width: 100%
         display: flex
@@ -900,25 +998,52 @@
         align-items: center
 
         .first-row
+            
             display: flex
-            justify-content: space-between
-            align-items: top
+            justify-content: space-around
+            width: 100%
+            @media (max-width: 500px)
+                justify-content: space-around
+            
 
-        .second-row
+        .mobile-row
+            margin: 3% 0 3% 0
+            width: 55%
             display: flex
             justify-content: space-around
 
+            @media (min-width: 500px)
+                display: none
+
+        .second-row
+            width: 80%
+            display: flex
+            justify-content: space-around
+
+            @media (max-width: 500px)
+                width: 100%
+        
+
         .member
+            
             display: flex
             flex-direction: column
             align-items: center
             position: relative
             padding-bottom: 0%
 
-            img
-                max-width: 100%
+            .member-img
+                width: 100%
+                height: 85%
+                display: inline-flex
+                justify-content: center
+
+                img
+                    object-fit: contain
+                    max-width: 100%
 
             .text
+                height: 15%
                 position: absolute
                 max-width: 100%
                 bottom: 0
@@ -928,7 +1053,7 @@
 
                 span
                     width: 100%
-                    font-size: 26px
+                    @include adaptiv-font(26, 17)
                     font-family: "Avenger"
                     color: rgb(255, 255, 255)
                     line-height: 0.583
@@ -944,9 +1069,28 @@
                     line-height: 1.167
                     font-weight: 100
                     text-align: center
-  
+    
+     
 
-  
+        .red
+            filter: drop-shadow(0px 0px 110px rgba(255, 0, 0, 0.5))
+
+        .pink
+            filter: drop-shadow(0px 0px 110px rgba(255, 0, 195, 0.5))
+
+        .blue
+            filter: drop-shadow(0px 0px 110px rgba(0, 162, 255, 0.5))
+
+        .orange
+            filter: drop-shadow(0px 0px 110px rgba(255, 153, 0, 0.5))
+
+        .yellow
+            filter: drop-shadow(0px 0px 110px rgba(255, 255, 0, 0.5))
+        
+        .mobile
+            @media (max-width: 500px)
+                    display: none
+
     h1
         text-align: center
         font-size: 48px
@@ -959,7 +1103,6 @@
 .roadmap
     
     padding-top: 4rem
-    width: 50%
     margin: auto
 
     h1
@@ -969,20 +1112,27 @@
         color: rgb(255, 255, 255)
         line-height: 0.729
         font-weight: 600
-        margin-bottom: 5%
+        margin-bottom: 10%
+
+    .container
+        max-width: 80vw
 
     details
+        width: 100%
 
         summary
             width: 100%
 
             .summary
                 border-radius: 10px
-                padding: 5px 0px 5px 0px
+                transition: all 1s 
+
+                padding: 1.6% 0px 1.6% 0px
                 display: flex
                 align-items: center
                 width: 100%
                 background-color: #562d6c
+
                 div
                     display: flex
                     width: 20%
@@ -993,31 +1143,42 @@
                         margin: 0
                         letter-spacing: 0.7px
                         font-size: 25px
+                        @include adaptiv-font(25, 16)
                         font-family: "Akrobat"
                         color: rgb(255, 255, 255)
                         text-align: left
                         font-weight: 600
+                        white-space: nowrap
+
                     span
                         
-                     
                         letter-spacing: 0.7px
                         font-size: 15px
                         font-family: "Akrobat"
                         color: rgb(255, 255, 255)
                         text-align: left
                         font-weight: 600
+                        @media (max-width: 500px)
+                            display: none
 
                     
 
                 img
+          
                     height: 50%
                     max-width: 100%
                     padding-left: 3%
+
+                    @media (max-width: 500px)
+                        width: 12%
+                       
+                        
 
   
 
     details[open] summary ~ * 
         animation: open .5s ease-in-out
+        
 
 
     details[close] summary ~ * 
@@ -1061,12 +1222,28 @@
         color: white
         position: absolute
         top: 50%
-        right: 0
+        right: 1%
         transition: 200ms linear
-    
-    details[open] summary:after 
-        transform: scale(0.65) translateY(-75%) 
 
+        @media (max-width: 500px)
+            right: 0%
+            top: 5%
+            transform: scale(0.30)  rotate(-90deg)  translateY(100%)
+
+    details[open] summary:after 
+        transform: scale(0.55) translateY(-75%) translateX(-60%)
+        right: 0%
+
+        @media (max-width: 500px)
+            top: 5%
+            right: 0%
+            transform: scale(0.30) translateX(40%) 
+
+        
+    details[open] summary
+        .summary
+            border-bottom-left-radius: 0px
+            border-bottom-right-radius: 0px
     
     details summary 
         outline: 0
@@ -1075,7 +1252,9 @@
         background-color: #562d6c
 
         width: 100%
-        border-radius: 10px
+
+        border-bottom-left-radius: 10px
+        border-bottom-right-radius: 10px
         padding: 10px 0px 10px 0
         
         margin: 0 
@@ -1085,7 +1264,7 @@
             margin: 0
             margin-left: 8%
             letter-spacing: 0.7px
-            font-size: 16px
+            @include adaptiv-font(16, 10)
             font-family: "Akrobat"
             color: rgb(255, 255, 255)
             text-align: left
@@ -1094,9 +1273,7 @@
     details
         margin-top: 2%
         
-
-    
-.pertners
+.partners
     margin-top: 10%
     .container
         h1
@@ -1110,7 +1287,6 @@
 
         img
             max-width: 100%
-
 
 .special
     margin-top: 10%
@@ -1149,6 +1325,7 @@
         .cards
             display: flex
             justify-content: space-around
+
             .gotchie_special
                 z-index: 3
                 box-shadow: 0 0 12.3px 2.2px rgba(0, 0, 0, 0.31)
@@ -1158,9 +1335,15 @@
                 margin-top: 40px
                 padding-bottom: 10px
                 width: 20%
+                @media ( max-width: 800px)
+                    width: 30%
+
 
                 img
-                    max-width: 100%
+                    width: 100%
+                    position: relative
+                    object-fit: cover
+                    object-position: center
                     
                 .description
                     h3
@@ -1174,7 +1357,6 @@
                         margin-bottom: 5%
                         line-height: 1.5
                         margin: 0 auto
-                    
 
 .sales
     margin-top: 10%
@@ -1196,3 +1378,5 @@
             margin-bottom: 5%
         img
             max-width: 100%
+
+

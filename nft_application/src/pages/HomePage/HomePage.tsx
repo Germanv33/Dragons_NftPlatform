@@ -102,8 +102,12 @@ import { Slider } from "../../components/main/slider/slider";
 export function HomePage() {
   const [windowWidth, setWindowWidth] = useState(0);
   const [windowHeight, setWindowHeight] = useState(0);
+
   const [heroHeight, setHeroHeight] = useState("0px");
   const [heroMinHeight, setHeroMinHeight] = useState("0px");
+
+  const [adventureHeight, setAdventureHeight] = useState("0px");
+  const [adventureMinHeight, setAdventureMinHeight] = useState("0px");
 
   let resizeWindow = () => {
     setWindowWidth(window.innerWidth);
@@ -121,6 +125,16 @@ export function HomePage() {
   useEffect(() => {
     if (windowWidth * 0.79 > windowHeight) {
       setHeroHeight("100vh");
+      setHeroMinHeight(String(windowWidth / 1.5) + "px");
+    } else {
+      setHeroHeight(String(windowWidth * 0.79) + "px");
+      setHeroMinHeight("0px");
+    }
+  }, [windowWidth, windowHeight]);
+
+  useEffect(() => {
+    if (windowWidth * 0.79 > windowHeight) {
+      setAdventureHeight("100vh");
       setHeroMinHeight(String(windowWidth / 1.5) + "px");
     } else {
       setHeroHeight(String(windowWidth * 0.79) + "px");
@@ -252,6 +266,7 @@ export function HomePage() {
               Crypto Gotchies, built on BNB Chain, is a game about cute
               monsters:
             </h2>
+
             <h3>
               Players can collect ultra-rare digital NFTs Beasties and
               Talismans, send them to Adventures and Dungeons, and get rewards.
@@ -288,7 +303,7 @@ export function HomePage() {
               <Gotchie_card
                 img={g_girl}
                 title="Gotcha Girl"
-                supply={50}
+                supply="Child: 50"
                 rarety="rare"
                 market_url="/"
               />
@@ -296,7 +311,7 @@ export function HomePage() {
               <Gotchie_card
                 img={g_boy2}
                 title="Gotcha Boy"
-                supply={100}
+                supply="Teen: 100"
                 rarety="common"
                 market_url="/"
               />
@@ -304,7 +319,7 @@ export function HomePage() {
               <Gotchie_card
                 img={g_boy}
                 title="Trendy Gotch"
-                supply={10}
+                supply="Adult: 10"
                 rarety="epic"
                 market_url="/"
               />
@@ -313,7 +328,7 @@ export function HomePage() {
               <Gotchie_card
                 img={g_boy1}
                 title="Beachy gotch"
-                supply={70}
+                supply="Child: 70"
                 rarety="uncommon"
                 market_url="/"
               />
@@ -321,7 +336,7 @@ export function HomePage() {
               <Gotchie_card
                 img={g_dragon}
                 title="Gotcha Dragon"
-                supply={5}
+                supply="Baby: 5"
                 rarety="legendary"
                 market_url="/"
               />
@@ -559,8 +574,24 @@ export function HomePage() {
         </section>
 
         <section className="adventures">
-          <div className="container">
-            <h1>Adventures & Dungeons</h1>
+          <h1>Adventures & Dungeons</h1>
+
+          <div className="right-area-mobile">
+            <h3>
+              This magical continent is full of adventures and dungeons. For
+              now, you can only explore part of it, but new expansions are
+              waiting for you very soon! Start exploring the world now, and get
+              ready for great battles on the new maps!
+            </h3>
+            <button>Explore The World</button>
+          </div>
+
+          <div
+            className="container"
+            style={{
+              maxHeight: windowWidth * 0.7,
+            }}
+          >
             <div className="right-area">
               <h3>
                 This magical continent is full of adventures and dungeons. For
@@ -735,15 +766,19 @@ export function HomePage() {
             <div className="members">
               <div className="first-row">
                 <div className="member">
-                  <img src={member1} alt="gotchie face" />
+                  <div className="member-img">
+                    <img src={member1} alt="gotchie face" className="red" />
+                  </div>
                   <div className="text">
                     <span>Rebecca</span>
                     <h4>3D designer</h4>
                   </div>
                 </div>
 
-                <div className="member">
-                  <img src={member5} alt="gotchie face" />
+                <div className="member mobile">
+                  <div className="member-img">
+                    <img src={member5} alt="gotchie face" className="blue" />
+                  </div>
                   <div className="text">
                     <span>Ricci</span>
                     <h4>2D concept artist</h4>
@@ -751,16 +786,33 @@ export function HomePage() {
                 </div>
 
                 <div className="member">
-                  <img src={member2} alt="gotchie face" />
+                  <div className="member-img">
+                    <img src={member2} alt="gotchie face" className="orange" />
+                  </div>
                   <div className="text">
                     <span>Joseph</span>
                     <h4>project manager</h4>
                   </div>
                 </div>
               </div>
+
+              <div className="mobile-row">
+                <div className="member">
+                  <div className="member-img">
+                    <img src={member5} alt="gotchie face" className="blue" />
+                  </div>
+                  <div className="text">
+                    <span>Ricci</span>
+                    <h4>2D concept artist</h4>
+                  </div>
+                </div>
+              </div>
+
               <div className="second-row">
                 <div className="member">
-                  <img src={member4} alt="gotchie face" />
+                  <div className="member-img">
+                    <img src={member4} alt="gotchie face" className="yellow" />
+                  </div>
                   <div className="text">
                     <span>Russel</span>
                     <h4>delivery wizard</h4>
@@ -768,7 +820,9 @@ export function HomePage() {
                 </div>
 
                 <div className="member">
-                  <img src={member3} alt="gotchie face" />
+                  <div className="member-img">
+                    <img src={member3} alt="gotchie face" className="pink" />
+                  </div>
                   <div className="text">
                     <span>Daisy</span>
                     <h4>WEB developer</h4>
@@ -870,7 +924,7 @@ export function HomePage() {
           </div>
         </section>
 
-        <section className="pertners">
+        <section className="partners">
           <div className="container">
             <h1>Press & Partners</h1>
             <img src={partners_mocha} alt="partners mocha" />

@@ -5,7 +5,7 @@ interface GotchieCardI {
   img: any;
   title: string;
   rarety: string;
-  supply: number;
+  supply: string;
   market_url: string;
 }
 
@@ -27,7 +27,7 @@ export const Gotchie_card: React.FC<GotchieCardI> = ({
           <button className={rarety}>{rarety}</button>
         </div>
         <div className="second_line">
-          <span className="supply">Supply: {supply}</span>
+          <span className="supply">{supply}</span>
           <a href={market_url}>Buy on platform {">"}</a>
         </div>
       </div>
