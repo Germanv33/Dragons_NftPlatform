@@ -98,7 +98,7 @@ import coming_soon from "../../assets/main/coming-soon.png";
 import React, { useEffect, useRef, useState } from "react";
 import { Gotchie_card } from "../../components/main/gotchie_card/gotchie_card";
 import { Slider } from "../../components/main/slider/slider";
-import { motion, useScroll, useTransform, useSpring } from "framer-motion";
+import { motion, useScroll, useTransform, useSpring, useInView } from "framer-motion";
 
 export function HomePage() {
   const [windowWidth, setWindowWidth] = useState(0);
@@ -114,10 +114,43 @@ export function HomePage() {
     offset: ["start start", "end start"],
   });
 
-  let island1Y = useTransform(scrollYProgress, [0, 1], ["0%", "-40%"]);
-  let island2Y = useTransform(scrollYProgress, [0, 1], ["0%", "-30%"]);
-  let island3Y = useTransform(scrollYProgress, [0, 1], ["0%", "-20%"]);
-  let island4Y = useTransform(scrollYProgress, [0, 1], ["0%", "-30%"]);
+  // const [ref, inView, entry] = useInView({
+  //   /* Optional options */
+  //   threshold: 0.5,
+  //   triggerOnce: false
+  // });
+
+  let island1Y = useSpring(useTransform(scrollYProgress, [0, 1], ["0%", "100%"]), { stiffness: 15 })
+  let island2Y = useSpring(useTransform(scrollYProgress, [0, 1], ["0%", "80%"]), { stiffness: 20 })
+  let island3Y = useSpring(useTransform(scrollYProgress, [0, 1], ["0%", "90%"]), { stiffness: 10 });
+  let island4Y = useSpring(useTransform(scrollYProgress, [0, 1], ["0%", "80%"]), { stiffness: 25 })
+
+  const variants = {
+    visible: { opacity: 1, scale: 1, y: 0 },
+    hidden: {
+      opacity: 0,
+      scale: 0.85,
+      y: 50
+    }
+  };
+
+  const heroH1variants = {
+    visible: { opacity: 1, scale: 1, y: 0 },
+    hidden: {
+      opacity: 0,
+      scale: 0.85,
+      y: -50
+    }
+  };
+
+
+  // <motion.div
+  //       animate={inView ? 'visible' : 'hidden'}
+  //       variants={variants}
+  //       transition={{ duration: 2, ease: 'easeOut' }}
+  //       ref={ref}
+  //       className="magic"
+  //     />
 
   let resizeWindow = () => {
     setWindowWidth(window.innerWidth);
@@ -159,6 +192,10 @@ export function HomePage() {
             <div className="islands">
               <motion.img
                 style={{ y: island1Y }}
+                initial={"hidden"}
+                whileInView={"visible"}
+                viewport={{ once: true }}
+                variants={variants}
                 src={island1}
                 alt="island1"
                 className="island1"
@@ -166,13 +203,24 @@ export function HomePage() {
 
               <motion.img
                 style={{ y: island2Y }}
+
+                initial={"hidden"}
+                whileInView={"visible"}
+                viewport={{ once: true }}
+                variants={variants}
                 src={island2}
+                transition={{ delay: 0.2 }}
                 alt="island2"
                 className="island2"
               />
 
               <motion.img
                 style={{ y: island3Y }}
+                initial={"hidden"}
+                whileInView={"visible"}
+                viewport={{ once: true }}
+                transition={{ type: "tween" }}
+                variants={variants}
                 src={island3}
                 alt="island3"
                 className="island3"
@@ -180,6 +228,10 @@ export function HomePage() {
 
               <motion.img
                 style={{ y: island4Y, x: "-50%" }}
+                initial={"hidden"}
+                whileInView={"visible"}
+                viewport={{ once: true }}
+                variants={variants}
                 src={island4}
                 alt="island4"
                 className="island4"
@@ -233,7 +285,13 @@ export function HomePage() {
             </div>
 
             <div className="container">
-              <motion.div style={{ y: island3Y }} className="text_area">
+              <motion.div initial={"hidden"}
+                whileInView={"visible"}
+                viewport={{ once: true }}
+                variants={heroH1variants}
+                transition={{ duration: 0.5 }}
+                className="text_area">
+
                 <h1 className="crypto_h1">CRYPTO</h1>
                 <h1 className="gotchies_h1">GOTCHIES</h1>
                 <h2>Unique NFT collectibles game</h2>
@@ -257,10 +315,17 @@ export function HomePage() {
                 2021. Since then, our team has done a lot, but there is still
                 more to be done!
               </h3>
-              <div className="video_handler">
+              <motion.div initial={"hidden"}
+                whileInView={"visible"}
+                // viewport={{ once: true }}
+                transition={{ duration: 1 }}
+                variants={heroH1variants}
+                className="video_handler">
+
                 <img src={screen} alt="vedo handler" />
                 {/* <video src=""></video> */}
-              </div>
+
+              </motion.div>
             </div>
           </section>
 
