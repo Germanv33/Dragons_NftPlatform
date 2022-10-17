@@ -1,0 +1,173 @@
+$maxWidth: 1280
+@mixin adaptiv-font($pcSize, $mobSize) 
+    $addSize: $pcSize - $mobSize
+    $maxWidth: $maxWidth - 320
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}))
+    
+body, html
+    background: radial-gradient(rgb(116, 33, 123) , rgb(83, 23, 89), rgb(83, 23, 89), rgb(116, 33, 123) )  
+    
+    
+.full_container
+    background: radial-gradient(rgb(116, 33, 123) , rgb(83, 23, 89))  
+
+    .mint
+        width: 100%        
+        justify-content: center
+        overflow: hidden
+        position: relative
+        height: 100vh
+        
+
+        .right-island
+            position: absolute
+            width: 70%
+            right: 0
+            top: 0
+            transform: translate(30%, -70%)
+            z-index: 1
+
+        .left-island
+            position: absolute
+            width: 70%
+            left: 0
+            top: 0
+            transform: translate(-20%, -60%)
+            z-index: 1
+
+        .right-sky
+            position: absolute
+            width: 100%
+            right: -30%
+            top: 0
+            transform: translate(10%, 0%) rotate(-15deg)
+            z-index: 1
+            opacity: 0.3
+
+        .left-sky
+            position: absolute
+            width: 70%
+            left: -25%
+            bottom: 0%
+            transform: translate(0%, 55%)
+            z-index: 13
+            opacity: 0.3
+        
+
+        
+        .container
+            
+            max-width: 1400px
+            margin: 0 auto
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-top: 5%
+
+            .top-logo
+                width: 5%
+
+            h1
+                text-align: center
+                @include adaptiv-font(48, 32)
+                font-family: "Akrobat"
+                color: rgb(255, 255, 255)
+                line-height: 0.729
+                font-weight: 1100
+                z-index: 10
+                
+            .connect
+                box-shadow: 0px 0px 10.66px 2.34px rgba(0, 0, 0, 0.41)
+                width: fit-content
+                text-align: center
+                min-width: 90px
+                border-radius: 10px 
+                white-space: nowrap
+                outline: none
+                padding: 0% 1% 0.5% 1%
+                border: 0
+                font-family: Akrobat
+                @include adaptiv-font(24.5, 18)
+                font-weight: 1100
+                color: #fffeff
+                background-image: linear-gradient(to right, #f18e1a, #f11aad)
+                
+            
+            .content
+                display: flex
+                width: 100%
+                justify-content: center
+
+                .image
+                    position: relative
+                    width: 50%
+                    float: right
+                    img
+                        position: absolute
+                        right: 0
+                        top: 0
+                        max-width: 50%
+                        max-height: 100%
+                        
+
+                .select-container
+                    width: 50%
+                    margin-top: 3%
+                    h3
+                        white-space: nowrap
+                        width: 86%
+                        margin: 0px
+                        font-family: Akrobat
+                        @include adaptiv-font(16, 14)
+                        font-weight: 100
+                        color: white
+
+                    .buttons
+                        display: flex
+                        flex-direction: column
+                        width: 50%
+                        
+                        row-gap: 5%
+
+                        button
+                            display: inline-flex
+                            margin-top: 5%
+                            
+                            color: #Fff
+                            text-align: left
+
+                            outline: none
+                            border: 0px
+
+
+
+                            background-color: rgba(255, 255, 255, 0.1)
+                            border-radius: 10px
+                            font-weight: 100
+                            align-items: center
+                            padding: 3% 0 3% 0
+
+                            @include adaptiv-font(16, 14)
+                            img
+                                width: 16%
+                                filter: drop-shadow(0px 0px 6px #000000)
+                                padding-left: 3%
+                                padding-right: 3%
+
+                        .active
+                            border: 1px
+                            border-color: orange
+
+                    .nets
+                        font-family: Akrobat
+                        font-weight: 100
+                        display: flex
+                        flex-direction: column
+                        @include adaptiv-font(16, 14)
+                        text-decoration: 1px
+                        text-decoration-color: azure
+                        text-decoration-line: underline
+                        color: #fff
+                        a
+                            margin-top: 3%
+               

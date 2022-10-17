@@ -11,6 +11,17 @@ $maxWidth: 1280
     $maxWidth: $maxWidth - 320
     font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}))
 
+.first-bg-handler, .sec-bg-handler, .third-bg-handler
+    z-index: -100000
+
+.first-bg-handler
+    background: radial-gradient(rgb(250, 143, 164),  rgb(116, 33, 123))
+
+.sec-bg-handler
+    background: radial-gradient(rgb(250, 143, 164),  rgb(116, 33, 123))
+
+.third-bg-handler
+    background: linear-gradient(rgb(46, 5, 73),  rgb(16, 2, 23))
 
 .hero
     height: fit-content
@@ -136,6 +147,7 @@ $maxWidth: 1280
     .dragon-img
         position: absolute
         max-width: 80%
+        width: 80%
         height: auto 
 
         z-index: 4
