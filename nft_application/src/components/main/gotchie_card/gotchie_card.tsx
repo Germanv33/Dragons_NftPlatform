@@ -1,4 +1,5 @@
-import React from "react";
+import { motion } from "framer-motion";
+import React, { forwardRef, Ref, useEffect, useRef } from "react";
 import "./gotchie_card.sass";
 
 interface GotchieCardI {
@@ -9,28 +10,29 @@ interface GotchieCardI {
   market_url: string;
 }
 
-export const Gotchie_card: React.FC<GotchieCardI> = ({
-  img,
-  title,
-  rarety,
-  supply,
-  market_url,
-}) => {
-  return (
-    <div className="gotchie_card">
-      <div className="gotchie-img">
-        <img src={img} alt="nft_img" />
-      </div>
-      <div className="description">
-        <div className="first_line">
-          <span className="title">{title}</span>
-          <button className={rarety}>{rarety}</button>
+export const Gotchie_card = forwardRef(
+  (
+    { img, title, rarety, supply, market_url }: GotchieCardI,
+    ref: Ref<HTMLDivElement>
+  ) => {
+    return (
+      <div ref={ref} className="gotchie_card">
+        <div className="gotchie-img">
+          <video autoPlay loop muted src={img} />
         </div>
-        <div className="second_line">
-          <span className="supply">{supply}</span>
-          <a href={market_url}>Buy on platform {">"}</a>
+        <div className="description">
+          <div className="first_line">
+            <span className="title">{title}</span>
+            <button className={rarety}>{rarety}</button>
+          </div>
+          <div className="second_line">
+            <span className="supply">{supply}</span>
+            <a href={market_url}>Buy on platform {">"}</a>
+          </div>
         </div>
       </div>
-    </div>
-  );
-};
+    );
+  }
+);
+
+export const MGotchie_card = motion(Gotchie_card);

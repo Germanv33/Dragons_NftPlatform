@@ -14,12 +14,13 @@ $maxWidth: 1280
     width: 20%
     display: flex
     flex-direction: column
+    transition: box-shadow 1s 
 
 
     .gotchie-img
         width: 100%
         position: relative
-        img
+        img, video
             width: 100%
 
             object-fit: cover
@@ -109,8 +110,14 @@ $maxWidth: 1280
                 color: #d8a1ff
                 text-decoration: none
 
+.gotchie_card:hover
+    box-shadow: 0 0 13px 15px rgba(255, 255, 255, 0.31)
+
 @media ( max-width: 800px )
     .gotchie_card
         margin: 0
         width: 80%
         margin: 0 auto
+        
+    .gotchie_card:hover
+            box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.0)
