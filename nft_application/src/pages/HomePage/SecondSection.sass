@@ -162,12 +162,17 @@ $maxWidth: 1280
 
     
     .gotchies_island1
-        left: -25%
+        img
+            margin-left: auto
+        left: 0
+        transform: translateX(-50%)
 
 
     .gotchies_island2
-        right: -25%
-
+        img
+            margin-right: auto
+        right: 0
+        transform: translateX(50%)
 
     .container
         
@@ -705,8 +710,8 @@ $maxWidth: 1280
                 
 
                 @media (max-width: 500px) and (min-width: 371px)
-                    padding-top: 6%
-                    transform: rotate(-6deg)
+                    padding-top: 10%
+                    transform: rotate(-8deg)
 
                 @media screen and (max-width: 370px)
                     padding-top: 9%
@@ -723,8 +728,9 @@ $maxWidth: 1280
 
                 @media (max-width: 500px)
                     flex-direction: column
-                    row-gap: 15px
-                    padding-bottom: 26%
+                    row-gap: 25px
+                    padding-bottom: 36%
+                    padding-top: 3%
 
                     
 
@@ -891,27 +897,27 @@ $maxWidth: 1280
 
             .island1
                 z-index: 12
-                width: 20%
-                left: 0
+                width: 23%
+                left: -1%
                 top: 40%
 
             .island2
                 z-index: 10
-                width: 20%
-                left: 17%
-                top: 5%
+                width: 15%
+                left: 20%
+                top: 10%
 
             .island3
                 z-index: 21
-                top: 25%
+                top: 24%
                 left: 50%
-                width: 33%
+                width: 27%
                 transform: translateX(-50%)
 
             .island4 
                 z-index: 13
-                width: 20% 
-                right: 5% 
+                width: 15% 
+                right: 7% 
                 top: 35% 
 
 
@@ -1327,9 +1333,15 @@ $maxWidth: 1280
 
     details
         width: 100%
+        transition: all 1s  easy-in-out
+        border-radius: 10px
+        border: 2px solid rgba(1,1 ,1 ,0 )
+        transition: border-color 1s ease
+       
 
         summary
             width: 100%
+            transition: border-color 1s ease
 
             .summary
                 border-radius: 10px
@@ -1392,6 +1404,17 @@ $maxWidth: 1280
     details[close] summary ~ * 
         animation: close .5s ease-in-out
 
+    details:hover[open]
+       border-radius: 10px
+       border: 1px solid orange
+
+    details:hover:not([open])
+        border-radius: 10px
+        border: 2px solid orange
+
+    details:hover:not([open]) summary:after 
+        color: orange
+        padding: 20px
 
     @keyframes open 
         0% 

@@ -3,10 +3,10 @@ import "./SecondSection.sass";
 
 import { Header } from "../../components/header_main_page/header";
 
-import island1 from "../../assets/main/island_1.png";
-import island2 from "../../assets/main/island_2.gif";
-import island3 from "../../assets/main/island_3.gif";
-import island4 from "../../assets/main/island_4.gif";
+import island1 from "../../assets/main/island1.gif";
+import island2 from "../../assets/main/island2.gif";
+import island3 from "../../assets/main/island3.gif";
+import island4 from "../../assets/main/island4.gif";
 
 import header_smoke from "../../assets/main/header-right-smoke.png";
 
