@@ -1,8 +1,8 @@
 import "./mint.sass";
 import mini_logo from "../../assets/main/stageLogo.png";
-import island4 from "../../assets/main/island_4.gif";
+import island4 from "../../assets/main/island4.gif";
 import shark_bright_sky from "../../assets/main/left-bright-sky.png";
-import island2 from "../../assets/main/island_2.gif";
+import island2 from "../../assets/main/island2.gif";
 import bright_casual_sky from "../../assets/main/right-down-bright.png";
 import { useState } from "react";
 
