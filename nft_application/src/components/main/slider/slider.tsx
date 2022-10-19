@@ -14,7 +14,7 @@ import { Gotchie_card } from "../gotchie_card/gotchie_card";
 import g_boy from "../../../assets/main/gotchie_boy1.mp4";
 import g_boy1 from "../../../assets/main/gotchie_boy3.mp4";
 import g_boy2 from "../../../assets/main/gotchie_boy5.mp4";
-import g_girl from "../../../assets/main/gotchie_girl_1.mp4";
+import g_girl from "../../../assets/main/gotchie_girl.mp4";
 import g_dragon from "../../../assets/main/gotchie_dragon.mp4";
 
 export const Slider: FunctionComponent = () => {

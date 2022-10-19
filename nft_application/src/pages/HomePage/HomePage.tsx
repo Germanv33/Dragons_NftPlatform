@@ -17,7 +17,7 @@ import screen from "../../assets/main/screen.png";
 import g_boy from "../../assets/main/gotchie_boy1.mp4";
 import g_boy1 from "../../assets/main/gotchie_boy3.mp4";
 import g_boy2 from "../../assets/main/gotchie_boy5.mp4";
-import g_girl from "../../assets/main/gotchie_girl_1.mp4";
+import g_girl from "../../assets/main/gotchie_girl.mp4";
 import g_dragon from "../../assets/main/gotchie_dragon.mp4";
 
 // avatars assets
@@ -228,8 +228,8 @@ export function HomePage() {
               <motion.div
                 initial={"hidden"}
                 whileInView={"visible"}
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 1 }}
+                viewport={{ once: true, amount: 0.6 }}
+                transition={{ duration: 1.1, type: "tween" }}
                 variants={heroH1variants}
                 className="video_handler"
               >
@@ -334,7 +334,7 @@ export function HomePage() {
               initial={"hidden"}
               variants={sky_variants}
               transition={{ duration: 1 }}
-              viewport={{ amount: 0.2, once: true }}
+              viewport={{ amount: 0.2 }}
               whileInView={"visible"}
               src={bright_casual_sky}
               alt="sky"
@@ -345,7 +345,7 @@ export function HomePage() {
               initial={"hidden"}
               variants={sky_variants}
               style={{ scaleX: -1 }}
-              viewport={{ once: true }}
+              viewport={{ amount: 0.2 }}
               transition={{ duration: 1 }}
               whileInView={"visible"}
               src={bright_casual_sky}
@@ -723,7 +723,17 @@ export function HomePage() {
                 waiting for you very soon! Start exploring the world now, and
                 get ready for great battles on the new maps!
               </h3>
-              <button>Explore The World</button>
+              <motion.button
+                initial={{ opacity: 0.6 }}
+                whileHover={{
+                  scale: 1.1,
+                  transition: { duration: 1 },
+                }}
+                whileTap={{ scale: 0.9 }}
+                whileInView={{ opacity: 1 }}
+              >
+                Explore The World
+              </motion.button>
             </div>
 
             <div
@@ -739,7 +749,17 @@ export function HomePage() {
                   waiting for you very soon! Start exploring the world now, and
                   get ready for great battles on the new maps!
                 </h3>
-                <button>Explore The World</button>
+                <motion.button
+                  initial={{ opacity: 0.6 }}
+                  whileHover={{
+                    scale: 1.1,
+                    transition: { duration: 1 },
+                  }}
+                  whileTap={{ scale: 0.9 }}
+                  whileInView={{ opacity: 1 }}
+                >
+                  Explore The World
+                </motion.button>
               </div>
               <div className="sky-images">
                 <img src={right_sky} alt="sky" className="right-sky" />
