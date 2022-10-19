@@ -3,7 +3,7 @@ import { FunctionComponent, useEffect, useRef, useState } from "react";
 import { Hero_button } from "../button/button";
 
 // hero assets
-import dragon_video from "../../../assets/main/dragon_gif_1.gif";
+import dragon_video from "../../../assets/main/dragon.gif";
 
 import island1 from "../../../assets/main/island1.gif";
 import island2 from "../../../assets/main/island2.gif";
