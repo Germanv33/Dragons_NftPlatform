@@ -4,6 +4,7 @@ import island4 from "../../assets/main/island4.gif";
 import shark_bright_sky from "../../assets/main/left-bright-sky.png";
 import island2 from "../../assets/main/island2.gif";
 import bright_casual_sky from "../../assets/main/right-down-bright.png";
+import change_island from "../../assets/mint/change_islands.webm"
 import { useState } from "react";
 
 export function Mint() {
@@ -28,7 +29,7 @@ export function Mint() {
             <button className="connect">Connect With Metamsk</button>
             <div className="content">
               <div className="image">
-                <img src={island4} alt="island" />
+                <video src={change_island} autoPlay loop muted />
               </div>
               <div className="select-container">
                 <h3>Select how many lands you want to mint</h3>

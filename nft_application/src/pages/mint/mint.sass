@@ -1,25 +1,24 @@
 $maxWidth: 1280
-@mixin adaptiv-font($pcSize, $mobSize) 
+@mixin adaptiv-font($pcSize, $mobSize)
     $addSize: $pcSize - $mobSize
     $maxWidth: $maxWidth - 320
     font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}))
-    
+
 body, html
-    background: radial-gradient(rgb(116, 33, 123) , rgb(83, 23, 89), rgb(83, 23, 89), rgb(116, 33, 123) )  
-    
-    
+    background: radial-gradient(rgb(116, 33, 123) , rgb(83, 23, 89), rgb(83, 23, 89), rgb(116, 33, 123) )
+
 .full_mint_container
-    background: radial-gradient(rgb(116, 33, 123) , rgb(83, 23, 89))  
+    background: radial-gradient(rgb(116, 33, 123) , rgb(83, 23, 89))
     overflow: hidden
     height: 100vh
-    
+
     .mint
-        width: 100%        
+        width: 100%
         justify-content: center
         overflow: hidden
         position: relative
         height: 100vh
-        
+
         .right-island
             position: absolute
             width: 70%
@@ -53,7 +52,7 @@ body, html
             transform: translate(0%, 55%)
             z-index: 13
             opacity: 0.3
-        
+
         .container
             position: relative
             max-width: 1400px
@@ -73,16 +72,16 @@ body, html
                 @include adaptiv-font(48, 32)
                 font-family: "Gepestev"
                 color: rgb(255, 255, 255)
-            
+
                 font-weight: 1100
                 z-index: 10
-                
+
             .connect
                 box-shadow: 0px 0px 10.66px 2.34px rgba(0, 0, 0, 0.41)
                 width: fit-content
                 text-align: center
                 min-width: 90px
-                border-radius: 10px 
+                border-radius: 10px
                 white-space: nowrap
                 outline: none
                 padding: 0% 1% 0.5% 1%
@@ -92,26 +91,25 @@ body, html
                 font-weight: 1100
                 color: #fffeff
                 background-image: linear-gradient(to right, #f18e1a, #f11aad)
-                
+
             .content
                 display: flex
                 width: 100%
                 justify-content: center
                 @media screen and ( max-width: 768px )
                     flex-direction: column
-                    
 
                 .image
                     position: relative
                     width: 50%
                     float: right
-                    img
+                    video
                         position: absolute
                         right: 0
                         top: 0
                         max-width: 100%
                         max-height: 100%
-                        
+
                 .select-container
                     width: 50%
                     margin-top: 3%
