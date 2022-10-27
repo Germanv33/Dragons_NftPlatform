@@ -4,6 +4,7 @@ import "./sidebar.sass";
 import { NavLink } from "react-router-dom";
 import stage_logo from "../../../assets/main/stageLogo.png";
 import burger_logo from "../../../assets/main/burger_logo.svg";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 interface SidebarProps {
   pageWrapId: string | undefined;
@@ -26,35 +27,37 @@ export const Sidebar: FC<SidebarProps> = (pageWrapId, outerContainerId) => {
       <div className="header-logo">
         <img src={stage_logo} alt="header logo" />
       </div>
-
       <NavLink className="menu-item" to="/">
         Home
       </NavLink>
 
-      <NavLink className="menu-item" to="/">
+      <AnchorLink offset="200" href="#video">
         About
-      </NavLink>
+      </AnchorLink>
 
-      <NavLink className="menu-item" to="/">
+      <AnchorLink offset="200" href="#gotchies">
         Gotchies
-      </NavLink>
+      </AnchorLink>
 
-      <NavLink className="menu-item" to="/">
+      <AnchorLink offset="200" href="#features">
         Features
-      </NavLink>
+      </AnchorLink>
 
-      <NavLink className="menu-item" to="/">
+      <AnchorLink offset="200" href="#adventures">
         Fun Lands
-      </NavLink>
-      <NavLink className="menu-item" to="/">
+      </AnchorLink>
+
+      <AnchorLink offset="200" href="#team">
         Team
-      </NavLink>
-      <NavLink className="menu-item" to="/">
+      </AnchorLink>
+
+      <AnchorLink offset="200" href="#roadmap">
         Roadmap
-      </NavLink>
-      <NavLink className="menu-item" to="/">
+      </AnchorLink>
+
+      <AnchorLink offset="200" href="#partners">
         Partners
-      </NavLink>
+      </AnchorLink>
     </Menu>
   );
 };

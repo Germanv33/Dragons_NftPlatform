@@ -13,25 +13,25 @@ export function Header() {
             <img src={stage_logo} alt="header logo" />
           </div>
           <ul className="menu">
-            <AnchorLink href="#video">
+            <AnchorLink offset="200" href="#video">
               <li>About</li>
             </AnchorLink>
-            <AnchorLink href="#video">
+            <AnchorLink offset="200" href="#gotchies">
               <li>Gotchies</li>
             </AnchorLink>
-            <AnchorLink href="#video">
+            <AnchorLink offset="200" href="#features">
               <li>Features</li>
             </AnchorLink>
-            <AnchorLink href="#video">
+            <AnchorLink offset="200" href="#adventures">
               <li>Fun Lands</li>
             </AnchorLink>
-            <AnchorLink href="#video">
+            <AnchorLink offset="200" href="#team">
               <li>Team</li>
             </AnchorLink>
-            <AnchorLink href="#video">
+            <AnchorLink offset="200" href="#roadmap">
               <li>Roadmap</li>
             </AnchorLink>{" "}
-            <AnchorLink href="#video">
+            <AnchorLink offset="200" href="#partners">
               <li>Partners</li>
             </AnchorLink>{" "}
           </ul>

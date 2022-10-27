@@ -1,22 +1,22 @@
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { FunctionComponent, useEffect, useRef, useState } from "react";
-import { Hero_button } from "../button/button";
+import { Hero_button } from "../../button/button";
 
 // hero assets
-import dragon_video from "../../../assets/main/dragon.gif";
+import dragon_video from "../../../../assets/main/dragon.gif";
 
-import island1 from "../../../assets/main/island1.gif";
-import island2 from "../../../assets/main/island2.gif";
-import island3 from "../../../assets/main/island3.gif";
-import island4 from "../../../assets/main/island4.gif";
+import island1 from "../../../../assets/main/island1.gif";
+import island2 from "../../../../assets/main/island2.gif";
+import island3 from "../../../../assets/main/island3.gif";
+import island4 from "../../../../assets/main/island4.gif";
 
-import left_below_smoke from "../../../assets/main/dragon-left-below.png";
-import right_below_smoke from "../../../assets/main/dragon-right-below.png";
-import left_dragon_smoke from "../../../assets/main/dragon-left.png";
-import island_first_smoke from "../../../assets/main/island-first-smoke.png";
-import island_second_smoke from "../../../assets/main/island-second-smoke.png";
-import header_smoke from "../../../assets/main/header-right-smoke.png";
-import dragon_above_smoke from "../../../assets/main/dragon-right-above.png";
+import left_below_smoke from "../../../../assets/main/dragon-left-below.png";
+import right_below_smoke from "../../../../assets/main/dragon-right-below.png";
+import left_dragon_smoke from "../../../../assets/main/dragon-left.png";
+import island_first_smoke from "../../../../assets/main/island-first-smoke.png";
+import island_second_smoke from "../../../../assets/main/island-second-smoke.png";
+import header_smoke from "../../../../assets/main/header-right-smoke.png";
+import dragon_above_smoke from "../../../../assets/main/dragon-right-above.png";
 
 export const Hero: FunctionComponent = () => {
   const [windowWidth, setWindowWidth] = useState(0);
