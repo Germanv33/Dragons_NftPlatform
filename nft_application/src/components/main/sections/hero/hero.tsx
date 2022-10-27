@@ -3,7 +3,7 @@ import { FunctionComponent, useEffect, useRef, useState } from "react";
 import { Hero_button } from "../../button/button";
 
 // hero assets
-import dragon_video from "../../../../assets/main/dragon.gif";
+import dragon_video from "../../../../assets/main/dragon.webm";
 
 import island1 from "../../../../assets/main/island1.gif";
 import island2 from "../../../../assets/main/island2.gif";
@@ -150,7 +150,7 @@ export const Hero: FunctionComponent = () => {
         />
       </div>
 
-      <img src={dragon_video} alt="dragon_video" className="dragon-img" />
+      <video src={dragon_video} autoPlay loop muted className="dragon-img" />
 
       <div className="smokes">
         <img
