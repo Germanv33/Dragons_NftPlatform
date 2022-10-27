@@ -43,3 +43,8 @@ code {
   font-family: "Avenger";
   src: local("Avenger"), url(./fonts/Avenger/Avenger.otf) format("opentype");
 }
+
+@font-face {
+  font-family: "Gepestev";
+  src: local("Gepestev"), url(./fonts/Gepestev/Gepestev.ttf) format("truetype");
+}

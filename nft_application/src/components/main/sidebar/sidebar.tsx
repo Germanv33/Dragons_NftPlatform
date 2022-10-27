@@ -32,15 +32,28 @@ export const Sidebar: FC<SidebarProps> = (pageWrapId, outerContainerId) => {
       </NavLink>
 
       <NavLink className="menu-item" to="/">
-        Gothies
+        About
       </NavLink>
 
       <NavLink className="menu-item" to="/">
-        Avatars
+        Gotchies
       </NavLink>
 
       <NavLink className="menu-item" to="/">
-        Tokens
+        Features
+      </NavLink>
+
+      <NavLink className="menu-item" to="/">
+        Fun Lands
+      </NavLink>
+      <NavLink className="menu-item" to="/">
+        Team
+      </NavLink>
+      <NavLink className="menu-item" to="/">
+        Roadmap
+      </NavLink>
+      <NavLink className="menu-item" to="/">
+        Partners
       </NavLink>
     </Menu>
   );

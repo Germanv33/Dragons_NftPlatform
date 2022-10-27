@@ -12,13 +12,14 @@ import header_smoke from "../../assets/main/header-right-smoke.png";
 
 // second block assets
 import screen from "../../assets/main/screen.png";
+import video_fire from "../../assets/main/video_fire.png";
 
 // gotchie assets
-import g_boy from "../../assets/main/gotchie_boy1.mp4";
-import g_boy1 from "../../assets/main/gotchie_boy3.mp4";
-import g_boy2 from "../../assets/main/gotchie_boy5.mp4";
-import g_girl from "../../assets/main/gotchie_girl.mp4";
-import g_dragon from "../../assets/main/gotchie_dragon.mp4";
+import g_boy from "../../assets/main/gotchie_boy1.webm";
+import g_boy1 from "../../assets/main/gotchie_boy3.webm";
+import g_boy2 from "../../assets/main/gotchie_boy5.webm";
+import g_girl from "../../assets/main/gotchie_girl.webm";
+import g_dragon from "../../assets/main/gotchie_dragon.webm";
 
 // avatars assets
 import avatars_1 from "../../assets/main/avatars_1.png";
@@ -58,13 +59,20 @@ import shark_bright_sky from "../../assets/main/left-bright-sky.png";
 import bright_casual_sky from "../../assets/main/right-down-bright.png";
 
 // housing assets
-import rooms from "../../assets/main/rooms.png";
+
+import room1 from "../../assets/main/house1.png";
+import room2 from "../../assets/main/house2.png";
+import room3 from "../../assets/main/house3.png";
+import room4 from "../../assets/main/house4.png";
 
 // roulette assets
 import roulette from "../../assets/main/roulette.png";
 
 // pvp assets
 import pvp from "../../assets/main/pvp.png";
+
+// token assets
+import token_logo from "../../assets/main/token-logo.png";
 
 // team
 import member1 from "../../assets/main/1_1.png";
@@ -82,8 +90,15 @@ import partners_mocha from "../../assets/main/partners.png";
 // special assets
 import special_bg from "../../assets/main/special-bg.png";
 
+import partner_gotchie from "../../assets/main/partner-gotchie.png";
+
 // sales & events assets
 import coming_soon from "../../assets/main/coming-soon.png";
+
+// footer
+import twitter from "../../assets/main/twitter.png";
+import discord from "../../assets/main/discord.png";
+import telegram from "../../assets/main/tg.png";
 
 import React, { useEffect, useRef, useState } from "react";
 import { MGotchie_card } from "../../components/main/gotchie_card/gotchie_card";
@@ -114,6 +129,14 @@ export function HomePage() {
 
   const sky_variants = {
     visible: { opacity: 0.6, scale: 1, y: 0 },
+    hidden: {
+      opacity: 0,
+      scale: 0.95,
+    },
+  };
+
+  const sky_variants_opacity = {
+    visible: { opacity: 0.3, scale: 1, y: 0 },
     hidden: {
       opacity: 0,
       scale: 0.95,
@@ -186,7 +209,7 @@ export function HomePage() {
         <div className="first-bg-handler">
           <Hero />
 
-          <section className="video_title">
+          <section id="video" className="video_title">
             <motion.img
               initial={"hidden"}
               variants={sky_variants}
@@ -212,8 +235,8 @@ export function HomePage() {
 
             <div className="container">
               <h2>
-                Crypto Gotchies, built on BNB Chain, is a game about cute
-                monsters:
+                Crypto Gotchies is a unique P2E digital pet game about cute
+                monsters built on BSC.
               </h2>
 
               <h3>
@@ -233,7 +256,13 @@ export function HomePage() {
                 variants={heroH1variants}
                 className="video_handler"
               >
-                <img src={screen} alt="vedo handler" />
+                <img src={screen} alt="vedo handler" className="handler" />
+
+                <img src={video_fire} alt="fire" className="left-fire" />
+                <img src={video_fire} alt="fire" className="right-fire" />
+
+                <button>WATCH TRAILER</button>
+
                 {/* <video src=""></video> */}
               </motion.div>
             </div>
@@ -496,6 +525,7 @@ export function HomePage() {
           <section className="features">
             <div className="container">
               <h2>Core Features</h2>
+              <img src={header_smoke} alt="sky" className="smoke" />
               <div className="cards">
                 <div className="card">
                   <div className="logo_img">
@@ -572,7 +602,17 @@ export function HomePage() {
 
           <section className="platform">
             <div className="container">
-              <img src="" alt="sky" className="sky" />
+              <motion.img
+                initial={"hidden"}
+                variants={sky_variants_opacity}
+                style={{ scaleX: -1 }}
+                viewport={{ amount: 0.2 }}
+                transition={{ duration: 1 }}
+                whileInView={"visible"}
+                src={bright_casual_sky}
+                alt="sky"
+                className="parallax-right-sky"
+              />
 
               <div className="content-area">
                 <div className="text-block">
@@ -714,14 +754,15 @@ export function HomePage() {
           </section>
 
           <section className="adventures">
-            <h1>Adventures & Dungeons</h1>
+            <h1>Fun Lands NFT's</h1>
 
             <div className="right-area-mobile">
               <h3>
-                This magical continent is full of adventures and dungeons. For
-                now, you can only explore part of it, but new expansions are
-                waiting for you very soon! Start exploring the world now, and
-                get ready for great battles on the new maps!
+                Fun Lands are limited supply NFT collectibles which offer real
+                utility and limitless passive income opportunities for owners.
+                They are fully integrated into ecosystem as lands which Gotchies
+                visit to earn <span>$GOTCHI</span> and various in-game
+                resources.
               </h3>
               <motion.button
                 initial={{ opacity: 0.6 }}
@@ -744,10 +785,11 @@ export function HomePage() {
             >
               <div className="right-area">
                 <h3>
-                  This magical continent is full of adventures and dungeons. For
-                  now, you can only explore part of it, but new expansions are
-                  waiting for you very soon! Start exploring the world now, and
-                  get ready for great battles on the new maps!
+                  Fun Lands are limited supply NFT collectibles which offer real
+                  utility and limitless passive income opportunities for owners.
+                  They are fully integrated into ecosystem as lands which
+                  Gotchies visit to earn <span>$GOTCHI</span> and various
+                  in-game resources.
                 </h3>
                 <motion.button
                   initial={{ opacity: 0.6 }}
@@ -854,7 +896,7 @@ export function HomePage() {
             <div className="container">
               <h1>Housing</h1>
               <h3>
-                Now your Beasties can have a house! And you can furnish it
+                Now your Gotchies can have a house! And you can furnish it
                 yourself! The furniture has the functionality of additional
                 bonuses, as well as unique properties for the economy of the
                 game. Players will be able to buy items that have the
@@ -862,7 +904,14 @@ export function HomePage() {
                 services to other players (buffs, paid crafting) or even host a
                 poker tournament.
               </h3>
-              <img src={rooms} alt="Rooms-IMG" />
+
+              <div className="rooms">
+                <img src={room1} alt="Rooms-IMG" className="room1" />
+                <img src={room2} alt="Rooms-IMG" className="room2" />
+                <img src={room3} alt="Rooms-IMG" className="room3" />
+                <img src={room4} alt="Rooms-IMG" className="room4" />
+              </div>
+
               <motion.button
                 initial={{ opacity: 0.6 }}
                 whileHover={{
@@ -905,11 +954,10 @@ export function HomePage() {
               <div className="text-side">
                 <h1>Gotchie Roulette</h1>
                 <h3>
-                  Try your luck by betting COOKIES on the Lucky Wheel, which is
-                  in the Witch's House <br /> <br /> We approached the question
-                  of development of this game carefully and calculated a
-                  mathematical model to provide our users with a fair fixed RTP
-                  of more than 90%
+                  Try your luck by betting $GOTCHI on the Gotchi Wheel.
+                  <br /> <br />
+                  Gotchi Wheel is an mathematically legit gambling game with
+                  high potential ROI and fair RTP of 89%
                 </h3>
                 <motion.button
                   initial={{ opacity: 0.6 }}
@@ -923,7 +971,9 @@ export function HomePage() {
                   Learn More
                 </motion.button>
               </div>
-              <img src={roulette} alt="roulette img" />
+              {/* <video autoPlay loop muted src={roulette} />
+               */}
+              <img src={roulette} alt="roulette" />
             </div>
           </section>
 
@@ -938,73 +988,51 @@ export function HomePage() {
             <section className="tokens">
               <div className="container">
                 <h1>Tokens</h1>
-                <div className="bsts-token">
-                  <div className="token-header">
-                    <img src="" alt="head" />
-                    <h2>BSTS Token</h2>
-                  </div>
-                  <h3>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Exercitationem aut placeat minima rem tempora, ullam debitis
-                    ad quasi culpa iusto velit voluptatibus officiis nam
-                    voluptates fugiat suscipit minus rerum consequatur.
-                  </h3>
-                  <h3>
-                    Token Name: <span>Magic Beasties</span>
-                  </h3>
-                  <h3>
-                    Token Ticker: <span>BSTS</span>
-                  </h3>
-                  <h3>
-                    Decimals: <span>9</span>
-                  </h3>
-                  <h3>
-                    Contract address: <br />{" "}
-                    0xc234423fg2fhg423fh2442h3f4fg2234f243gfg
-                  </h3>
-                  <div className="info-btns">
-                    <button>Documentation</button>
-                    <button>Audits</button>
-                  </div>
-                  <a href="">
-                    <img src="" alt="rabbit logo" />
-                    <span className="title">Buy BSTS on PancakeSwap</span>
-                    <span className="slippage">Slippage = 8%</span>
-                  </a>
-                </div>
+                <h2>GOTCHIE Token</h2>
+                <h3>
+                  Gotchie is a hyper-deflationary token running on BNB Chain?
+                  which is used in the in-game Marketplace to buy Gotchies,
+                  Tallsmans, Houses and other NFT's items.
+                </h3>
 
-                <div className="cookies-token">
-                  <div className="token-header">
-                    <img src="" alt="head" />
-                    <h2>COOKIES Token</h2>
+                <div className="token-info">
+                  <div className="token-img">
+                    <img src={token_logo} alt="token-logo" />
                   </div>
-                  <h3>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Exercitationem aut placeat minima rem tempora, ullam debitis
-                    ad quasi culpa iusto velit voluptatibus officiis nam
-                    voluptates fugiat suscipit minus rerum consequatur.
-                  </h3>
-                  <h3>
-                    Token Name: <span>Cookies</span>
-                  </h3>
-                  <h3>
-                    Token Ticker: <span>COOKIES</span>
-                  </h3>
-                  <h3>
-                    Decimals: <span>18</span>
-                  </h3>
-                  <h3>
-                    Contract address: <br />{" "}
-                    0xc234423fg2fhg423fh2442h3f4fg2234f243gfg
-                  </h3>
-                  <div className="info-btns">
-                    <button>Documentation</button>
+                  <div className="text">
+                    <h3>
+                      Token Name: <span>Crypto Gotchies</span>
+                    </h3>
+                    <h3>
+                      Token Ticker: <span>GOTCHIE</span>
+                    </h3>
+                    <h3>
+                      Decimals: <span>9</span>
+                    </h3>
+                    <h3 className="address">
+                      Contract address: <br />{" "}
+                      <span>0xc234423fg2fhg423fh2442h3f4fg2234f243gfg</span>
+                    </h3>
+
+                    <div className="info-web">
+                      <div className="first">
+                        <a>
+                          <h3>Documentation</h3>
+                        </a>
+                        <a>
+                          <h3>Audits</h3>
+                        </a>
+                      </div>
+                      <div className="sec">
+                        <a>
+                          <h3>Contract</h3>
+                        </a>
+                        <a>
+                          <h3>Chart</h3>
+                        </a>
+                      </div>
+                    </div>
                   </div>
-                  <a href="">
-                    <img src="" alt="rabbit logo" />
-                    <span className="title">Buy BSTS on PancakeSwap</span>
-                    <span className="slippage">Slippage = 0.5%</span>
-                  </a>
                 </div>
               </div>
             </section>
@@ -1210,32 +1238,29 @@ export function HomePage() {
                 <h1>Want To Become Our Partner</h1>
 
                 <h3>
-                  We can provide cross-promo, branded Talismans, branded
-                  Beasties, ads on the map, special buildings, quests and
-                  events, tokens from other projects as rewards, and more...
+                  Each day we pursue getting new partners onboard by offering
+                  branded limited NFT Gotchies and Additional Items
+                  collectibles.
                 </h3>
 
                 <div className="cards">
-                  <div className="gotchie_special">
-                    <video src={g_boy2} loop autoPlay />
+                  <motion.div
+                    initial={"hidden"}
+                    whileInView={"visible"}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1, delay: 0.2 }}
+                    variants={variants2}
+                    className="gotchie_special"
+                  >
+                    {/* <video src={g_boy2} loop autoPlay /> */}
+                    <img src={partner_gotchie} alt="gotchie-partner" />
                     <div className="description">
                       <h3>
-                        Branded Beastie special
+                        Branded Gotchie special
                         <br />
-                        for Biswap
                       </h3>
                     </div>
-                  </div>
-                  <div className="gotchie_special">
-                    <video src={g_dragon} loop autoPlay />
-                    <div className="description">
-                      <h3>
-                        Branded Beastie special
-                        <br />
-                        for Biswap
-                      </h3>
-                    </div>
-                  </div>
+                  </motion.div>
                 </div>
               </div>
             </section>
@@ -1246,6 +1271,76 @@ export function HomePage() {
                 <img src={coming_soon} alt="in work img" />
               </div>
             </section>
+
+            <footer>
+              <div className="container">
+                <div className="sections">
+                  <div className="social">
+                    <h3>Join Us</h3>
+                    <div className="first">
+                      <a className="telegram">
+                        <img src={telegram} alt="tg" />
+                      </a>
+                      <a>
+                        <img src={twitter} alt="twitter" />
+                      </a>
+                      <a className="discord-mobile">
+                        <img src={discord} alt="discord" />
+                      </a>
+                    </div>
+
+                    <a>
+                      <img src={discord} alt="discord" className="discord" />
+                    </a>
+                  </div>
+                  <div className="invest">
+                    <h3>Invest</h3>
+                    <div className="links">
+                      <a>
+                        <h4>Buy Token</h4>
+                      </a>
+                      <a>
+                        <h4>NFT Market</h4>
+                      </a>
+                      <a>
+                        <h4>In-Game Market</h4>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="game">
+                    <h3>Game</h3>
+                    <div className="links">
+                      <a>
+                        <h4>Game World</h4>
+                      </a>
+                      <a>
+                        <h4>Leaderboard</h4>
+                      </a>
+                      <a>
+                        <h4>Achievements</h4>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="docs">
+                    <h3>Docs</h3>
+                    <div className="links">
+                      <a>
+                        <h4>Whitepaper</h4>
+                      </a>
+                      <a>
+                        <h4>Audit</h4>
+                      </a>
+                      <a>
+                        <h4>Pitch Deck</h4>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <h3>© 2022- Crypto Gotchies. All rights reserved.</h3>
+              </div>
+            </footer>
           </div>
         </div>
       </div>

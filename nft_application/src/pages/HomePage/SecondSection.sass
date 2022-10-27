@@ -4,9 +4,9 @@ $maxWidth: 1280
     $maxWidth: $maxWidth - 320
     font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}))
 
-.gotchies, .avatars, .features, .housing, .pvp, .tokens, .team, .team, .special, .sales, .partners, .roadmap
+.gotchies, .avatars, .features, .pvp, .team, .team, .sales, .partners, .roadmap
     h1
-        @include adaptiv-font(48, 32)
+        @include adaptiv-font(48, 26)
 
     .container, .squared-container
 
@@ -42,7 +42,7 @@ $maxWidth: 1280
                 max-width: 320px
     
 
-.housing, .adventures ,.roulette, .avatars
+.housing, .adventures ,.roulette, .avatars, .video_title
     button
         box-shadow: 0px 0px 10.66px 2.34px rgba(0, 0, 0, 0.41)
         width: fit-content
@@ -51,11 +51,11 @@ $maxWidth: 1280
         border-radius: 10px 
         white-space: nowrap
         outline: none
-        padding: 0% 3% 0.5% 3%
+        padding: 0% 3% 0.1% 3%
         border: 0
-        font-family: Akrobat
+        font-family: Gepestev
         @include adaptiv-font(24.5, 18)
-        font-weight: 1100
+        font-weight: bolder
         color: #fffeff
         cursor: pointer
     
@@ -98,38 +98,77 @@ $maxWidth: 1280
     .container
         position: relative
         overflow: visible
-        max-width: 1200px
+        max-width: 80%
         margin: 0 auto
         display: flex
         flex-direction: column
         align-items: center
+        @media screen and (max-width: 800px)
+            max-width: 90%
 
         .video_handler
-            width: 60%
+            margin: 0 auto
+            position: relative
+            width: 80%
+            max-width: 818px
             align-items: center
-            
+            @media screen and (max-width: 800px)
+                width: 95%
+
+            .handler
+                display: block
+                z-index: 10
+                position: relative
+                margin: 0 auto
+                
+
+            button
+                position: absolute
+                top: 48%
+                left: 50%
+                transform: translate(-50%, 50%)
+                z-index: 11
+                @include adaptiv-font(25, 16)
+                @media screen and (max-width: 600px)
+                    transform: translate(-50%, 20%)
+
+            .left-fire
+                width: 18%
+                position: absolute
+                left: 18.7%
+                bottom: -8.5%
+                z-index: 2
+
+            .right-fire
+                width: 18%
+                position: absolute
+                right: 18.7%
+                bottom: -8.5%
+                z-index: 2
+
         img
             max-width: 100%
+  
 
         h2
             width: 90%
-            font-family: Akrobat
-            @include adaptiv-font(38, 32)
+            font-family: Gepestev
+            @include adaptiv-font(30, 25)
             font-weight: 900
             font-stretch: normal
             font-style: normal
-            line-height: 0.85
-            letter-spacing: normal
+
+            
             margin: 0px
             margin-bottom: 35px
             color: white
             text-align: center
 
         h3
-            width: 86%
+            width: 69%
             margin: 0px
             margin-bottom: 40px
-            font-family: Akrobat
+            font-family: Gepestev
             @include adaptiv-font(22, 16)
             font-weight: 500
             font-stretch: normal
@@ -138,8 +177,9 @@ $maxWidth: 1280
             letter-spacing: normal
             text-align: center
             color: white
+            @media screen and (max-width: 600px)
+                width: 90%
   
-
 .gotchies
     margin-top: 20%
    
@@ -207,8 +247,8 @@ $maxWidth: 1280
         h2
             margin: 0px
             margin-bottom: 45px
-            font-family: Akrobat
-            @include adaptiv-font(48, 32)
+            font-family: Gepestev
+            @include adaptiv-font(45, 32)
             font-weight: 900
             font-stretch: normal
             font-style: normal
@@ -241,7 +281,6 @@ $maxWidth: 1280
             @media ( max-width: 800px)
                 display: block
 
-
 @keyframes pulse 
   from 
     transform: scale(.85)
@@ -252,8 +291,6 @@ $maxWidth: 1280
   to 
     transform: scale(.85)
   
-
-
 .avatars
     position: relative
     margin-top: 10%
@@ -375,11 +412,12 @@ $maxWidth: 1280
 
 
             h2
-                font-family: Akrobat
+                font-family: Gepestev
                 @include adaptiv-font(38, 32)
-                font-weight: 1100
+                font-weight: 900
+                
             h3
-                font-family: Akrobat
+                font-family: Gepestev
                 @include adaptiv-font(20, 18)
                 font-weight: 600
                 margin: 0px 0 20px 0
@@ -409,20 +447,26 @@ $maxWidth: 1280
                 // background-image: linear-gradient(to right, #f11aad, #d46013)
 
 .features
-
+    position: relative
     margin-top: 10%
+    .smoke
+        position: absolute
+        right: -20%
+        top: 10%
+        opacity: 0.25
+        width: 80%
 
     .container
         max-width: 1200px
         margin: 0 auto
         align-items: center
-        font-family: Akrobat
+        font-family: Gepestev
         text-align: center
         color: #fff
 
         h2
-            @include adaptiv-font(35, 25)
-            font-weight: 1100
+            @include adaptiv-font(38, 32)
+            font-weight: 900
 
         .cards
             width: 100%
@@ -447,7 +491,7 @@ $maxWidth: 1280
                 h3
                     text-align: left
                     font-weight: 500
-                    @include adaptiv-font(19, 15)
+                    @include adaptiv-font(18, 15)
 
                 h4
 
@@ -485,9 +529,7 @@ $maxWidth: 1280
             //     right: -10%
             //     transition: 200ms linear
             //     transform: translate(0, -50%)
-
-            
-
+          
 .platform
     margin-top: 10%
     .container
@@ -495,13 +537,18 @@ $maxWidth: 1280
         max-width: 1200px
         margin: 0 auto
 
-        .sky
-            display: none
 
+        .parallax-right-sky
+            top: 25%
+            left: 10%
+            max-width: 100%
             position: absolute
-            top: 10%
-            left: 5%
-            width: 60%
+            width: 90%
+
+            @media (max-width: 900px)
+                top: 45%
+
+
 
         .content-area
             width: 100%
@@ -513,15 +560,15 @@ $maxWidth: 1280
                 width: 50%
                 float: right
                 h2
-                    @include adaptiv-font(35, 25)
-                    font-family: "Akrobat"
+                    @include adaptiv-font(33, 25)
+                    font-family: "Gepestev"
                     color: rgb(255, 255, 255)
                     font-weight: bold
-                    line-height: 0.972
+                 
                     text-align: center
                 h3
-                    @include adaptiv-font(16, 14)
-                    font-family: "Akrobat"
+                    @include adaptiv-font(15, 14)
+                    font-family: "Gepestev"
                     color: rgb(255, 255, 255)
                     font-weight: 100
                     text-align: center
@@ -638,8 +685,8 @@ $maxWidth: 1280
                             max-width: 100%
 
                         span
-                            @include adaptiv-font(16, 11)
-                            font-family: "Akrobat"
+                            @include adaptiv-font(14, 11)
+                            font-family: "Gepestev"
                             color: rgba(255, 255, 255, 0.541)
                             font-weight: bold
                             line-height: 1.167
@@ -653,12 +700,10 @@ $maxWidth: 1280
         padding-top: 5%
         position: relative
         padding-bottom: -10%
+
         @media screen and (max-width: 600px)
             padding-top: 10%
-            
         
-
-        // FIX IT!
         clip-path: polygon(0.00% 0%,100% 0%, 100.00% 88.5%,0% 99%)
   
         .bot-border, .top-border
@@ -669,6 +714,7 @@ $maxWidth: 1280
         .bot-border
             bottom: 0
             left: 0
+
             @media (min-width: 501px) and (max-width: 906px)
                 width: 100%
                 height: 20%
@@ -679,7 +725,6 @@ $maxWidth: 1280
                 height: 20%
 
         .top-border
-            // top: 5%
             left: 0
             @media (max-width: 500px)
                 width: 100%
@@ -702,10 +747,10 @@ $maxWidth: 1280
             h1
                 text-align: center
                 margin-top: 11%
-                @include adaptiv-font(48, 32)
-                font-family: "Akrobat"
+                @include adaptiv-font(45, 28)
+                font-family: "Gepestev"
                 color: rgb(255, 255, 255)
-                line-height: 0.729
+                
                 transform: rotate(-5deg)
                 
 
@@ -717,12 +762,18 @@ $maxWidth: 1280
                     padding-top: 9%
                     transform: rotate(-7deg)
 
+                @media screen and (max-width: 320px)
+                    padding-top: 12%
+                    transform: rotate(-10deg)
+
+
             .cards
                 width: 90%
                 display: flex
                 justify-content: space-between
                 margin: 0 auto
                 padding-bottom: 15%
+
                 @media (min-width: 501px) and (max-width: 607px)
                     padding-bottom: 25%
 
@@ -736,6 +787,7 @@ $maxWidth: 1280
 
             .card
                 width: 25%
+
                 @media (min-width: 501px) and (max-width: 906px)
                     width: 30%
 
@@ -745,11 +797,11 @@ $maxWidth: 1280
                     
 
                 .icon-handler
-    
                     width: 100%
                     height: 40%
                     display: inline-flex
                     background: radial-gradient(ellipse at center,  rgba(0, 0, 0, 0.3) 0%,rgba(0, 0, 0, 0.3) 49%,rgba(0, 0, 0, 0.3) 47%,rgba(1, 1, 1, 0) 47%,rgba(1, 1, 1, 0) 48%)
+                    
                     @media (max-width: 500px)
                         width: 30%
                         margin: auto 0
@@ -774,12 +826,13 @@ $maxWidth: 1280
                 width: 70%
                 margin-left: 5%
 
-
             h2
+                font-family: "Gepestev"
                 padding-top: 5%
                 text-align: center
                 color: #fff
                 font-weight: 600
+
                 @media (max-width: 500px)
                     padding-top: 3%
                     text-align: left
@@ -791,7 +844,7 @@ $maxWidth: 1280
                 width: 70%
                 letter-spacing: 0.7px
                 @include adaptiv-font(16, 13)
-                font-family: "Akrobat"
+                font-family: "Gepestev"
                 color: rgb(255, 255, 255)
                 text-align: left
                 font-weight: 300
@@ -807,18 +860,22 @@ $maxWidth: 1280
 
         .first
             padding-bottom: 45%
+
             @media (min-width: 501px) and (max-width: 906px)
                 padding-bottom: 55%
 
         .second
             padding-bottom: 29%
+
             @media (min-width: 501px) and (max-width: 906px)
                 padding-bottom: 29%
 
         .thirst
             padding-bottom: 15%
+
             @media (min-width: 501px) and (max-width: 906px)
                 padding-bottom: 20%
+
         .first, .second, .thirst
             @media (max-width: 500px)
                 padding-bottom: 4%
@@ -826,16 +883,12 @@ $maxWidth: 1280
 .adventures
     h1
         text-align: center
-        @include adaptiv-font(48, 32)
-        font-family: "Akrobat"
+        @include adaptiv-font(48, 23)
+        font-family: "Gepestev"
         color: rgb(255, 255, 255)
-        line-height: 0.729
-
+        
     button
         @include adaptiv-font(24.5, 16)
-
-
-
 
     .right-area-mobile
 
@@ -849,11 +902,10 @@ $maxWidth: 1280
         margin: 0 auto
         text-align: center
 
-
         h3
                 font-weight: 100
                 @include adaptiv-font(18, 12)
-         
+                font-family: "Gepestev"
                 color: #fff
 
     .container
@@ -863,22 +915,26 @@ $maxWidth: 1280
         height: 900px
 
 
-
         .right-area
             position: relative
             margin-left: auto
             width: 40%
             margin-right: 3%
             z-index: 5000
+            
             @media (max-width: 600px)
                 display: none
 
 
             h3
-                font-weight: 100
+                font-family: "Gepestev"
+                font-weight: 300
                 @include adaptiv-font(18, 12)
                 z-index: 5002
                 color: #fff
+                span
+                    color: orange
+
             button
                 z-index: 5001
             
@@ -890,7 +946,6 @@ $maxWidth: 1280
             left: 0
             position: absolute
          
-
             img
                 position: absolute
                 max-width: 100%
@@ -928,12 +983,10 @@ $maxWidth: 1280
             top: 0
             left: 0
     
-
             img
                 position: absolute
 
             .right-sky
-                
                 z-index: 20
                 max-width: 100%
                 width: 58%
@@ -942,7 +995,6 @@ $maxWidth: 1280
                 transform: translate(0, -40%)
 
             .right-sky-inversed
-                
                 z-index: 20
                 max-width: 100%
                 width: 58%
@@ -951,7 +1003,6 @@ $maxWidth: 1280
                 transform: translate(99.9999%, -40%) scaleX(-1)
 
             .left-sky
-                
                 z-index: 19
                 max-width: 100%
                 width: 45%
@@ -960,7 +1011,6 @@ $maxWidth: 1280
                 transform: translate(0, -20%)
 
             .left-sky-inversed
-                
                 z-index: 19
                 max-width: 100%
                 width: 45%
@@ -969,7 +1019,6 @@ $maxWidth: 1280
                 transform: translate(-100%, -20%) scaleX(-1)
             
             .right-down-sky
-                
                 z-index: 17
                 max-width: 100%
                 width: 60%
@@ -978,7 +1027,6 @@ $maxWidth: 1280
                 opacity: 0.5
 
             .top-sky
-                
                 z-index: 16
                 max-width: 100%
                 width: 60%
@@ -988,7 +1036,6 @@ $maxWidth: 1280
                 transform: translate(45%, -15%) 
 
             .top-right-sky
-                
                 z-index: 15
                 max-width: 100%
                 width: 60%
@@ -998,7 +1045,6 @@ $maxWidth: 1280
                 transform: translate(45%, 0%) rotate(-15deg)
             
             .top-left-sky
-                
                 z-index: 14
                 max-width: 100%
                 width: 60%
@@ -1006,6 +1052,7 @@ $maxWidth: 1280
                 top: 5%
                 opacity: 0.3
                 transform: translate(-50%, 0%)
+                filter: blur(8px)
             
             .left-deep-sky
                 filter: blur(15px)
@@ -1027,7 +1074,6 @@ $maxWidth: 1280
                 transform: translate(-100%, -70%) scaleX(-1)
             
             .bottom-shark-sky
-                
                 z-index: 9
                 max-width: 100%
                 width: 60%
@@ -1046,7 +1092,6 @@ $maxWidth: 1280
                 transform: translate(-100%, 90%) scaleX(-1)
 
             .top-casual-sky
-                
                 z-index: 8
                 max-width: 100%
                 width: 55%
@@ -1058,6 +1103,7 @@ $maxWidth: 1280
 .housing
     position: relative
     z-index: 10
+
     .container
         position: relative
         display: flex
@@ -1066,32 +1112,81 @@ $maxWidth: 1280
 
         h1
             text-align: center
-            @include adaptiv-font(48, 32)
-            font-family: "Akrobat"
+            @include adaptiv-font(48, 23)
+            font-family: "Gepestev"
             color: rgb(255, 255, 255)
-            line-height: 0.729
-            font-weight: 600
+            
+            font-weight: 900
+            letter-spacing: 2px
 
         h3
             margin: 0 auto
             width: 80%
             letter-spacing: 0.7px
-            font-size: 16px
-            font-family: "Akrobat"
+            @include adaptiv-font(18, 16)
+            font-family: "Gepestev"
             color: rgb(255, 255, 255)
             text-align: center
             font-weight: 300
 
-        img
-            padding: 40px 0 40px 0
+            img
+                display: inline-block
+                margin: 0 auto
+                max-width: 90%
+
+  
+        .rooms
+            
+            position: relative
             display: inline-flex
-            max-width: 90%
-            margin: 0 auto
+        
+            width: 90%
+            height: calc(100vw * 0.39)
+            max-height: 700px
+            max-width: 1440px
+            margin-top: 3%
+            margin-left: 9%
+
+            .room1
+                width: 30%
+                position: absolute
+                left: 0
+                top: 0
+                z-index: 1
+                max-width: 40%
+                filter: drop-shadow(0px 30px 40px rgba(0, 0, 0, 0.5))
+
+            .room2
+                width: 30%
+                position: absolute
+                z-index: 3
+                left: 23%
+                top: 20%
+                filter: drop-shadow(0px 55px 60px rgba(0, 0, 0, 0.5))
+
+            .room3
+                width: 30%
+                position: absolute
+                left: 40%
+                top: -3%
+                z-index: 1
+                filter: drop-shadow(0px 30px 40px rgba(0, 0, 0, 0.5))
+
+
+            .room4
+                width: 30%
+                position: absolute
+                left: 62%
+                top: 15%
+                z-index: 3
+                filter: drop-shadow(0px 55px 60px rgba(0, 0, 0, 0.5))
+
+       
+
 
     @media (max-width: 600px)
         h3
             width: 95% !important
-
 
 .roulette
     position: relative
@@ -1117,6 +1212,7 @@ $maxWidth: 1280
         align-items: center
         max-width: 1400px
         margin: 0 auto
+        position: relative
 
         .text-side
             padding-left: 5%
@@ -1128,10 +1224,10 @@ $maxWidth: 1280
 
         h1
         
-            @include adaptiv-font(48, 32)
-            font-family: "Akrobat"
+            @include adaptiv-font(48, 23)
+            font-family: "Gepestev"
             color: rgb(255, 255, 255)
-            line-height: 0.729
+            
             font-weight: 600
             margin-bottom: 8%
 
@@ -1139,8 +1235,8 @@ $maxWidth: 1280
         
             width: 80%
             letter-spacing: 0.7px
-            font-size: 16px
-            font-family: "Akrobat"
+            @include adaptiv-font(20, 18)
+            font-family: "Gepestev"
             color: rgb(255, 255, 255)
             text-align: left
             font-weight: 300
@@ -1163,13 +1259,13 @@ $maxWidth: 1280
 
             button
                 padding: 0% 4% 1% 4%
+
             img
                 position: absolute
                 top: 50%
                 right: 0%
                 transform: translate(50%, -59%) rotate(-10deg) scale(2)
                 filter: drop-shadow(-10px 10px 10px rgba(253, 253, 255, 0.3))
-
 
 .pvp
     padding-top: 10%
@@ -1186,10 +1282,10 @@ $maxWidth: 1280
         align-items: center
         h1
                 text-align: center
-                @include adaptiv-font(48, 32)
-                font-family: "Akrobat"
+                @include adaptiv-font(48, 26)
+                font-family: "Gepestev"
                 color: rgb(255, 255, 255)
-                line-height: 0.729
+             
                 font-weight: 600
                 margin-bottom: 5%
         img
@@ -1197,13 +1293,136 @@ $maxWidth: 1280
             margin: 0 auto
     margin-top: 0    
 
-
 .tokens
-    display: none
+    .container
+        width: 80%
+        max-width: 1300px
+        margin: 0 auto
+        position: relative
 
+        @media  (max-width: 769px)
+            width: 95%
+
+        h1, h2, h3 
+            font-family: "Gepestev"
+            text-align: center
+
+        h1
+            color: rgb(255, 255, 255)
+            
+            font-weight: bolder
+            margin-top: 0
+            @include adaptiv-font(48, 26)
+
+        h2
+            color: orange
+            @include adaptiv-font(26, 20)
+
+        h3
+            color: #fff
+            width: 70%
+            margin: 0 auto
+            @include adaptiv-font(20, 16)
+            @media  (max-width: 769px)
+                width: 100%
+
+        .token-info
+            margin-top: 4%
+            display: flex
+            // width: 60%
+            justify-content: center
+            
+
+            .token-img
+                width: 40%
+                object-fit: contain
+                object-position: center
+
+                img
+                    // height: 90%
+                    max-width: 100%
+                @media  (max-width: 500px)
+                    position: absolute
+                    left: 0%
+                    z-index: 0
+                    top: 45%
+                    transform: translate(-50% , 0%)
+                    width: 75%
+                    opacity: 0.6
+
+            .text
+                width: 60%
+                padding-left: 5%
+                z-index: 6
+                @media  (max-width: 500px)
+                    width: 80%
+
+                h3
+                    width:100%
+                    color: orange
+                    text-align: right
+                    margin: 3% 0 3% 0
+
+                    span
+                        color: #fff
+
+
+                .address
+                    overflow: hidden
+                    text-overflow: ellipsis
+                    white-space: nowrap
+
+                .h3:hover
+                    white-space: normal
+
+        .info-web
+            margin-top: 10%
+            
+            a
+                border: 1px solid rgba(1,1 ,1 ,0 )
+                transition: border-color 1s ease
+                border-radius: 10px
+                cursor: pointer
+                
+            h3
+                color: #fff
+                transition: color 0.8s ease
+
+
+            .first
+                display: flex
+                justify-content: space-between
+                a
+                    width: 40%
+                    padding: 0px 1% 0px 1%
+                    h3
+                        text-align: center
+                        color: #fff
+
+            .sec
+                margin-top: 5%
+                display: flex
+                justify-content: space-between
+
+                a
+                    width: 40%
+                    padding: 0px 1% 0px 1%
+                    h3
+                        text-align: center
+                        color: #fff
+            
+            a:hover
+             
+           
+                border: 1px solid #ff8800
+                h3
+                    color: #ff8800
+               
 .team
+          
 
     margin-top: 0
+
     .members
         width: 100%
         display: flex
@@ -1306,12 +1525,12 @@ $maxWidth: 1280
 
     h1
         text-align: center
-        font-family: "Akrobat"
+        font-family: "Gepestev"
         color: rgb(255, 255, 255)
-        line-height: 0.729
+        
         font-weight: 600
         margin-bottom: 8%
-        margin-top: 0
+        margin-top: 10%
 
 .roadmap
     
@@ -1320,10 +1539,10 @@ $maxWidth: 1280
 
     h1
         text-align: center
-        @include adaptiv-font(48, 32)
-        font-family: "Akrobat"
+        @include adaptiv-font(48, 26)
+        font-family: "Gepestev"
         color: rgb(255, 255, 255)
-        line-height: 0.729
+        
         font-weight: 600
         margin-bottom: 10%
 
@@ -1415,6 +1634,9 @@ $maxWidth: 1280
     details:hover:not([open]) summary:after 
         color: orange
         padding: 20px
+        @media (max-width: 500px)
+            padding: 0px
+            padding-right: 20px
 
     @keyframes open 
         0% 
@@ -1506,39 +1728,50 @@ $maxWidth: 1280
         
 .partners
     margin-top: 10%
+
     .container
+
         h1
             text-align: center
-            @include adaptiv-font(48, 32)
-            font-family: "Akrobat"
+            @include adaptiv-font(48, 23)
+            font-family: "Gepestev"
             color: rgb(255, 255, 255)
-            line-height: 0.729
+            
             font-weight: 600
             margin-bottom: 5%
 
+        h3
+            font-family: "Gepestev"
+
         img
             max-width: 100%
+            display: block
+            width: 70%
+            margin: 0 auto
 
 .special
     margin-top: 10%
     
     .container
         position: relative
+        max-width: 1300px
+        margin: 0 auto
 
         h1
             text-align: center
-            @include adaptiv-font(48, 32)
-            font-family: "Akrobat"
+            @include adaptiv-font(48, 23)
+            font-family: "Gepestev"
             color: rgb(255, 255, 255)
-            line-height: 0.729
-            font-weight: 600
+
+            font-weight: bolder
             margin-bottom: 5%
+            letter-spacing: 1.5px
 
         h3
             width: 50%
             letter-spacing: 0.7px
             @include adaptiv-font(16, 12)
-            font-family: "Akrobat"
+            font-family: "Gepestev"
             color: rgb(255, 255, 255)
             text-align: center
             font-weight: 300
@@ -1554,35 +1787,39 @@ $maxWidth: 1280
             left: 50%
             transform: translate(-50%, -50%)
             z-index: -1
+
         .cards
             display: flex
             justify-content: space-around
-
+            
             .gotchie_special
                 z-index: 3
-                box-shadow: 0 0 12.3px 2.2px rgba(0, 0, 0, 0.31)
+                box-shadow: 0 0 111px 10px rgba(255, 217, 0, 0.31)
                 padding: 4px 4px
                 background-color: rgba(0, 0, 0, 0.24)
                 border-radius: 15px
                 margin-top: 40px
                 padding-bottom: 10px
-                width: 20%
+                width: 25%
+
                 @media ( max-width: 800px)
                     width: 30%
+                @media ( max-width: 500px)
+                    width: 50%
 
-
-                video
+                img
                     width: 100%
                     position: relative
                     object-fit: cover
                     object-position: center
                     
                 .description
+                    padding: 5% 0 5% 0
                     h3
                         width: 100%
                         letter-spacing: 0.7px
                         @include adaptiv-font(16, 12)
-                        font-family: "Akrobat"
+                        font-family: "Gepestev"
                         color: rgb(255, 255, 255)
                         text-align: center
                         font-weight: 300
@@ -1602,12 +1839,179 @@ $maxWidth: 1280
     .container
         h1
             text-align: center
-            @include adaptiv-font(48, 32)
-            font-family: "Akrobat"
+            @include adaptiv-font(48, 23)
+            font-family: "Gepestev"
             color: rgb(255, 255, 255)
-            line-height: 0.729
+            
             font-weight: 600
             margin-bottom: 5%
         img
             max-width: 100%
 
+footer
+
+    margin-top: 10%
+    .container
+        width: 90%
+        margin: 0 auto
+
+
+    width: 100%
+    h3, h4
+        color: #fff
+        font-family: "Gepestev"
+
+    h3
+        text-align: center
+
+    h4
+        opacity: 0.85
+    
+    a
+        cursor: pointer
+
+    a:hover
+        h4
+            text-decoration: underline
+
+    .sections
+        width: 70%
+        display: flex
+
+        justify-content: space-between
+        margin: 0 auto
+
+        @media  (max-width: 700px)
+            flex-direction: column
+            width: 100%
+
+        .social
+            h3
+                white-space: nowrap
+
+            width: 20%
+
+            .discord-mobile
+                display: none
+
+            @media  (max-width: 700px)
+                display: flex
+                width: 100%
+                .discord-mobile
+                    display: block
+
+            .first
+                display: flex
+        
+                justify-content: center
+
+                a
+                    width: 25%
+                    object-fit: cover
+           
+                
+
+                    img
+
+                        max-width: 100%
+
+                .telegram
+                    object-position: right
+                    
+                    img
+                        display: block
+                        margin-left: auto
+
+                    @media  (max-width: 700px)
+                        img
+                            margin: 0 
+
+
+                @media  (max-width: 1000px) and (min-width: 701px)
+
+                    flex-direction: column
+                    align-items: center
+                    a
+                        width: 35%
+                        margin-bottom: 4%
+
+                @media  (max-width: 700px)
+                    display: flex
+                    width: 30%
+                    margin-left: 2.5%
+                    flex-direction: row
+                    justify-content: normal
+                    align-items: center
+                 
+             
+                    a
+                        width: auto
+                        padding: 0 5% 0 5%
+
+                @media  (max-width: 500px)
+                    width: 40%
+                          
+
+            .discord
+
+                display: block
+                margin: 0 auto
+                width: 25%
+                object-fit: contain
+
+                @media  (max-width: 1000px) and (min-width: 701px)
+                        width: 35%
+
+                @media  (max-width: 700px)
+                    display: none 
+                        
+                            
+
+
+
+
+
+        .invest, .game, .docs
+            width: 20%
+            @media  (max-width: 700px)
+                display: flex
+                width: auto
+                h3
+                    padding-right: 5%
+                
+            @media  (max-width: 500px)
+                flex-direction: column
+                h4
+                    margin-top: 0
+                    margin-bottom: 0
+  
+                
+
+            h3
+                text-align: left
+
+            .links
+                
+                margin-top: 10px
+                h4
+                    font-weight: 100
+
+                @media  (max-width: 700px)
+                    display: flex
+                    column-gap: 9%
+                    margin-top: 0px
+                    
+                    
+        .docs
+            @media  (max-width: 700px)
+                
+                h4
+                    white-space: nowrap
+                h3
+                    padding-right: 6.5%
+
+        .invest
+            @media  (max-width: 700px)
+            
+                h3
+                    padding-right: 4%

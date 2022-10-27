@@ -8,9 +8,11 @@ body, html
     background: radial-gradient(rgb(116, 33, 123) , rgb(83, 23, 89), rgb(83, 23, 89), rgb(116, 33, 123) )  
     
     
-.full_container
+.full_mint_container
     background: radial-gradient(rgb(116, 33, 123) , rgb(83, 23, 89))  
-
+    overflow: hidden
+    height: 100vh
+    
     .mint
         width: 100%        
         justify-content: center
@@ -18,7 +20,6 @@ body, html
         position: relative
         height: 100vh
         
-
         .right-island
             position: absolute
             width: 70%
@@ -53,16 +54,16 @@ body, html
             z-index: 13
             opacity: 0.3
         
-
-        
         .container
-            
+            position: relative
             max-width: 1400px
+            width: 95%
             margin: 0 auto
             display: flex
             flex-direction: column
             align-items: center
             margin-top: 5%
+            z-index: 15
 
             .top-logo
                 width: 5%
@@ -70,9 +71,9 @@ body, html
             h1
                 text-align: center
                 @include adaptiv-font(48, 32)
-                font-family: "Akrobat"
+                font-family: "Gepestev"
                 color: rgb(255, 255, 255)
-                line-height: 0.729
+            
                 font-weight: 1100
                 z-index: 10
                 
@@ -86,17 +87,19 @@ body, html
                 outline: none
                 padding: 0% 1% 0.5% 1%
                 border: 0
-                font-family: Akrobat
+                font-family: Gepestev
                 @include adaptiv-font(24.5, 18)
                 font-weight: 1100
                 color: #fffeff
                 background-image: linear-gradient(to right, #f18e1a, #f11aad)
                 
-            
             .content
                 display: flex
                 width: 100%
                 justify-content: center
+                @media screen and ( max-width: 768px )
+                    flex-direction: column
+                    
 
                 .image
                     position: relative
@@ -106,18 +109,18 @@ body, html
                         position: absolute
                         right: 0
                         top: 0
-                        max-width: 50%
+                        max-width: 100%
                         max-height: 100%
                         
-
                 .select-container
                     width: 50%
                     margin-top: 3%
+
                     h3
                         white-space: nowrap
                         width: 86%
                         margin: 0px
-                        font-family: Akrobat
+                        font-family: Gepestev
                         @include adaptiv-font(16, 14)
                         font-weight: 100
                         color: white
@@ -126,28 +129,25 @@ body, html
                         display: flex
                         flex-direction: column
                         width: 50%
-                        
                         row-gap: 5%
 
                         button
                             display: inline-flex
                             margin-top: 5%
-                            
+                            border: 1px solid rgba(1,1 ,1 ,0 )
                             color: #Fff
                             text-align: left
-
                             outline: none
-                            border: 0px
-
-
-
                             background-color: rgba(255, 255, 255, 0.1)
                             border-radius: 10px
                             font-weight: 100
                             align-items: center
                             padding: 3% 0 3% 0
-
+                            cursor: pointer
                             @include adaptiv-font(16, 14)
+
+                            transition: border-color 1s ease
+
                             img
                                 width: 16%
                                 filter: drop-shadow(0px 0px 6px #000000)
@@ -155,11 +155,10 @@ body, html
                                 padding-right: 3%
 
                         .active
-                            border: 1px
-                            border-color: orange
+                            border: 1px solid #ffae00
 
                     .nets
-                        font-family: Akrobat
+                        font-family: Gepestev
                         font-weight: 100
                         display: flex
                         flex-direction: column
@@ -170,4 +169,23 @@ body, html
                         color: #fff
                         a
                             margin-top: 3%
-               
+
+                @media screen and ( max-width: 768px )
+                    .image
+                        width: 100%
+                        height: 30vh
+                        img
+                            position: relative
+                            display: block
+                            margin: 0 auto
+
+                    .select-container
+                        width: 60%
+                        margin: 5% auto 0 auto
+                        .buttons
+                            width: 90%
+
+                @media screen and ( max-width: 500px )
+
+                    .select-container
+                        width: 90%

@@ -7,41 +7,15 @@ import bright_casual_sky from "../../assets/main/right-down-bright.png";
 import { useState } from "react";
 
 export function Mint() {
-  const [one, setOne] = useState(false);
-  const [two, setTwo] = useState(false);
-  const [three, setThree] = useState(false);
-  const [four, setFour] = useState(false);
+  const [active, setActive] = useState("");
 
-  const handleClick = (number: number) => {
-    if (number == 1) {
-      setOne(true);
-      setFour(false);
-      setThree(false);
-      setTwo(false);
-    }
-    if (number == 2) {
-      setOne(false);
-      setFour(false);
-      setThree(false);
-      setTwo(true);
-    }
-    if (number == 3) {
-      setOne(false);
-      setFour(false);
-      setThree(true);
-      setTwo(false);
-    }
-    if (number == 4) {
-      setOne(false);
-      setFour(true);
-      setThree(false);
-      setTwo(false);
-    }
+  const handleClick = (number: string) => {
+    setActive(number);
   };
 
   return (
     <>
-      <div className="full_container">
+      <div className="full_mint_container">
         <section className="mint">
           <img src={island4} alt="right island" className="right-island" />
           <img src={island2} alt="left top island" className="left-island" />
@@ -60,29 +34,29 @@ export function Mint() {
                 <h3>Select how many lands you want to mint</h3>
                 <div className="buttons">
                   <button
-                    className={one ? "active" : "inactive"}
-                    onClick={() => handleClick(1)}
+                    className={active == "1" ? "active" : "inactive"}
+                    onClick={() => handleClick("1")}
                   >
                     <img src={mini_logo} alt="img-logo" />
                     One land
                   </button>
                   <button
-                    className={two ? "active" : "inactive"}
-                    onClick={() => handleClick(2)}
+                    className={active == "2" ? "active" : "inactive"}
+                    onClick={() => handleClick("2")}
                   >
                     <img src={mini_logo} alt="img-logo" />
                     Two lands
                   </button>
                   <button
-                    className={three ? "active" : "inactive"}
-                    onClick={() => handleClick(3)}
+                    className={active == "3" ? "active" : "inactive"}
+                    onClick={() => handleClick("3")}
                   >
                     <img src={mini_logo} alt="img-logo" />
                     Three lands
                   </button>
                   <button
-                    className={four ? "active" : "inactive"}
-                    onClick={() => handleClick(4)}
+                    className={active == "4" ? "active" : "inactive"}
+                    onClick={() => handleClick("4")}
                   >
                     <img src={mini_logo} alt="img-logo" />
                     Four lands
