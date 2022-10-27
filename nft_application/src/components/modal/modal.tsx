@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { FunctionComponent } from "react";
 import Portal from "../portal/portal";
 
@@ -16,12 +17,26 @@ export const Modal: FunctionComponent<ModalProps> = ({
   onClose,
   body,
 }) => {
+
+  const variants = {
+    visible: { opacity: 1, scale: 1, y: "-50%" },
+    hidden: {
+      opacity: 0,
+      scale: 0.85,
+      y: 50,
+    },
+  };
+
   return (
     <>
       {isOpen && (
         <Portal>
-          <div onClick={onClose} className="modalOverlay">
-            <div className={window_style}>
+          <div className="modalOverlay">
+            <motion.div initial={"hidden"}
+              style={{ y: "50%", x: "-50%" }}
+              whileInView={"visible"}
+              viewport={{}}
+              variants={variants} className={window_style}>
               <div className="modalHeader">
                 <svg
                   onClick={onClose}
@@ -41,7 +56,7 @@ export const Modal: FunctionComponent<ModalProps> = ({
                 </svg>
               </div>
               <div className="modalBody">{body}</div>
-            </div>
+            </motion.div>
           </div>
         </Portal>
       )}
