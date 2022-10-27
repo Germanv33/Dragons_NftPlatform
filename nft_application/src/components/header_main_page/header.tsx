@@ -1,7 +1,7 @@
 import "./header.sass";
 import stage_logo from "../../assets/main/stageLogo.png";
 import { Sidebar } from "../main/sidebar/sidebar";
-import { HashLink as Link } from "react-router-hash-link";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export function Header() {
   return (
@@ -13,27 +13,27 @@ export function Header() {
             <img src={stage_logo} alt="header logo" />
           </div>
           <ul className="menu">
-            <li>
-              <Link to={{ pathname: "/", hash: "#video" }}>About</Link>
-            </li>
-            <li>
-              <Link to={{ pathname: "/", hash: "#faq-1" }}>Gotchies</Link>
-            </li>
-            <li>
-              <Link to={{ pathname: "/", hash: "#faq-1" }}>Features</Link>
-            </li>
-            <li>
-              <Link to={{ pathname: "/", hash: "#faq-1" }}>Fun Lands</Link>
-            </li>
-            <li>
-              <Link to={{ pathname: "/", hash: "#faq-1" }}>Team</Link>
-            </li>
-            <li>
-              <Link to={{ pathname: "/", hash: "#faq-1" }}>Roadmap</Link>
-            </li>
-            <li>
-              <Link to={{ pathname: "/", hash: "#faq-1" }}>Partners</Link>
-            </li>
+            <AnchorLink href="#video">
+              <li>About</li>
+            </AnchorLink>
+            <AnchorLink href="#video">
+              <li>Gotchies</li>
+            </AnchorLink>
+            <AnchorLink href="#video">
+              <li>Features</li>
+            </AnchorLink>
+            <AnchorLink href="#video">
+              <li>Fun Lands</li>
+            </AnchorLink>
+            <AnchorLink href="#video">
+              <li>Team</li>
+            </AnchorLink>
+            <AnchorLink href="#video">
+              <li>Roadmap</li>
+            </AnchorLink>{" "}
+            <AnchorLink href="#video">
+              <li>Partners</li>
+            </AnchorLink>{" "}
           </ul>
           <button>D.APP</button>
         </div>
