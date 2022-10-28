@@ -5,6 +5,14 @@ import room3 from "../../../../assets/main/house3.png";
 import room4 from "../../../../assets/main/house4.png";
 
 export function Housing() {
+  const variants = {
+    visible: { opacity: 1, scale: 1, y: 0 },
+    hidden: {
+      opacity: 0,
+      scale: 0.85,
+      y: 0,
+    },
+  };
   return (
     <section id="housing" className="housing">
       <div className="container">
@@ -19,10 +27,66 @@ export function Housing() {
         </h3>
 
         <div className="rooms">
-          <img src={room1} alt="Rooms-IMG" className="room1" />
-          <img src={room2} alt="Rooms-IMG" className="room2" />
-          <img src={room3} alt="Rooms-IMG" className="room3" />
-          <img src={room4} alt="Rooms-IMG" className="room4" />
+          <motion.img
+            initial={"hidden"}
+            whileInView={"visible"}
+            viewport={{
+              once: true,
+            }}
+            transition={{
+              duration: 1,
+              delay: 0.2,
+            }}
+            variants={variants}
+            src={room1}
+            alt="Rooms-IMG"
+            className="room1"
+          />
+          <motion.img
+            initial={"hidden"}
+            whileInView={"visible"}
+            viewport={{
+              once: true,
+            }}
+            transition={{
+              duration: 1,
+              delay: 0.5,
+            }}
+            variants={variants}
+            src={room2}
+            alt="Rooms-IMG"
+            className="room2"
+          />
+          <motion.img
+            initial={"hidden"}
+            whileInView={"visible"}
+            viewport={{
+              once: true,
+            }}
+            transition={{
+              duration: 1,
+              delay: 0.7,
+            }}
+            variants={variants}
+            src={room3}
+            alt="Rooms-IMG"
+            className="room3"
+          />
+          <motion.img
+            initial={"hidden"}
+            whileInView={"visible"}
+            viewport={{
+              once: true,
+            }}
+            transition={{
+              duration: 1,
+              delay: 0.9,
+            }}
+            variants={variants}
+            src={room4}
+            alt="Rooms-IMG"
+            className="room4"
+          />
         </div>
 
         <motion.button

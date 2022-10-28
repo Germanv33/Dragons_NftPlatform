@@ -12,9 +12,17 @@ interface SidebarProps {
 }
 
 export const Sidebar: FC<SidebarProps> = (pageWrapId, outerContainerId) => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <Menu
       right
+      onOpen={() => {
+        setIsOpen(true);
+      }}
+      isOpen={isOpen}
+      onClose={() => {
+        setIsOpen(false);
+      }}
       // burgerButtonClassName={"burger-button"}
       customBurgerIcon={<img src={burger_logo} />}
       // customBurgerIcon={false}
@@ -27,35 +35,83 @@ export const Sidebar: FC<SidebarProps> = (pageWrapId, outerContainerId) => {
       <div className="header-logo">
         <img src={stage_logo} alt="header logo" />
       </div>
-      <NavLink className="menu-item" to="/">
+      <NavLink
+        onClick={() => {
+          setIsOpen(false);
+        }}
+        className="menu-item"
+        to="/"
+      >
         Home
       </NavLink>
 
-      <AnchorLink offset="200" href="#video">
+      <AnchorLink
+        onClick={() => {
+          setIsOpen(false);
+        }}
+        offset="200"
+        href="#video"
+      >
         About
       </AnchorLink>
 
-      <AnchorLink offset="200" href="#gotchies">
+      <AnchorLink
+        onClick={() => {
+          setIsOpen(false);
+        }}
+        offset="200"
+        href="#gotchies"
+      >
         Gotchies
       </AnchorLink>
 
-      <AnchorLink offset="200" href="#features">
+      <AnchorLink
+        onClick={() => {
+          setIsOpen(false);
+        }}
+        offset="200"
+        href="#features"
+      >
         Features
       </AnchorLink>
 
-      <AnchorLink offset="200" href="#adventures">
+      <AnchorLink
+        onClick={() => {
+          setIsOpen(false);
+        }}
+        offset="200"
+        href="#adventures"
+      >
         Fun Lands
       </AnchorLink>
 
-      <AnchorLink offset="200" href="#team">
+      <AnchorLink
+        onClick={() => {
+          setIsOpen(false);
+        }}
+        offset="200"
+        href="#team"
+      >
         Team
       </AnchorLink>
 
-      <AnchorLink offset="200" href="#roadmap">
+      <AnchorLink
+        onClick={() => {
+          setIsOpen(false);
+        }}
+        offset="200"
+        href="#roadmap"
+      >
         Roadmap
       </AnchorLink>
 
-      <AnchorLink offset="200" href="#partners">
+      <AnchorLink
+        onClick={() => {
+          setIsOpen(false);
+        }}
+        offset="200"
+        href="#partners"
+      >
         Partners
       </AnchorLink>
     </Menu>

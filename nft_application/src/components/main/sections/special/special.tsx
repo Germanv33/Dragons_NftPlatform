@@ -8,7 +8,7 @@ export function Special() {
     hidden: {
       opacity: 0,
       scale: 0.85,
-      y: -50,
+      y: 0,
     },
   };
   return (

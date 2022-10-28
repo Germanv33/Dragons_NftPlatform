@@ -4,8 +4,9 @@ import island4 from "../../assets/main/island4.gif";
 import shark_bright_sky from "../../assets/main/left-bright-sky.png";
 import island2 from "../../assets/main/island2.gif";
 import bright_casual_sky from "../../assets/main/right-down-bright.png";
-import change_island from "../../assets/mint/change_islands.webm"
+import change_island from "../../assets/mint/change_islands.webm";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export function Mint() {
   const [active, setActive] = useState("");
@@ -26,7 +27,26 @@ export function Mint() {
           <div className="container">
             <img src={mini_logo} alt="mini-logo" className="top-logo" />
             <h1>Mint your land NFT (Game access)</h1>
-            <button className="connect">Connect With Metamsk</button>
+            <motion.button
+              initial={{
+                opacity: 0.6,
+              }}
+              whileHover={{
+                scale: 1.2,
+                transition: {
+                  duration: 1,
+                },
+              }}
+              whileTap={{
+                scale: 0.9,
+              }}
+              whileInView={{
+                opacity: 1,
+              }}
+              className="connect"
+            >
+              Connect With Metamsk
+            </motion.button>
             <div className="content">
               <div className="image">
                 <video src={change_island} autoPlay loop muted />
