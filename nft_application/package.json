@@ -2,6 +2,7 @@
   "name": "nft_application",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://www.cryptogotchies.com/",
   "dependencies": {
     "@react-spring/parallax": "^9.5.5",
     "@testing-library/jest-dom": "^5.16.5",

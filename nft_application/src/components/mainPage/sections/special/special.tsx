@@ -39,7 +39,7 @@ export function Special() {
             className="gotchie_special"
           >
             {/* <video src={g_boy2} loop autoPlay /> */}
-            <video src={partner_gotchie} autoPlay loop muted />
+            <video src={partner_gotchie} playsInline autoPlay loop muted />
             <div className="description">
               <h3>
                 Branded Gotchie special

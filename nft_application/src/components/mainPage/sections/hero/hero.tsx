@@ -152,7 +152,14 @@ export const Hero: FunctionComponent = () => {
         />
       </div>
 
-      <video src={dragon_video} autoPlay loop muted className="dragon-img" />
+      <video
+        src={dragon_video}
+        playsInline
+        autoPlay
+        loop
+        muted
+        className="dragon-img"
+      />
 
       <div className="smokes">
         <img

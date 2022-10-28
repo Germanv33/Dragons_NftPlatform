@@ -76,9 +76,7 @@ export function Roulette() {
             Learn More
           </motion.button>
         </div>
-        {/* <video autoPlay loop muted src={roulette} />
-         */}
-        <video src={roulette} autoPlay loop muted />
+        <video src={roulette} playsInline autoPlay loop muted />
       </div>
     </section>
   );
