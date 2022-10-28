@@ -17,7 +17,7 @@ $maxWidth: 1280
         color: rgb(255, 255, 255)
         
         font-weight: 600
-        margin-bottom: 10%
+        margin-bottom: 6%
 
     .container
         width: 90%
@@ -41,7 +41,6 @@ $maxWidth: 1280
             .summary
                 border-radius: 10px
                 transition: all 1s 
-
                 padding: 1.6% 0px 1.6% 0px
                 display: flex
                 align-items: center
@@ -59,7 +58,7 @@ $maxWidth: 1280
                         letter-spacing: 0.7px
                         font-size: 25px
                         @include adaptiv-font(25, 16)
-                        font-family: "Akrobat"
+                        font-family: "Gepestev"
                         color: rgb(255, 255, 255)
                         text-align: left
                         font-weight: 600
@@ -69,7 +68,7 @@ $maxWidth: 1280
                         
                         letter-spacing: 0.7px
                         font-size: 15px
-                        font-family: "Akrobat"
+                        font-family: "Gepestev"
                         color: rgb(255, 255, 255)
                         text-align: left
                         font-weight: 600
@@ -94,8 +93,6 @@ $maxWidth: 1280
     details[open] summary ~ * 
         animation: open .5s ease-in-out
         
-
-
     details[close] summary ~ * 
         animation: close .5s ease-in-out
 
@@ -122,7 +119,6 @@ $maxWidth: 1280
             opacity: 1 
             margin-left: 0px
 
-
     @keyframes close 
         0% 
             opacity: 1 
@@ -131,11 +127,9 @@ $maxWidth: 1280
             opacity: 0 
             margin-left: -20px
 
-    
     details summary::-webkit-details-marker 
         display: none
     
-
     details summary 
         width: 100%
         position: relative
@@ -144,7 +138,6 @@ $maxWidth: 1280
         h2
             margin: 0
     
-
     details summary:after 
         content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='50.5px' height='26.5px'%3E%3Cpath fill-rule='evenodd' stroke='rgb(254, 254, 254)' stroke-width='3px' stroke-linecap='butt' stroke-linejoin='miter' opacity='0.502' fill='none' d='M2.578,1.490 L46.432,1.490 C50.352,1.490 42.757,10.233 35.027,15.889 L25.744,22.681 C25.071,23.173 24.592,23.500 24.550,23.500 L24.150,23.500 C24.108,23.500 23.633,23.173 22.967,22.681 L13.780,15.889 C6.075,10.193 -1.324,1.490 2.578,1.490 Z'/%3E%3C/svg%3E")
         transform: scale(0.65) translateY(-75%) rotate(-90deg) 
@@ -168,7 +161,6 @@ $maxWidth: 1280
             right: 0%
             transform: scale(0.30) translateX(40%) 
 
-        
     details[open] summary
         .summary
             border-bottom-left-radius: 0px
@@ -184,7 +176,7 @@ $maxWidth: 1280
 
         border-bottom-left-radius: 10px
         border-bottom-right-radius: 10px
-        padding: 10px 0px 10px 0
+        padding: 10px 0px 1.6% 0
         
         margin: 0 
         
@@ -192,6 +184,7 @@ $maxWidth: 1280
             color: #fff
             margin: 0
             margin-left: 8%
+            margin-top: 0.3%
             letter-spacing: 0.7px
             @include adaptiv-font(16, 10)
             font-family: "Akrobat"

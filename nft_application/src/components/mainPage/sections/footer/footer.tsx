@@ -72,9 +72,9 @@ export function Footer() {
             </div>
           </div>
         </div>
-        <h3 className="copyrights">
+        {/* <h3 className="copyrights">
           © 2022- Crypto Gotchies. All rights reserved.
-        </h3>
+        </h3> */}
       </div>
     </footer>
   );

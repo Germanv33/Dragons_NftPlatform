@@ -61,10 +61,11 @@ header
             font-weight: 600
             font-size: 24px
             line-height: 20px
-            color: #FFFFFF
-            background: linear-gradient(100.13deg, #FF007A 1.78%, #FFC700 139.38%)
+            color: orange
+            background-color: linear-gradient(to right,  rgb(241,152,26) , rgb(190,13,151) )
             border-radius: 24px
-            border-color: rgba(255,255 ,255 ,0 )
+            border: 1px solid rgba(255,255 ,255 ,0)
+            
             padding: 2px 18px
             transition: all .7s ease !important
             cursor: pointer
@@ -73,12 +74,10 @@ header
                 display: none
 
         button:hover
-           
-            border-color: rgba(255,255 ,255 ,1 )
+            // border-color: orange
+            color: orange
+            background: white
      
-
-
-
         .header_logo
 
             height: 65%
@@ -86,6 +85,6 @@ header
             img
                 width: 100%
                 height: 100%
-                object-fit: cover
+                object-fit: contain
                 object-position: center
                 
