@@ -1,6 +1,6 @@
 import "./header.sass";
 import stage_logo from "../../assets/main/stageLogo.png";
-import { Sidebar } from "../main/sidebar/sidebar";
+import { Sidebar } from "../mainPage/sidebar/sidebar";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export function Header() {

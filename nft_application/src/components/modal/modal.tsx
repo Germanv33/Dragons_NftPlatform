@@ -17,7 +17,6 @@ export const Modal: FunctionComponent<ModalProps> = ({
   onClose,
   body,
 }) => {
-
   const variants = {
     visible: { opacity: 1, scale: 1, y: "-50%" },
     hidden: {
@@ -31,12 +30,15 @@ export const Modal: FunctionComponent<ModalProps> = ({
     <>
       {isOpen && (
         <Portal>
-          <div className="modalOverlay">
-            <motion.div initial={"hidden"}
+          <div onClick={onClose} className="modalOverlay">
+            <motion.div
+              initial={"hidden"}
               style={{ y: "50%", x: "-50%" }}
               whileInView={"visible"}
               viewport={{}}
-              variants={variants} className={window_style}>
+              variants={variants}
+              className={window_style}
+            >
               <div className="modalHeader">
                 <svg
                   onClick={onClose}
