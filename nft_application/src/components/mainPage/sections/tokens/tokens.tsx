@@ -6,11 +6,11 @@ export function Tokens() {
     <section id="tokens" className="tokens">
       <div className="container">
         <h1>Tokens</h1>
-        <h2>GOTCHIE Token</h2>
+        <h2>$GOTCHI Token</h2>
         <h3>
-          Gotchie is a hyper-deflationary token running on BNB Chain? which is
-          used in the in-game Marketplace to buy Gotchies, Tallsmans, Houses and
-          other NFT's items.
+          $GOTCHI is a BEP20 main in-game token which is used for NFT minting,
+          buying additional items, levelling up and buying Fun Lands. You earn
+          it by visiting Fun Lands
         </h3>
 
         <div className="token-info">
@@ -22,11 +22,16 @@ export function Tokens() {
               Token Name: <span>Crypto Gotchies</span>
             </h3>
             <h3>
-              Token Ticker: <span>GOTCHIE</span>
+              Token Ticker: <span>$GOTCHI</span>
             </h3>
+
             <h3>
               Decimals: <span>9</span>
             </h3>
+            <h3>
+              Buy/Sell tax: <span>0%</span>
+            </h3>
+
             <h3 className="address">
               Contract address: <br />{" "}
               <span>0xc234423fg2fhg423fh2442h3f4fg2234f243gfg</span>

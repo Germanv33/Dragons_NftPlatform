@@ -22,7 +22,7 @@ export function Crafting() {
       <div className="squared-container">
         <img src={top_border} alt="tech-border" className="top-border" />
         <div className="container">
-          <h1>Resources & Crafting</h1>
+          <h1>Gameplay</h1>
           <div className="cards">
             <motion.div
               initial={"hidden"}
@@ -41,10 +41,12 @@ export function Crafting() {
                 <img src={emblem1} alt="collection logo" />
               </div>
               <div className="text first">
-                <h2>Collect</h2>
+                <h2>Explore</h2>
                 <h3>
-                  Use different combinations of Beasties depending on the type
-                  of dungeon or adventure to get more resources
+                  Great rewards come with great efforts. Send your Gotchi via
+                  Portal to Fun Lands to visit Kindergarten, School or Business
+                  Center depending on it's evolution stage to earn $GOTCHI and
+                  progress with the evolution.
                 </h3>
               </div>
             </motion.div>
@@ -67,10 +69,10 @@ export function Crafting() {
               </div>
 
               <div className="text second">
-                <h2>Trade</h2>
+                <h2>Take care</h2>
                 <h3>
-                  Show off your trading skills. Our off-chain marketplace allows
-                  you to trade quickly and without unnecessary gas fees
+                  All Gotchies need to be well taken care of. This is done by
+                  completing mini-tasks such as feeding, hygiene care and sleep.
                 </h3>
               </div>
             </motion.div>
@@ -92,10 +94,11 @@ export function Crafting() {
                 <img src={emblem3} alt="craft logo" />
               </div>
               <div className="text thirst">
-                <h2>Craft</h2>
+                <h2>Evolve</h2>
                 <h3>
-                  Use different combinations of Beasties depending on the type
-                  of dungeon or adventure to get more resources
+                  Your Gotchi has 4 evolution stages: Baby, Child, Teen, Adult.
+                  Each stage brings its own challenges and has different care
+                  routine.
                 </h3>
               </div>
             </motion.div>

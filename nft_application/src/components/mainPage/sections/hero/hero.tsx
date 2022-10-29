@@ -7,10 +7,10 @@ import "./hero.sass";
 // hero assets
 import dragon_video from "../../../../assets/main/dragon.webm";
 
-import island1 from "../../../../assets/main/island1.gif";
-import island2 from "../../../../assets/main/island2.gif";
-import island3 from "../../../../assets/main/island3.gif";
-import island4 from "../../../../assets/main/island4.gif";
+import island1 from "../../../../assets/main/island1.webm";
+import island2 from "../../../../assets/main/island2.webm";
+import island3 from "../../../../assets/main/island3.webm";
+import island4 from "../../../../assets/main/island4.webm";
 
 import left_below_smoke from "../../../../assets/main/dragon-left-below.png";
 import right_below_smoke from "../../../../assets/main/dragon-right-below.png";
@@ -105,18 +105,20 @@ export const Hero: FunctionComponent = () => {
       className="hero"
     >
       <div className="islands">
-        <motion.img
+        <motion.video
           style={{ y: island1Y }}
           initial={"hidden"}
           whileInView={"visible"}
           viewport={{ once: true }}
           variants={variants}
           src={island1}
-          alt="island1"
           className="island1"
+          autoPlay
+          loop
+          muted
         />
 
-        <motion.img
+        <motion.video
           style={{ y: island2Y }}
           initial={"hidden"}
           whileInView={"visible"}
@@ -124,11 +126,13 @@ export const Hero: FunctionComponent = () => {
           variants={variants}
           src={island2}
           transition={{ delay: 0.2 }}
-          alt="island2"
           className="island2"
+          autoPlay
+          loop
+          muted
         />
 
-        <motion.img
+        <motion.video
           style={{ y: island3Y }}
           initial={"hidden"}
           whileInView={"visible"}
@@ -136,19 +140,23 @@ export const Hero: FunctionComponent = () => {
           transition={{ type: "tween" }}
           variants={variants}
           src={island3}
-          alt="island3"
           className="island3"
+          autoPlay
+          loop
+          muted
         />
 
-        <motion.img
+        <motion.video
           style={{ y: island4Y, x: "-50%" }}
           initial={"hidden"}
           whileInView={"visible"}
           viewport={{ once: true }}
           variants={variants}
           src={island4}
-          alt="island4"
           className="island4"
+          autoPlay
+          loop
+          muted
         />
       </div>
 

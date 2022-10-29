@@ -4,7 +4,7 @@ import island4 from "../../assets/main/island4.gif";
 import shark_bright_sky from "../../assets/main/left-bright-sky.png";
 import island2 from "../../assets/main/island2.gif";
 import bright_casual_sky from "../../assets/main/right-down-bright.png";
-import change_island from "../../assets/mint/change_islands.webm";
+import change_island from "../../assets/mint/island_change.webm";
 import { useState } from "react";
 import { motion } from "framer-motion";
 

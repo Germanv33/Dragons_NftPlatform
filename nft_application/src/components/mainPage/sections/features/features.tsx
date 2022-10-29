@@ -21,9 +21,9 @@ export function Features() {
             </div>
             <h3>True Ownership</h3>
             <h4>
-              Every item or character you own in the game is 100% yours and
-              stored on the blockchain. You can exchange or transfer it to
-              anyone at any time.
+              Gotchies and Fun Lands are NFTs meaning you have 100% ownership
+              over the assets. You can buy, sell and transfer it to anyone
+              without any restriction.
             </h4>
           </div>
 
@@ -31,14 +31,15 @@ export function Features() {
             <div className="logo_img">
               <img src={logo2} alt="Marketplace" />
             </div>
-            <h3>Marketplace</h3>
+            <h3>Secondary Market </h3>
             <h4>
-              You will be able to trade on any marketplaces that support NFT's.
-              And we are also working on our own marketplace
+              You can trade your NFT on any secondary third party NFT
+              Marketplaces. Crypto Gotchies will be verified NFT collection on
+              multiple NFT Marketplaces including our own one.
             </h4>
           </div>
 
-          <div className="card">
+          {/* <div className="card">
             <div className="logo_img">
               <img src={logo3} alt="Leaderboard" />
             </div>
@@ -47,7 +48,7 @@ export function Features() {
               Grow your beasties and move up in the player rankings. Prizes
               await the winners
             </h4>
-          </div>
+          </div> */}
 
           <div className="card">
             <div className="logo_img">
@@ -55,9 +56,8 @@ export function Features() {
             </div>
             <h3>In-Game Wallet</h3>
             <h4>
-              We have created a virtual wallet for our players, through which
-              they can deposit or withdraw tokens from blockchain to game and
-              vice versa
+              Crypto Gotchies utilizes in-game wallet which stores your $GOTCHI
+              safely and lets deposit or withdraw tokens at any time.
             </h4>
           </div>
 
@@ -65,15 +65,14 @@ export function Features() {
             <div className="logo_img">
               <img src={logo5} alt="design" />
             </div>
-            <h3>Secure By Design</h3>
+            <h3>Security first </h3>
             <h4>
-              We constantly consult with leading experts in the field of cyber
-              security. Several companies audited our project and gave a
-              positive feedback
+              We implemented well secured game internals with a help of leading
+              experts. Crypto Gotchies is audited and our team is KYC'd.
             </h4>
           </div>
 
-          <div className="card">
+          {/* <div className="card">
             <div className="logo_img">
               <img src={logo6} alt="profile" />
             </div>
@@ -82,7 +81,7 @@ export function Features() {
               We will conduct a transparent development, which you can observe,
               as well as can take part in it and leave your proposal
             </h4>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

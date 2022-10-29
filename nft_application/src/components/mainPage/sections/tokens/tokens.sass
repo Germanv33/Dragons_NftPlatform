@@ -46,12 +46,16 @@ $maxWidth: 1280
 
             .token-img
                 width: 40%
-                object-fit: contain
-                object-position: center
-
+                height: 90%
+                display: inline-block
+                object-fit: fill
                 img
                     // height: 90%
-                    max-width: 100%
+                    display: inline-block
+                    object-fit: contain
+                    height: 90%
+                    width: 100%
+
                 @media  (max-width: 500px)
                     position: absolute
                     left: 0%

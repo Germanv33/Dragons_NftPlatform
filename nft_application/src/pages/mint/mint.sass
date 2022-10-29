@@ -98,6 +98,7 @@ body, html
                 color: #fffeff
                 background-image: linear-gradient(to right, #f18e1a, #f11aad)
                 transition: box-shadow 0.4s
+                cursor: pointer
                 @media screen and ( max-width: 500px )
                     margin-bottom: 5%
 
@@ -142,6 +143,7 @@ body, html
                         row-gap: 5%
 
                         button
+                            
                             display: inline-flex
                             margin-top: 5%
                             border: 1px solid rgba(1,1 ,1 ,0 )
@@ -156,7 +158,8 @@ body, html
                             cursor: pointer
                             @include adaptiv-font(16, 14)
 
-                            transition: border-color 1s ease
+                            transition: all 1s ease
+                           
 
                             img
                                 width: 16%
@@ -178,6 +181,7 @@ body, html
                         text-decoration-line: underline
                         color: #fff
                         a
+                            cursor: pointer
                             margin-top: 3%
 
                 @media screen and ( max-width: 768px )
