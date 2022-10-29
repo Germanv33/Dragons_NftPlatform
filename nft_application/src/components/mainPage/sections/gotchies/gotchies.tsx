@@ -5,7 +5,7 @@ import g_boy1 from "../../../../assets/main/gotchie_boy3.webm";
 import g_boy2 from "../../../../assets/main/gotchie_boy5.webm";
 import g_girl from "../../../../assets/main/gotchie_girl.webm";
 import g_dragon from "../../../../assets/main/gotchie_dragon.webm";
-import island3 from "../../../../assets/main/island3.gif";
+import island3 from "../../../../assets/main/island3.webm";
 import bright_casual_sky from "../../../../assets/main/right-down-bright.png";
 
 import "./gotchies.sass";
@@ -41,11 +41,11 @@ export function Gotchies() {
   return (
     <section id="gotchies" className="gotchies">
       <div className="gotchies_island1">
-        <img src={island3} alt="island" />
+        <video src={island3} loop autoPlay muted />
       </div>
 
       <div className="gotchies_island2">
-        <img src={island3} alt="island" />
+        <video src={island3} loop autoPlay muted />
       </div>
 
       <div className="container">

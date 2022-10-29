@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import island1 from "../../../../assets/main/island1.gif";
-import island2 from "../../../../assets/main/island2.gif";
-import island3 from "../../../../assets/main/island3.gif";
-import island4 from "../../../../assets/main/island4.gif";
+import island1 from "../../../../assets/main/island1.webm";
+import island2 from "../../../../assets/main/island2.webm";
+import island3 from "../../../../assets/main/island3.webm";
+import island4 from "../../../../assets/main/island4.webm";
 import right_sky from "../../../../assets/main/right-sky.png";
 import left_sky from "../../../../assets/main/left-sky.png";
 import right_down_sky from "../../../../assets/main/right-down-sky.png";
@@ -114,8 +114,9 @@ export function Adventures() {
 
           <img src={bright_casual_sky} alt="sky" className="top-casual-sky" />
         </div>
+
         <div className="islands">
-          <motion.img
+          <motion.video
             style={{}}
             transition={{
               duration: 1,
@@ -128,10 +129,12 @@ export function Adventures() {
             }}
             variants={variants2}
             src={island1}
-            alt="island"
             className="island1"
+            loop
+            autoPlay
+            muted
           />
-          <motion.img
+          <motion.video
             style={{}}
             initial={"hidden"}
             transition={{
@@ -144,10 +147,12 @@ export function Adventures() {
             }}
             variants={variants2}
             src={island2}
-            alt="island"
             className="island2"
+            loop
+            autoPlay
+            muted
           />
-          <motion.img
+          <motion.video
             style={{
               x: "-50%",
             }}
@@ -161,10 +166,12 @@ export function Adventures() {
             }}
             variants={variants2}
             src={island3}
-            alt="island"
             className="island3"
+            loop
+            autoPlay
+            muted
           />
-          <motion.img
+          <motion.video
             style={{}}
             initial={"hidden"}
             transition={{
@@ -177,8 +184,10 @@ export function Adventures() {
             }}
             variants={variants2}
             src={island4}
-            alt="island"
             className="island4"
+            loop
+            autoPlay
+            muted
           />
         </div>
       </div>
