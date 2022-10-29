@@ -5,6 +5,7 @@ import shark_bright_sky from "../../assets/main/left-bright-sky.png";
 import island2 from "../../assets/main/island2.gif";
 import bright_casual_sky from "../../assets/main/right-down-bright.png";
 import change_island from "../../assets/mint/island_change.webm";
+import change_island_mov from "../../assets/mint/island_change.mov";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
@@ -49,8 +50,15 @@ export function Mint() {
             </motion.button>
             <div className="content">
               <div className="image">
-                <video src={change_island} autoPlay loop muted />
+                <video autoPlay loop muted>
+                  <source
+                    src={change_island_mov}
+                    type='video/mp4; codecs="hvc1"'
+                  />
+                  <source src={change_island} type="video/webm" />
+                </video>
               </div>
+
               <div className="select-container">
                 <h3>Select how many lands you want to mint</h3>
                 <div className="buttons">
