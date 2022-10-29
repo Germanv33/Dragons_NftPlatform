@@ -161,14 +161,7 @@ export const Hero: FunctionComponent = () => {
         />
       </div>
 
-      <video
-        src={dragon_video}
-        playsInline
-        autoPlay
-        loop
-        muted
-        className="dragon-img"
-      >
+      <video playsInline autoPlay loop muted className="dragon-img">
         <source src={dragon_video_mov} type='video/mp4; codecs="hvc1"' />
         <source src={dragon_video} type="video/webm" />
       </video>
