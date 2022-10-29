@@ -6,6 +6,7 @@ import "./hero.sass";
 
 // hero assets
 import dragon_video from "../../../../assets/main/dragon.webm";
+import dragon_video_mov from "../../../../assets/main/dragon.mov";
 
 import island1 from "../../../../assets/main/island1.webm";
 import island2 from "../../../../assets/main/island2.webm";
@@ -167,7 +168,10 @@ export const Hero: FunctionComponent = () => {
         loop
         muted
         className="dragon-img"
-      />
+      >
+        <source src={dragon_video_mov} type='video/mp4; codecs="hvc1"' />
+        <source src={dragon_video} type="video/webm" />
+      </video>
 
       <div className="smokes">
         <img
