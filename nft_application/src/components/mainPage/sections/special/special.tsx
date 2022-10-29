@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import special_bg from "../../../../assets/main/special-bg.png";
-import partner_gotchie from "../../../../assets/main/partner_gotchie.webm";
+import partner_gotchie from "../../../../assets/main/partner-gotchie.webm";
 import "./special.sass";
 
 export function Special() {
