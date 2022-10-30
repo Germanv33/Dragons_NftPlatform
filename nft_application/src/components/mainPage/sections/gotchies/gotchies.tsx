@@ -1,12 +1,22 @@
 import { MGotchie_card } from "../../gotchie_card/gotchie_card";
 import { Slider } from "../../slider/slider";
-import g_boy from "../../../../assets/main/gotchie_boy1.webm";
-import g_boy1 from "../../../../assets/main/gotchie_boy3.webm";
-import g_boy2 from "../../../../assets/main/gotchie_boy5.webm";
-import g_girl from "../../../../assets/main/gotchie_girl.webm";
-import g_dragon from "../../../../assets/main/gotchie_dragon.webm";
+
+import g_boy_webm from "../../../../assets/main/gotchie_boy1.webm";
+import g_boy1_webm from "../../../../assets/main/gotchie_boy3.webm";
+import g_boy2_webm from "../../../../assets/main/gotchie_boy5.webm";
+import g_girl_webm from "../../../../assets/main/gotchie_girl.webm";
+import g_dragon_webm from "../../../../assets/main/gotchie_dragon.webm";
+
+import g_boy from "../../../../assets/main/gotchie_boy1.mp4";
+import g_boy1 from "../../../../assets/main/gotchie_boy3.mp4";
+import g_boy2 from "../../../../assets/main/gotchie_boy5.mp4";
+import g_girl from "../../../../assets/main/gotchie_girl.mp4";
+import g_dragon from "../../../../assets/main/gotchie_dragon.mp4";
+
 import island3 from "../../../../assets/main/island3.webm";
+
 import bright_casual_sky from "../../../../assets/main/right-down-bright.png";
+import island3_mov from "../../../../assets/main/island3.mov";
 
 import "./gotchies.sass";
 
@@ -41,11 +51,17 @@ export function Gotchies() {
   return (
     <section id="gotchies" className="gotchies">
       <div className="gotchies_island1">
-        <video src={island3} loop autoPlay muted />
+        <video loop autoPlay muted playsInline>
+          <source src={island3_mov} type='video/mp4; codecs="hvc1" ' />
+          <source src={island3} type="video/webm" />
+        </video>
       </div>
 
       <div className="gotchies_island2">
-        <video src={island3} loop autoPlay muted />
+        <video loop autoPlay muted playsInline>
+          <source src={island3_mov} type='video/mp4; codecs="hvc1" ' />
+          <source src={island3} type="video/webm" />
+        </video>
       </div>
 
       <div className="container">
