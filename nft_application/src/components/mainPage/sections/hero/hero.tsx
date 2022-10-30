@@ -8,6 +8,7 @@ import "./hero.sass";
 import dragon_video from "../../../../assets/main/dragon.webm";
 import dragon_video_mp4 from "../../../../assets/main/dragon.mp4";
 
+import island1_mov from "../../../../assets/main/island1.mov";
 import island1 from "../../../../assets/main/island1.webm";
 import island2 from "../../../../assets/main/island2.webm";
 import island3 from "../../../../assets/main/island3.webm";
@@ -112,12 +113,15 @@ export const Hero: FunctionComponent = () => {
           whileInView={"visible"}
           viewport={{ once: true }}
           variants={variants}
-          src={island1}
           className="island1"
+          playsInline
           autoPlay
           loop
           muted
-        />
+        >
+          <source src={island1_mov} type='video/mp4; codecs="hvc1"' />
+          <source src={island1} type="video/webm" />
+        </motion.video>
 
         <motion.video
           style={{ y: island2Y }}
