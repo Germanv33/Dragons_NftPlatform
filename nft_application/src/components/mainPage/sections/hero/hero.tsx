@@ -8,8 +8,9 @@ import "./hero.sass";
 import dragon_video from "../../../../assets/main/dragon.webm";
 import dragon_video_mp4 from "../../../../assets/main/dragon.mp4";
 
-import island1_mov from "../../../../assets/main/island1.mov";
+import island1_mov from "../../../../assets/main/island1-1.mov";
 import island1 from "../../../../assets/main/island1.webm";
+
 import island2 from "../../../../assets/main/island2.webm";
 import island3 from "../../../../assets/main/island3.webm";
 import island4 from "../../../../assets/main/island4.webm";
