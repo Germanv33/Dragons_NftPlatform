@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import roulette from "../../../../assets/main/roulette.webm";
+import roulette_mov from "../../../../assets/main/roulette.mov";
+
 import bright_casual_sky from "../../../../assets/main/right-down-bright.png";
 
 import "./roulette.sass";
@@ -76,7 +78,10 @@ export function Roulette() {
             Learn More
           </motion.button>
         </div>
-        <video src={roulette} playsInline autoPlay loop muted />
+        <video playsInline autoPlay loop muted>
+          <source src={roulette_mov} type='video/mp4; codecs="hvc1" ' />
+          <source src={roulette} type="video/webm" />
+        </video>
       </div>
     </section>
   );
