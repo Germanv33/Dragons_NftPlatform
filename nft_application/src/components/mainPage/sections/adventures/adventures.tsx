@@ -132,7 +132,6 @@ export function Adventures() {
               once: true,
             }}
             variants={variants2}
-            src={island1}
             className="island1"
             loop
             autoPlay
@@ -153,7 +152,6 @@ export function Adventures() {
               once: true,
             }}
             variants={variants2}
-            src={island2}
             className="island2"
             loop
             autoPlay
@@ -176,7 +174,6 @@ export function Adventures() {
               once: true,
             }}
             variants={variants2}
-            src={island3}
             className="island3"
             loop
             autoPlay
@@ -197,7 +194,6 @@ export function Adventures() {
               once: true,
             }}
             variants={variants2}
-            src={island4}
             className="island4"
             loop
             autoPlay
