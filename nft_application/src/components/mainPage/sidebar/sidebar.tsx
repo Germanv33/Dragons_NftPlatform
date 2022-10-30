@@ -2,7 +2,7 @@ import React, { FC, useEffect, useState } from "react";
 import { slide as Menu } from "react-burger-menu";
 import "./sidebar.sass";
 import { NavLink } from "react-router-dom";
-import stage_logo from "../../../assets/main/stageLogo.png";
+import stage_logo from "../../../assets/main/stageLogo.webp";
 import burger_logo from "../../../assets/main/burger_logo.svg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 

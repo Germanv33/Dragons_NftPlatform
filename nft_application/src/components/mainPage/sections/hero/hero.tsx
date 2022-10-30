@@ -19,13 +19,13 @@ import island2 from "../../../../assets/main/island2.webm";
 import island3 from "../../../../assets/main/island3.webm";
 import island4 from "../../../../assets/main/island4.webm";
 
-import left_below_smoke from "../../../../assets/main/dragon-left-below.png";
-import right_below_smoke from "../../../../assets/main/dragon-right-below.png";
-import left_dragon_smoke from "../../../../assets/main/dragon-left.png";
-import island_first_smoke from "../../../../assets/main/island-first-smoke.png";
-import island_second_smoke from "../../../../assets/main/island-second-smoke.png";
-import header_smoke from "../../../../assets/main/header-right-smoke.png";
-import dragon_above_smoke from "../../../../assets/main/dragon-right-above.png";
+import left_below_smoke from "../../../../assets/main/dragon-left-below.webp";
+import right_below_smoke from "../../../../assets/main/dragon-right-below.webp";
+import left_dragon_smoke from "../../../../assets/main/dragon-left.webp";
+import island_first_smoke from "../../../../assets/main/island-first-smoke.webp";
+import island_second_smoke from "../../../../assets/main/island-second-smoke.webp";
+import header_smoke from "../../../../assets/main/header-right-smoke.webp";
+import dragon_above_smoke from "../../../../assets/main/dragon-right-above.webp";
 
 export const Hero: FunctionComponent = () => {
   const [windowWidth, setWindowWidth] = useState(0);

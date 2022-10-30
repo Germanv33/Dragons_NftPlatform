@@ -1,10 +1,10 @@
-import header_smoke from "../../../../assets/main/header-right-smoke.png";
-import logo1 from "../../../../assets/main/logo1.png";
-import logo2 from "../../../../assets/main/logo2.png";
-import logo3 from "../../../../assets/main/logo3.png";
-import logo4 from "../../../../assets/main/logo4.png";
-import logo5 from "../../../../assets/main/logo5.png";
-import logo6 from "../../../../assets/main/logo6.png";
+import header_smoke from "../../../../assets/main/header-right-smoke.webp";
+import logo1 from "../../../../assets/main/logo1.webp";
+import logo2 from "../../../../assets/main/logo2.webp";
+import logo3 from "../../../../assets/main/logo3.webp";
+import logo4 from "../../../../assets/main/logo4.webp";
+import logo5 from "../../../../assets/main/logo5.webp";
+import logo6 from "../../../../assets/main/logo6.webp";
 
 import "./features.sass";
 

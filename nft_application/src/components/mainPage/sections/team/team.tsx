@@ -1,8 +1,8 @@
-import member1 from "../../../../assets/main/1_1.png";
-import member2 from "../../../../assets/main/2_2.png";
-import member3 from "../../../../assets/main/3_3.png";
-import member4 from "../../../../assets/main/4_4.png";
-import member5 from "../../../../assets/main/5_5.png";
+import member1 from "../../../../assets/main/1_1.webp";
+import member2 from "../../../../assets/main/2_2.webp";
+import member3 from "../../../../assets/main/3_3.webp";
+import member4 from "../../../../assets/main/4_4.webp";
+import member5 from "../../../../assets/main/5_5.webp";
 
 import "./team.sass";
 

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import roulette from "../../../../assets/main/roulette.webm";
 import roulette_mov from "../../../../assets/main/roulette.mov";
 
-import bright_casual_sky from "../../../../assets/main/right-down-bright.png";
+import bright_casual_sky from "../../../../assets/main/right-down-bright.webp";
 
 import "./roulette.sass";
 

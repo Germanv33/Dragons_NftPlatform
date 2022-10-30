@@ -1,4 +1,4 @@
-import pvp from "../../../../assets/main/pvp.png";
+import pvp from "../../../../assets/main/pvp.webp";
 
 import "./pvp.sass";
 

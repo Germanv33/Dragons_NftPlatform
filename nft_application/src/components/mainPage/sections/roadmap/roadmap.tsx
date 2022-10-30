@@ -1,4 +1,4 @@
-import stage_logo from "../../../../assets/main/stageLogo.png";
+import stage_logo from "../../../../assets/main/stageLogo.webp";
 
 import "./roadmap.sass";
 

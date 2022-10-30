@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 
-import top_border from "../../../../assets/main/top-border.png";
-import bot_border from "../../../../assets/main/bot-border.png";
+import top_border from "../../../../assets/main/top-border.webp";
+import bot_border from "../../../../assets/main/bot-border.webp";
 
-import emblem1 from "../../../../assets/main/emblem1.png";
-import emblem2 from "../../../../assets/main/emblem2.png";
-import emblem3 from "../../../../assets/main/emblem3.png";
+import emblem1 from "../../../../assets/main/emblem1.webp";
+import emblem2 from "../../../../assets/main/emblem2.webp";
+import emblem3 from "../../../../assets/main/emblem3.webp";
 
 import "./crafting.sass";
 

@@ -1,6 +1,6 @@
-import twitter from "../../../../assets/main/twitter.png";
-import discord from "../../../../assets/main/discord.png";
-import telegram from "../../../../assets/main/tg.png";
+import twitter from "../../../../assets/main/twitter.webp";
+import discord from "../../../../assets/main/discord.webp";
+import telegram from "../../../../assets/main/tg.webp";
 
 import "./footer.sass";
 

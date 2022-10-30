@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import room1 from "../../../../assets/main/house1.png";
-import room2 from "../../../../assets/main/house2.png";
-import room3 from "../../../../assets/main/house3.png";
-import room4 from "../../../../assets/main/house4.png";
+import room1 from "../../../../assets/main/house1.webp";
+import room2 from "../../../../assets/main/house2.webp";
+import room3 from "../../../../assets/main/house3.webp";
+import room4 from "../../../../assets/main/house4.webp";
 
 import "./housing.sass";
 

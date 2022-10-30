@@ -1,4 +1,4 @@
-import partners_mocha from "../../../../assets/main/partners.png";
+import partners_mocha from "../../../../assets/main/partners.webp";
 
 import "./partners.sass";
 

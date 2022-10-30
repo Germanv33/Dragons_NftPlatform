@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import special_bg from "../../../../assets/main/special-bg.png";
+import special_bg from "../../../../assets/main/special-bg.webp";
 
 import partner_gotchie from "../../../../assets/main/partner-gotchie.mp4";
 import "./special.sass";

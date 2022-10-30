@@ -1,11 +1,11 @@
 import "./mint.sass";
-import mini_logo from "../../assets/main/stageLogo.png";
+import mini_logo from "../../assets/main/stageLogo.webp";
 
 import island4 from "../../assets/mint/island4.png";
 import island2 from "../../assets/mint/island2.png";
 
-import shark_bright_sky from "../../assets/main/left-bright-sky.png";
-import bright_casual_sky from "../../assets/main/right-down-bright.png";
+import shark_bright_sky from "../../assets/main/left-bright-sky.webp";
+import bright_casual_sky from "../../assets/main/right-down-bright.webp";
 import change_island from "../../assets/mint/island_change.webm";
 import change_island_mov from "../../assets/mint/island_change.mov";
 import { useState } from "react";

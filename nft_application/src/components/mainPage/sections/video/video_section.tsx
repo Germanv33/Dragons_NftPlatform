@@ -1,8 +1,8 @@
 import { Variants, motion } from "framer-motion";
-import screen from "../../../../assets/main/screen.png";
-import video_fire from "../../../../assets/main/video_fire.png";
-import header_smoke from "../../../../assets/main/header-right-smoke.png";
-import left_deep_sky from "../../../../assets/main/left-deep-sky.png";
+import screen from "../../../../assets/main/screen.webp";
+import video_fire from "../../../../assets/main/video_fire.webp";
+import header_smoke from "../../../../assets/main/header-right-smoke.webp";
+import left_deep_sky from "../../../../assets/main/left-deep-sky.webp";
 import React from "react";
 import Modal from "../../../modal/modal";
 

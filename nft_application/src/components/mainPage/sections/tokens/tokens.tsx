@@ -1,4 +1,4 @@
-import token_logo from "../../../../assets/main/token-logo.png";
+import token_logo from "../../../../assets/main/token-logo.webp";
 import "./tokens.sass";
 
 export function Tokens() {

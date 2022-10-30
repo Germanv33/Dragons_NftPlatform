@@ -1,4 +1,4 @@
-import coming_soon from "../../../../assets/main/coming-soon.png";
+import coming_soon from "../../../../assets/main/coming-soon.webp";
 
 import "./sales.sass";
 

@@ -1,5 +1,5 @@
 import "./header.sass";
-import stage_logo from "../../assets/main/stageLogo.png";
+import stage_logo from "../../assets/main/stageLogo.webp";
 import { Sidebar } from "../mainPage/sidebar/sidebar";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 

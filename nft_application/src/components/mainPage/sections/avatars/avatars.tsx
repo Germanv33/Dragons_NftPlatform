@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import bright_casual_sky from "../../../../assets/main/right-down-bright.png";
-import avatars_1 from "../../../../assets/main/avatars_1.png";
-import avatars_2 from "../../../../assets/main/avatars_2.png";
-import avatars_3 from "../../../../assets/main/avatars_3.png";
-import avatars_4 from "../../../../assets/main/avatars_4.png";
-import avatars_5 from "../../../../assets/main/avatars_5.png";
+import bright_casual_sky from "../../../../assets/main/right-down-bright.webp";
+import avatars_1 from "../../../../assets/main/avatars_1.webp";
+import avatars_2 from "../../../../assets/main/avatars_2.webp";
+import avatars_3 from "../../../../assets/main/avatars_3.webp";
+import avatars_4 from "../../../../assets/main/avatars_4.webp";
+import avatars_5 from "../../../../assets/main/avatars_5.webp";
 
 import "./avatars.sass";
 

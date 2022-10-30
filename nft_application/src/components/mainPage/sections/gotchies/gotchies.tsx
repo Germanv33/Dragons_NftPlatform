@@ -15,7 +15,7 @@ import g_dragon from "../../../../assets/main/gotchie_dragon.mp4";
 
 import island3 from "../../../../assets/main/island3.webm";
 
-import bright_casual_sky from "../../../../assets/main/right-down-bright.png";
+import bright_casual_sky from "../../../../assets/main/right-down-bright.webp";
 import island3_mov from "../../../../assets/main/island3.mov";
 
 import "./gotchies.sass";
