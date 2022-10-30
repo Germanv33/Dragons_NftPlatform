@@ -18,7 +18,10 @@ export const Gotchie_card = forwardRef(
     return (
       <div ref={ref} className="gotchie_card">
         <div className="gotchie-img">
-          <video autoPlay playsInline loop muted src={img} />
+          <video autoPlay playsInline loop muted>
+            {" "}
+            <source src={img} type="video/mp4" />
+          </video>
         </div>
         <div className="description">
           <div className="first_line">
