@@ -111,6 +111,7 @@ export function Avatars() {
               alt="avatars container"
               className="second"
             />
+
             <motion.img
               initial={"static"}
               variants={avatarsVariants}
