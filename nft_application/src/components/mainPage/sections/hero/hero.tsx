@@ -1,6 +1,7 @@
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { FunctionComponent, useEffect, useRef, useState } from "react";
 import { Hero_button } from "../../button/button";
+import LazyHydrate from "react-lazy-hydration";
 
 import "./hero.sass";
 
@@ -177,11 +178,12 @@ export const Hero: FunctionComponent = () => {
           <source src={island4} type="video/webm" />
         </motion.video>
       </div>
-
-      <video playsInline autoPlay loop muted className="dragon-img">
-        <source src={dragon_video_mov} type='video/mp4; codecs="hvc1"' />
-        <source src={dragon_video} type="video/webm" />
-      </video>
+      <LazyHydrate whenIdle>
+        <video playsInline autoPlay loop muted className="dragon-img">
+          <source src={dragon_video_mov} type='video/mp4; codecs="hvc1"' />
+          <source src={dragon_video} type="video/webm" />
+        </video>
+      </LazyHydrate>
 
       <div className="smokes">
         <img
