@@ -9,6 +9,10 @@ import right_down_sky from "../../../../assets/main/right-down-sky.png";
 import left_deep_sky from "../../../../assets/main/left-deep-sky.png";
 import shark_bright_sky from "../../../../assets/main/left-bright-sky.png";
 import bright_casual_sky from "../../../../assets/main/right-down-bright.png";
+import island1_mov from "../../../../assets/main/island1-1.mov";
+import island2_mov from "../../../../assets/main/island2.mov";
+import island3_mov from "../../../../assets/main/island3.mov";
+import island4_mov from "../../../../assets/main/island4.mov";
 
 import "./adventures.sass";
 
@@ -133,7 +137,10 @@ export function Adventures() {
             loop
             autoPlay
             muted
-          />
+          >
+            <source src={island1_mov} type='video/mp4; codecs="hvc1" ' />
+            <source src={island1} type="video/webm" />
+          </motion.video>
           <motion.video
             style={{}}
             initial={"hidden"}
@@ -151,7 +158,11 @@ export function Adventures() {
             loop
             autoPlay
             muted
-          />
+          >
+            {" "}
+            <source src={island2_mov} type='video/mp4; codecs="hvc1" ' />
+            <source src={island2} type="video/webm" />
+          </motion.video>
           <motion.video
             style={{
               x: "-50%",
@@ -170,7 +181,10 @@ export function Adventures() {
             loop
             autoPlay
             muted
-          />
+          >
+            <source src={island3_mov} type='video/mp4; codecs="hvc1" ' />
+            <source src={island3} type="video/webm" />
+          </motion.video>
           <motion.video
             style={{}}
             initial={"hidden"}
@@ -188,7 +202,11 @@ export function Adventures() {
             loop
             autoPlay
             muted
-          />
+          >
+            {" "}
+            <source src={island4_mov} type='video/mp4; codecs="hvc1" ' />
+            <source src={island4} type="video/webm" />
+          </motion.video>
         </div>
       </div>
     </section>
