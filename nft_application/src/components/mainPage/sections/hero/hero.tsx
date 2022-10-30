@@ -9,6 +9,10 @@ import dragon_video from "../../../../assets/main/dragon.webm";
 import dragon_video_mp4 from "../../../../assets/main/dragon.mp4";
 
 import island1_mov from "../../../../assets/main/island1-1.mov";
+import island2_mov from "../../../../assets/main/island2.mov";
+import island3_mov from "../../../../assets/main/island3.mov";
+import island4_mov from "../../../../assets/main/island4.mov";
+
 import island1 from "../../../../assets/main/island1.webm";
 
 import island2 from "../../../../assets/main/island2.webm";
@@ -130,13 +134,16 @@ export const Hero: FunctionComponent = () => {
           whileInView={"visible"}
           viewport={{ once: true }}
           variants={variants}
-          src={island2}
           transition={{ delay: 0.2 }}
           className="island2"
           autoPlay
           loop
           muted
-        />
+        >
+          {" "}
+          <source src={island2_mov} type='video/mp4; codecs="hvc1" ' />
+          <source src={island2} type="video/webm" />
+        </motion.video>
 
         <motion.video
           style={{ y: island3Y }}
@@ -145,12 +152,14 @@ export const Hero: FunctionComponent = () => {
           viewport={{ once: true }}
           transition={{ type: "tween" }}
           variants={variants}
-          src={island3}
           className="island3"
           autoPlay
           loop
           muted
-        />
+        >
+          <source src={island3_mov} type='video/mp4; codecs="hvc1" ' />
+          <source src={island3} type="video/webm" />
+        </motion.video>
 
         <motion.video
           style={{ y: island4Y, x: "-50%" }}
@@ -158,12 +167,15 @@ export const Hero: FunctionComponent = () => {
           whileInView={"visible"}
           viewport={{ once: true }}
           variants={variants}
-          src={island4}
           className="island4"
           autoPlay
           loop
           muted
-        />
+        >
+          {" "}
+          <source src={island4_mov} type='video/mp4; codecs="hvc1" ' />
+          <source src={island4} type="video/webm" />
+        </motion.video>
       </div>
 
       <video playsInline autoPlay loop muted className="dragon-img">
