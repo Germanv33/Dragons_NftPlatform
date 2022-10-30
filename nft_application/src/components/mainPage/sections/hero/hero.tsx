@@ -119,8 +119,8 @@ export const Hero: FunctionComponent = () => {
           loop
           muted
         >
-          <source src={island1_mov} />
-          <source src={island1} />
+          <source src={island1_mov} type='video/quicktime; codecs="hvc1" ' />
+          <source src={island1} type="video/webm" />
         </motion.video>
 
         <motion.video
