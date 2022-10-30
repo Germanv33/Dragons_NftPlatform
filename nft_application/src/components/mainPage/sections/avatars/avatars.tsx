@@ -63,96 +63,99 @@ export function Avatars() {
         alt="sky"
         className="parallax-right-sky"
       />
+
       <div className="container">
         <div className="screen_img">
-          <motion.img
-            initial={"static"}
-            variants={avatarsVariants}
-            animate={card1}
-            onHoverStart={(e) => {
-              setcard1("hovered");
-              setcard2("under_hovered");
-              setcard3("under_hovered");
-              setcard4("under_hovered");
-              setcard5("under_hovered");
-            }}
-            onHoverEnd={(e) => {
-              setcard1("static");
-              setcard2("static");
-              setcard3("static");
-              setcard4("static");
-              setcard5("static");
-            }}
-            src={avatars_1}
-            alt="avatars container"
-            className="first"
-          />
-          <motion.img
-            initial={"static"}
-            variants={avatarsVariants}
-            animate={card2}
-            onHoverStart={(e) => {
-              setcard1("under_hovered");
-              setcard2("hovered");
-              setcard3("under_hovered");
-              setcard4("under_hovered");
-              setcard5("under_hovered");
-            }}
-            onHoverEnd={(e) => {
-              setcard1("static");
-              setcard2("static");
-              setcard3("static");
-              setcard4("static");
-              setcard5("static");
-            }}
-            src={avatars_2}
-            alt="avatars container"
-            className="second"
-          />
-          <motion.img
-            initial={"static"}
-            variants={avatarsVariants}
-            animate={card3}
-            onHoverStart={(e) => {
-              setcard1("under_hovered");
-              setcard2("under_hovered");
-              setcard3("hovered");
-              setcard4("under_hovered");
-              setcard5("under_hovered");
-            }}
-            onHoverEnd={(e) => {
-              setcard1("static");
-              setcard2("static");
-              setcard3("static");
-              setcard4("static");
-              setcard5("static");
-            }}
-            src={avatars_3}
-            alt="avatars container"
-            className="third"
-          />
-          <motion.img
-            initial={"static"}
-            variants={avatarsVariants}
-            animate={card4}
-            onHoverStart={(e) => {
-              setcard1("under_hovered");
-              setcard2("under_hovered");
-              setcard3("under_hovered");
-              setcard4("hovered");
-              setcard5("under_hovered");
-            }}
-            onHoverEnd={(e) => {
-              setcard1("static");
-              setcard2("static");
-              setcard3("static");
-              setcard4("static");
-              setcard5("static");
-            }}
-            src={avatars_4}
-            alt="avatars container"
-            className="fourth"
-          />
+          <div className="cude-imgs">
+            <motion.img
+              initial={"static"}
+              variants={avatarsVariants}
+              animate={card1}
+              onHoverStart={(e) => {
+                setcard1("hovered");
+                setcard2("under_hovered");
+                setcard3("under_hovered");
+                setcard4("under_hovered");
+                setcard5("under_hovered");
+              }}
+              onHoverEnd={(e) => {
+                setcard1("static");
+                setcard2("static");
+                setcard3("static");
+                setcard4("static");
+                setcard5("static");
+              }}
+              src={avatars_1}
+              alt="avatars container"
+              className="first"
+            />
+            <motion.img
+              initial={"static"}
+              variants={avatarsVariants}
+              animate={card2}
+              onHoverStart={(e) => {
+                setcard1("under_hovered");
+                setcard2("hovered");
+                setcard3("under_hovered");
+                setcard4("under_hovered");
+                setcard5("under_hovered");
+              }}
+              onHoverEnd={(e) => {
+                setcard1("static");
+                setcard2("static");
+                setcard3("static");
+                setcard4("static");
+                setcard5("static");
+              }}
+              src={avatars_2}
+              alt="avatars container"
+              className="second"
+            />
+            <motion.img
+              initial={"static"}
+              variants={avatarsVariants}
+              animate={card3}
+              onHoverStart={(e) => {
+                setcard1("under_hovered");
+                setcard2("under_hovered");
+                setcard3("hovered");
+                setcard4("under_hovered");
+                setcard5("under_hovered");
+              }}
+              onHoverEnd={(e) => {
+                setcard1("static");
+                setcard2("static");
+                setcard3("static");
+                setcard4("static");
+                setcard5("static");
+              }}
+              src={avatars_3}
+              alt="avatars container"
+              className="third"
+            />
+            <motion.img
+              initial={"static"}
+              variants={avatarsVariants}
+              animate={card4}
+              onHoverStart={(e) => {
+                setcard1("under_hovered");
+                setcard2("under_hovered");
+                setcard3("under_hovered");
+                setcard4("hovered");
+                setcard5("under_hovered");
+              }}
+              onHoverEnd={(e) => {
+                setcard1("static");
+                setcard2("static");
+                setcard3("static");
+                setcard4("static");
+                setcard5("static");
+              }}
+              src={avatars_4}
+              alt="avatars container"
+              className="fourth"
+            />
+          </div>
 
           <div className="last">
             <motion.img

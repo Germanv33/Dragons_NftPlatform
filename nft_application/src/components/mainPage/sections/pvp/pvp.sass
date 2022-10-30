@@ -13,11 +13,15 @@ $maxWidth: 1280
         padding-top: 24%
         
     .container
+        max-width: 1300px
+        margin: 0 auto
         display: flex
         flex-direction: column
         align-items: center
+        position: relative
         
         align-items: center
+
         h1
                 text-align: center
                 @include adaptiv-font(48, 26)
@@ -26,7 +30,18 @@ $maxWidth: 1280
              
                 font-weight: 600
                 margin-bottom: 5%
-        img
+
+        .bg
             max-width: 70%
             margin: 0 auto
+        
+        .gotchie-flying
+            width: 30%
+            position: absolute
+            top: 25%
+            left: 53%
+            @media (max-width: 500px)
+                top: 30%
+            
+
     margin-top: 0    

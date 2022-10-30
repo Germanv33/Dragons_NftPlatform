@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 import top_border from "../../../../assets/main/top-border.webp";
 import bot_border from "../../../../assets/main/bot-border.webp";
 
-import emblem1 from "../../../../assets/main/emblem1.webp";
-import emblem2 from "../../../../assets/main/emblem2.webp";
-import emblem3 from "../../../../assets/main/emblem3.webp";
+import emblem1 from "../../../../assets/main/boots.webp";
+import emblem2 from "../../../../assets/main/soap.webp";
+import emblem3 from "../../../../assets/main/evolution.webp";
 
 import "./crafting.sass";
 
@@ -17,6 +17,7 @@ export function Crafting() {
       y: -50,
     },
   };
+
   return (
     <section id="crafting" className="crafting">
       <div className="squared-container">
