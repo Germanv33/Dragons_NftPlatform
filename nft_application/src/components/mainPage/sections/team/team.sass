@@ -59,6 +59,7 @@ $maxWidth: 1280
                 img
                     object-fit: contain
                     max-width: 100%
+                    z-index: 2
 
             .text
                 height: 15%
@@ -98,12 +99,11 @@ $maxWidth: 1280
                 width: 90%
                 height: 85%
                 box-shadow: inset 0px 0px 50px rgb(255, 0, 0)
-                filter: blur(14px)
+                filter: blur(30px)
                 border-radius: 100px
                 z-index: 1
                 // box-shadow: 
-            @media screen and ( max-width: 500px )
-                // filter: drop-shadow(-30px 0px 30px rgba(255, 0, 0, 0.5 / 0.8))
+            
             img
                 z-index: 2
             
@@ -111,15 +111,27 @@ $maxWidth: 1280
 
         .pink
             
-            filter: drop-shadow(0px 0px 50px rgba(255, 0, 195, 0.5 / 0.8))
-            @media screen and ( max-width: 500px )
-                filter: drop-shadow(0px 0px 15px rgba(255, 0, 195, 0.5 / 0.8))
+            // filter: drop-shadow(0px 0px 50px rgba(255, 0, 195, 0.5 / 0.8))
+            .shadow
+                position: absolute
+                width: 90%
+                height: 85%
+                box-shadow: inset 0px 0px 50px rgb(255, 0, 195)
+                filter: blur(30px)
+                border-radius: 100px
+                z-index: 1
 
                 
         .blue
-            filter: drop-shadow(0px 0px 50px rgba(0, 162, 255, 0.5 / 0.8))
-            @media screen and ( max-width: 500px )
-                filter: drop-shadow(0px 0px 50px rgba(0, 162, 255, 0.5 / 0.8))
+            // filter: drop-shadow(0px 0px 50px rgba(0, 162, 255, 0.5 / 0.8))
+            .shadow
+                position: absolute
+                width: 90%
+                height: 85%
+                box-shadow: inset 0px 0px 50px rgb(0, 162, 255)
+                filter: blur(30px)
+                border-radius: 100px
+                z-index: 1
 
         .orange
             // filter: drop-shadow(0px 0px 50px rgba(255, 153, 0, 0.5 / 0.8))
@@ -131,13 +143,18 @@ $maxWidth: 1280
                 filter: blur(30px)
                 border-radius: 100px
                 z-index: 1
-            @media screen and ( max-width: 500px )
-                // filter: drop-shadow(20px 0px 50px rgba(255, 153, 0, 0.5 / 0.8))
+           
 
         .yellow
-            filter: drop-shadow(0px 0px 50px rgba(255, 255, 0, 0.5 / 0.8))
-            @media screen and ( max-width: 500px )
-                filter: drop-shadow(0px 0px 50px rgba(255, 255, 0, 0.5 / 0.8))
+            // filter: drop-shadow(0px 0px 50px rgba(255, 255, 0, 0.5 / 0.8))
+            .shadow
+                position: absolute
+                width: 90%
+                height: 85%
+                box-shadow: inset 0px 0px 50px rgb(255, 255, 0)
+                filter: blur(30px)
+                border-radius: 100px
+                z-index: 1
 
         .mobile
             @media (max-width: 500px)

@@ -27,6 +27,7 @@ export function Team() {
             <div className="member mobile">
               <div className="member-img blue">
                 <img src={member5} alt="gotchie face" />
+                <div className="shadow"></div>
               </div>
               <div className="text">
                 <span>Anthony</span>
@@ -50,6 +51,7 @@ export function Team() {
             <div className="member">
               <div className="member-img blue">
                 <img src={member5} alt="gotchie face" />
+                <div className="shadow"></div>
               </div>
               <div className="text">
                 <span>Alex</span>
@@ -62,6 +64,7 @@ export function Team() {
             <div className="member">
               <div className="member-img yellow">
                 <img src={member4} alt="gotchie face" />
+                <div className="shadow"></div>
               </div>
               <div className="text">
                 <span>Mark</span>
@@ -72,6 +75,7 @@ export function Team() {
             <div className="member">
               <div className="member-img pink">
                 <img src={member3} alt="gotchie face" />
+                <div className="shadow"></div>
               </div>
               <div className="text">
                 <span>Danny</span>
