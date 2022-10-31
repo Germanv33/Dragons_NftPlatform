@@ -14,8 +14,8 @@ export function Team() {
         <div className="members">
           <div className="first-row">
             <div className="member">
-              <div className="member-img">
-                <img src={member1} alt="gotchie face" className="red" />
+              <div className="member-img red">
+                <img src={member1} alt="gotchie face" />
               </div>
               <div className="text">
                 <span>Julia</span>
@@ -24,8 +24,8 @@ export function Team() {
             </div>
 
             <div className="member mobile">
-              <div className="member-img">
-                <img src={member5} alt="gotchie face" className="blue" />
+              <div className="member-img blue">
+                <img src={member5} alt="gotchie face" />
               </div>
               <div className="text">
                 <span>Anthony</span>
@@ -34,8 +34,8 @@ export function Team() {
             </div>
 
             <div className="member">
-              <div className="member-img">
-                <img src={member2} alt="gotchie face" className="orange" />
+              <div className="member-img orange">
+                <img src={member2} alt="gotchie face" />
               </div>
               <div className="text">
                 <span>Jay</span>
@@ -46,8 +46,8 @@ export function Team() {
 
           <div className="mobile-row">
             <div className="member">
-              <div className="member-img">
-                <img src={member5} alt="gotchie face" className="blue" />
+              <div className="member-img blue">
+                <img src={member5} alt="gotchie face" />
               </div>
               <div className="text">
                 <span>Alex</span>
@@ -58,8 +58,8 @@ export function Team() {
 
           <div className="second-row">
             <div className="member">
-              <div className="member-img">
-                <img src={member4} alt="gotchie face" className="yellow" />
+              <div className="member-img yellow">
+                <img src={member4} alt="gotchie face" />
               </div>
               <div className="text">
                 <span>Mark</span>
@@ -68,8 +68,8 @@ export function Team() {
             </div>
 
             <div className="member">
-              <div className="member-img">
-                <img src={member3} alt="gotchie face" className="pink" />
+              <div className="member-img pink">
+                <img src={member3} alt="gotchie face" />
               </div>
               <div className="text">
                 <span>Danny</span>

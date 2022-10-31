@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import special_bg from "../../../../assets/main/special-bg.webp";
 
 import partner_gotchie from "../../../../assets/main/partner-gotchie.mp4";
+import partner_gotchie_mov from "../../../../assets/main/partner-gotchie.mov";
+
 import "./special.sass";
 
 export function Special() {
@@ -40,7 +42,11 @@ export function Special() {
             className="gotchie_special"
           >
             {/* <video src={g_boy2} loop autoPlay /> */}
-            <video src={partner_gotchie} playsInline autoPlay loop muted />
+            <video src={partner_gotchie} playsInline autoPlay loop muted>
+              {" "}
+              <source src={partner_gotchie} type="video/webm" />
+              <source src={partner_gotchie_mov} type="video/mp4;" />
+            </video>
             <div className="description">
               <h3>
                 Branded Gotchie special

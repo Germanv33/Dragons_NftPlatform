@@ -105,6 +105,7 @@ export const Hero: FunctionComponent = () => {
 
   return (
     <section
+      id="hero"
       ref={heroRef}
       style={{
         height: heroHeight,

@@ -35,15 +35,15 @@ export const Sidebar: FC<SidebarProps> = (pageWrapId, outerContainerId) => {
       <div className="header-logo">
         <img src={stage_logo} alt="header logo" />
       </div>
-      <NavLink
+      <AnchorLink
         onClick={() => {
           setIsOpen(false);
         }}
         className="menu-item"
-        to="/"
+        href="#hero"
       >
         Home
-      </NavLink>
+      </AnchorLink>
 
       <AnchorLink
         onClick={() => {
