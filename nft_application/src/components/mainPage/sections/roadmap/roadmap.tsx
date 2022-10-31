@@ -81,9 +81,7 @@ export function Roadmap() {
             <li>Fun Lands sale</li>
             <li>Pancakeswap Launch </li>
             <li>Game beta test </li>
-            <li>
-              Housing Marketing for houses sale Sale of houses and furniture
-            </li>
+            <li>Game Alpha release</li>
           </motion.ul>
         </details>
         <details>
@@ -106,7 +104,7 @@ export function Roadmap() {
             variants={openVariants}
           >
             <li>Tier 1 CEX Listings</li>
-            <li>Alpha release</li>
+            <li>Game v1.0 release</li>
             <li>Gotchi x Partners limited NFTs </li>
             <li>Gotchi guilds </li>
           </motion.ul>
