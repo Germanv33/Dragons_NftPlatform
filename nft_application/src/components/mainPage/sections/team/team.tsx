@@ -16,6 +16,7 @@ export function Team() {
             <div className="member">
               <div className="member-img red">
                 <img src={member1} alt="gotchie face" />
+                <div className="shadow"></div>
               </div>
               <div className="text">
                 <span>Julia</span>
@@ -36,6 +37,7 @@ export function Team() {
             <div className="member">
               <div className="member-img orange">
                 <img src={member2} alt="gotchie face" />
+                <div className="shadow"></div>
               </div>
               <div className="text">
                 <span>Jay</span>
