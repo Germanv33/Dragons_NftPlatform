@@ -12,14 +12,23 @@ $maxWidth: 1280
         overflow: visible
         @media screen and ( max-width: 600px )
             width: 100%
-            
+
+        h1
+            text-align: center
+            @include adaptiv-font(48, 23)
+            font-family: "Gepestev"
+            color: rgb(255, 255, 255)
+
+
     margin-top: 0
+
 
     .members
         width: 100%
         display: flex
         flex-direction: column
         align-items: center
+        height: 100%
 
         .first-row
             
@@ -28,11 +37,12 @@ $maxWidth: 1280
             width: 100%
             @media (max-width: 500px)
                 justify-content: space-around
-            
+                height: 33%
 
         .mobile-row
             margin: 3% 0 3% 0
             width: 50%
+            height: 30%
             display: flex
             justify-content: space-around
 
@@ -46,36 +56,45 @@ $maxWidth: 1280
 
             @media (max-width: 500px)
                 width: 100%
-        
+                height: 33%
 
         .member
-            
+            height: 100%
             display: flex
             flex-direction: column
             align-items: center
             position: relative
             padding-bottom: 0%
 
+                
             .member-img
                 width: 100%
-                height: 85%
+                height: 100%
                 display: inline-flex
                 justify-content: center
 
                 img
                     object-fit: contain
-                    max-width: 100%
+                    max-width: 150%
                     z-index: 2
+                    height: 150%
+                    width: 150%
+                    @media (max-width: 500px)
+                        max-width: 100%
 
             .text
                 height: 15%
                 position: absolute
+                top: 90%
+                left: 50%
+                transform: translateX(-50%)
                 max-width: 100%
                 bottom: 0
                 display: flex
                 flex-direction: column
                 justify-content: center
                 z-index: 2
+                width: 100%
 
                 span
                     width: 100%
@@ -98,69 +117,69 @@ $maxWidth: 1280
     
      
 
-        .red
-            // filter: drop-shadow(0px 0px 50px rgba(255, 0, 0, 0.5 / 0.8))
-            .shadow
-                position: absolute
-                width: 90%
-                height: 85%
-                box-shadow: inset 0px 0px 50px rgb(255, 0, 0)
-                filter: blur(30px)
-                border-radius: 100px
-                z-index: 1
-                // box-shadow: 
+        // .red
+        //     // filter: drop-shadow(0px 0px 50px rgba(255, 0, 0, 0.5 / 0.8))
+        //     .shadow
+        //         position: absolute
+        //         width: 90%
+        //         height: 85%
+        //         box-shadow: inset 0px 0px 50px rgb(255, 0, 0)
+        //         filter: blur(30px)
+        //         border-radius: 100px
+        //         z-index: 1
+        //         // box-shadow: 
             
-            img
-                z-index: 2
+        //     img
+        //         z-index: 2
             
             
 
-        .pink
+        // .pink
             
-            // filter: drop-shadow(0px 0px 50px rgba(255, 0, 195, 0.5 / 0.8))
-            .shadow
-                position: absolute
-                width: 90%
-                height: 85%
-                box-shadow: inset 0px 0px 50px rgb(255, 0, 195)
-                filter: blur(30px)
-                border-radius: 100px
-                z-index: 1
+        //     // filter: drop-shadow(0px 0px 50px rgba(255, 0, 195, 0.5 / 0.8))
+        //     .shadow
+        //         position: absolute
+        //         width: 90%
+        //         height: 85%
+        //         box-shadow: inset 0px 0px 50px rgb(255, 0, 195)
+        //         filter: blur(30px)
+        //         border-radius: 100px
+        //         z-index: 1
 
                 
-        .blue
-            // filter: drop-shadow(0px 0px 50px rgba(0, 162, 255, 0.5 / 0.8))
-            .shadow
-                position: absolute
-                width: 90%
-                height: 85%
-                box-shadow: inset 0px 0px 50px rgb(0, 162, 255)
-                filter: blur(30px)
-                border-radius: 100px
-                z-index: 1
+        // .blue
+        //     // filter: drop-shadow(0px 0px 50px rgba(0, 162, 255, 0.5 / 0.8))
+        //     .shadow
+        //         position: absolute
+        //         width: 90%
+        //         height: 85%
+        //         box-shadow: inset 0px 0px 50px rgb(0, 162, 255)
+        //         filter: blur(30px)
+        //         border-radius: 100px
+        //         z-index: 1
 
-        .orange
-            // filter: drop-shadow(0px 0px 50px rgba(255, 153, 0, 0.5 / 0.8))
-            .shadow
-                position: absolute
-                width: 90%
-                height: 85%
-                box-shadow: inset 0px 0px 50px rgb(255, 153, 0)
-                filter: blur(30px)
-                border-radius: 100px
-                z-index: 1
+        // .orange
+        //     // filter: drop-shadow(0px 0px 50px rgba(255, 153, 0, 0.5 / 0.8))
+        //     .shadow
+        //         position: absolute
+        //         width: 90%
+        //         height: 85%
+        //         box-shadow: inset 0px 0px 50px rgb(255, 153, 0)
+        //         filter: blur(30px)
+        //         border-radius: 100px
+        //         z-index: 1
            
 
-        .yellow
-            // filter: drop-shadow(0px 0px 50px rgba(255, 255, 0, 0.5 / 0.8))
-            .shadow
-                position: absolute
-                width: 90%
-                height: 85%
-                box-shadow: inset 0px 0px 50px rgb(255, 255, 0)
-                filter: blur(30px)
-                border-radius: 100px
-                z-index: 1
+        // .yellow
+        //     // filter: drop-shadow(0px 0px 50px rgba(255, 255, 0, 0.5 / 0.8))
+        //     .shadow
+        //         position: absolute
+        //         width: 90%
+        //         height: 85%
+        //         box-shadow: inset 0px 0px 50px rgb(255, 255, 0)
+        //         filter: blur(30px)
+        //         border-radius: 100px
+        //         z-index: 1
 
         .mobile
             @media (max-width: 500px)
