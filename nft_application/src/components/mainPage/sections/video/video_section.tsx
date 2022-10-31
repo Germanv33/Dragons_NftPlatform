@@ -95,11 +95,9 @@ export function VideoSection() {
         </h2>
 
         <h3>
-          Players can collect ultra-rare digital NFTs Beasties and Talismans,
-          send them to Adventures and Dungeons, and get rewards. There are
-          different types of activities within the game and use-cases for our
-          tokens. The project was launched in June 2021. Since then, our team
-          has done a lot, but there is still more to be done!
+          Crypto Gotchies is a free2play and play2earn Tamagotchi-inspired game
+          in which you will take care of your little Gotchies NFT characters,
+          evolve them and send them to Fun Lands to earn $GOTCHI tokens.
         </h3>
 
         <motion.div

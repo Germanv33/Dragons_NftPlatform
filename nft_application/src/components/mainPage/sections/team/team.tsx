@@ -31,7 +31,7 @@ export function Team() {
               </div>
               <div className="text">
                 <span>Anthony</span>
-                <h4>2D concept artist</h4>
+                <h4>project manager </h4>
               </div>
             </div>
 
@@ -42,7 +42,7 @@ export function Team() {
               </div>
               <div className="text">
                 <span>Jay</span>
-                <h4>project manager</h4>
+                <h4>web designer</h4>
               </div>
             </div>
           </div>
@@ -55,7 +55,7 @@ export function Team() {
               </div>
               <div className="text">
                 <span>Alex</span>
-                <h4>2D concept artist</h4>
+                <h4>blockchain dev </h4>
               </div>
             </div>
           </div>
@@ -68,7 +68,7 @@ export function Team() {
               </div>
               <div className="text">
                 <span>Mark</span>
-                <h4>delivery wizard</h4>
+                <h4>CMO</h4>
               </div>
             </div>
 
@@ -79,7 +79,7 @@ export function Team() {
               </div>
               <div className="text">
                 <span>Danny</span>
-                <h4>WEB developer</h4>
+                <h4>CEO</h4>
               </div>
             </div>
           </div>
