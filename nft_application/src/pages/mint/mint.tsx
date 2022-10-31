@@ -53,7 +53,7 @@ export function Mint() {
             </motion.button>
             <div className="content">
               <div className="image">
-                <video autoPlay loop muted>
+                <video autoPlay loop muted playsInline>
                   <source
                     src={change_island_mov}
                     type='video/mp4; codecs="hvc1"'
