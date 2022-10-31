@@ -184,14 +184,13 @@ export function Avatars() {
           </div>
         </div>
         <div className="text">
-          <h2>Unique Avatars</h2>
+          <h2>Meet Gotchies</h2>
           <h3>
-            Beasties Avatars is a special collection of NFTs. Each avatar is
-            unique! These NFTs can be used as in-game profile pictures. They
-            also have different rarity, rare avatars give bonuses for both PvE
-            now and PvP in the future. And of course, just like with any other
-            NFT, you can do whatever you want with your avatars, collect, trade
-            and swap!
+            Gotchies are digital pet NFTs which you'll need to take care of and
+            earn $GOTCHI rewards for it. Each Gotchi is unique! They come from
+            Eggs. Depending on rarity, each has different earning potential.
+            During the game you will go through 4 evolution stages such as Baby,
+            Child, Teen and adult. Each stage has different experience to it
           </h3>
           <motion.button
             initial={{
@@ -210,7 +209,7 @@ export function Avatars() {
               opacity: 1,
             }}
           >
-            MINT YOUR AVATAR
+            Mint your Gotchi
           </motion.button>
         </div>
       </div>

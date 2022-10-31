@@ -237,7 +237,10 @@ export const Hero: FunctionComponent = () => {
         >
           <h1 className="crypto_h1">CRYPTO</h1>
           <h1 className="gotchies_h1">GOTCHIES</h1>
-          <h2>Take care, evolve and earn $GOTCHI</h2>
+          <h2>
+            Unique digital pet tamagotchi-inspired NFT game
+            {/* <br />{" "} */}
+          </h2>
           <Hero_button title="LEARN MORE" />
         </motion.div>
       </div>

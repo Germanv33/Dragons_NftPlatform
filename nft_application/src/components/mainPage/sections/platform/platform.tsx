@@ -42,15 +42,14 @@ export function Platform() {
         <div className="content-area">
           <div className="text-block">
             <h2>
-              We want to create not just a game, <br /> but a social platform
-              for people
+              Crypto Gotchies <br /> not your typical P2E game
             </h2>
             <h3>
-              Magic Beasties should be a place where people have fun and enjoy
-              spending time. <br /> Appealing to the user's sense of competitive
-              spirit is necessary <br /> to get them to spend more time with the
-              product and invite other
-              <br /> members to jump in to the project.{" "}
+              We plan to create GotchiVerse and integrate social-fi creating
+              whole different AAA game experience. With future lobby update you
+              will be able to team up with your friends and explore Fun Lands
+              and even battle with other teams to split weekly prizes along with
+              top 10 teams from leaderboard.
             </h3>
           </div>
 
@@ -61,37 +60,27 @@ export function Platform() {
 
             <div className="first-tips-row">
               <div className="tip">
-                <span>
-                  Personal profilies
-                  <br />
-                  Avatars & Ranks
-                </span>
+                <span>GotchiVerse</span>
                 <img src={profile_icon} alt="profile img-logo" />
               </div>
               <div className="tip">
-                <span className="onerow-span">Guilds</span>
+                <span className="onerow-span">Multiplayer </span>
 
                 <img src={shield_icon} alt="shield img-logo" />
               </div>
               <div className="tip">
-                <span>
-                  In-Game
-                  <br />
-                  Chats
-                </span>
+                <span>Teams</span>
                 <img src={chat_icon} alt="message img-logo" />
               </div>
             </div>
             <div className="second-tips-row">
               <div className="tip">
                 <img src={like_icon} alt="like img-logo" />
-                <span className="onerow-span">Votings</span>
+                <span className="onerow-span">Leaderboard</span>
               </div>
               <div className="tip">
                 <img src={check_icon} alt="task img-logo" />
-                <span>
-                  Achievements <br /> Daily Tasks
-                </span>
+                <span>Updates</span>
               </div>
             </div>
           </div>

@@ -104,8 +104,8 @@ export function VideoSection() {
           initial={"hidden"}
           whileInView={"visible"}
           viewport={{
-            once: true,
             amount: 0.6,
+            once: true,
           }}
           transition={{
             duration: 1.1,

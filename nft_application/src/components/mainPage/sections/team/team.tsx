@@ -31,7 +31,7 @@ export function Team() {
               </div>
               <div className="text">
                 <span>Anthony</span>
-                <h4>project manager </h4>
+                <h4>Project manager </h4>
               </div>
             </div>
 
@@ -42,7 +42,7 @@ export function Team() {
               </div>
               <div className="text">
                 <span>Jay</span>
-                <h4>web designer</h4>
+                <h4>Web designer</h4>
               </div>
             </div>
           </div>

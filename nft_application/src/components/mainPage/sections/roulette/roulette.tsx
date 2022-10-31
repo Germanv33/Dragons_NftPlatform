@@ -51,7 +51,7 @@ export function Roulette() {
 
       <div className="container">
         <div className="text-side">
-          <h1>Gotchie Roulette</h1>
+          <h1>Gotchi Roulette</h1>
           <h3>
             Try your luck by betting $GOTCHI on the Gotchi Wheel.
             <br /> <br />
