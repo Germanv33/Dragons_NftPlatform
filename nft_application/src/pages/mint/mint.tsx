@@ -7,7 +7,7 @@ import island2 from "../../assets/mint/island2.png";
 import shark_bright_sky from "../../assets/main/left-bright-sky.webp";
 import bright_casual_sky from "../../assets/main/right-down-bright.webp";
 import change_island from "../../assets/mint/island_change.webm";
-import change_island_mov from "../../assets/mint/island_change.mov";
+import change_island_mov from "../../assets/mint/change_islands2-1.mov";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
