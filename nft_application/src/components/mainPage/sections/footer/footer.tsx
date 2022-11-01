@@ -31,13 +31,13 @@ export function Footer() {
             <h3>Invest</h3>
             <div className="links">
               <a>
-                <h4>Buy Token</h4>
+                <h4>$GOTCHI Presale </h4>
+              </a>
+              <a>
+                <h4>Mint Lands Lands </h4>
               </a>
               <a>
                 <h4>NFT Market</h4>
-              </a>
-              <a>
-                <h4>In-Game Market</h4>
               </a>
             </div>
           </div>
@@ -58,7 +58,7 @@ export function Footer() {
           </div>
 
           <div className="docs">
-            <h3>Docs</h3>
+            <h3>Documents </h3>
             <div className="links">
               <a>
                 <h4>Whitepaper</h4>
@@ -67,7 +67,7 @@ export function Footer() {
                 <h4>Audit</h4>
               </a>
               <a>
-                <h4>Pitch Deck</h4>
+                <h4>KYC</h4>
               </a>
             </div>
           </div>

@@ -241,7 +241,10 @@ export const Hero: FunctionComponent = () => {
             Unique digital pet tamagotchi-inspired NFT game
             {/* <br />{" "} */}
           </h2>
-          <Hero_button title="LEARN MORE" />
+
+          <a href="https://cryptogotchies.gitbook.io/whitepaper/">
+            <Hero_button title="LEARN MORE" />
+          </a>
         </motion.div>
       </div>
     </section>

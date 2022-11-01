@@ -53,7 +53,7 @@ export function Adventures() {
             opacity: 1,
           }}
         >
-          Explore The World
+          Mint Fun Lands
         </motion.button>
       </div>
 
@@ -87,7 +87,7 @@ export function Adventures() {
               opacity: 1,
             }}
           >
-            Explore The World
+            Mint Fun Lands
           </motion.button>
         </div>
         <div className="sky-images">

@@ -49,7 +49,7 @@ export function Mint() {
               }}
               className="connect"
             >
-              Connect With Metamsk
+              Connect With Metamask
             </motion.button>
             <div className="content">
               <div className="image">
@@ -95,8 +95,13 @@ export function Mint() {
                   </button>
                 </div>
                 <div className="nets">
-                  <a>Documentation</a>
-                  <a>How to mint</a>
+                  <a href="https://cryptogotchies.gitbook.io/whitepaper/game-elements/fun-lands">
+                    Learn about Fun Lands
+                  </a>
+
+                  <a href="https://cryptogotchies.gitbook.io/whitepaper/how-to-mint">
+                    How to mint
+                  </a>
                 </div>
               </div>
             </div>
