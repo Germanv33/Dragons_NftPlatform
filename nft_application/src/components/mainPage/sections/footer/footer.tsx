@@ -3,6 +3,7 @@ import discord from "../../../../assets/main/discord.webp";
 import telegram from "../../../../assets/main/tg.webp";
 
 import "./footer.sass";
+import { NavLink } from "react-router-dom";
 
 export function Footer() {
   return (
@@ -33,9 +34,10 @@ export function Footer() {
               <a>
                 <h4>$GOTCHI Presale </h4>
               </a>
-              <a>
-                <h4>Mint Lands Lands </h4>
-              </a>
+              <NavLink to={"/mint"}>
+                <h4>Mint Lands </h4>
+              </NavLink>
+
               <a>
                 <h4>NFT Market</h4>
               </a>
