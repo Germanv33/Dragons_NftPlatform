@@ -60,7 +60,7 @@ export function Footer() {
           <div className="docs">
             <h3>Documents </h3>
             <div className="links">
-              <a>
+              <a href="https://cryptogotchies.gitbook.io/whitepaper/">
                 <h4>Whitepaper</h4>
               </a>
               <a>
