@@ -54,7 +54,7 @@ export function Adventures() {
             opacity: 1,
           }}
         >
-          Mint Fun Lands
+          <NavLink to={"/mint"}>Mint Fun Lands</NavLink>
         </motion.button>
       </div>
 
