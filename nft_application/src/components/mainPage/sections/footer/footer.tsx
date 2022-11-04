@@ -26,8 +26,11 @@ export function Footer() {
                 <img src={discord} alt="discord" />
               </a> */}
 
-              <a href="https://www.youtube.com/channel/UCQ5S64qkvmWB0BKYhbp9jIg/featured">
-                <img src={youtube} alt="discord" className="youtube" />
+              <a
+                className="youtube"
+                href="https://www.youtube.com/channel/UCQ5S64qkvmWB0BKYhbp9jIg/featured"
+              >
+                <img src={youtube} alt="discord" />
               </a>
 
               <a>
