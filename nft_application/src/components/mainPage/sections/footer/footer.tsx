@@ -1,6 +1,7 @@
 import twitter from "../../../../assets/main/twitter.webp";
 import discord from "../../../../assets/main/discord.webp";
 import telegram from "../../../../assets/main/tg.webp";
+import youtube from "../../../../assets/main/youtube.png";
 
 import "./footer.sass";
 import { NavLink } from "react-router-dom";
@@ -16,17 +17,27 @@ export function Footer() {
               <a className="telegram">
                 <img src={telegram} alt="tg" />
               </a>
+
               <a>
                 <img src={twitter} alt="twitter" />
               </a>
-              <a className="discord-mobile">
+
+              {/* <a className="discord-mobile">
                 <img src={discord} alt="discord" />
+              </a> */}
+
+              <a href="https://www.youtube.com/channel/UCQ5S64qkvmWB0BKYhbp9jIg/featured">
+                <img src={youtube} alt="discord" className="youtube" />
+              </a>
+
+              <a>
+                <img src={discord} alt="discord" className="discord" />
               </a>
             </div>
 
-            <a>
+            {/* <a>
               <img src={discord} alt="discord" className="discord" />
-            </a>
+            </a> */}
           </div>
           <div className="invest">
             <h3>Invest</h3>
