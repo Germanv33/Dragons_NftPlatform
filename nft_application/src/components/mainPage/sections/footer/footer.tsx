@@ -18,7 +18,7 @@ export function Footer() {
                 <img src={telegram} alt="tg" />
               </a>
 
-              <a>
+              <a className="twitter">
                 <img src={twitter} alt="twitter" />
               </a>
 
