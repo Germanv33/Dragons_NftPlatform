@@ -73,6 +73,16 @@ footer
                 justify-content: center
                 flex-wrap: wrap
 
+                
+                margin: auto
+
+                @media ( min-width: 2340px )
+                    width: 60%
+                    margin: auto
+
+                @media (max-width: 2339px) and ( min-width: 1441px)
+                    width: 75%
+
                 a
                     width: 30%
                     object-fit: cover
@@ -124,14 +134,25 @@ footer
                         padding: 0 2% 0 2%
                           
             .youtube
-                object-position: right 
+   
         
                 img
+
                     display: block
-                    margin-left: auto
-                    max-width: 90%
+                    margin: auto
+                    display: block
+                    /* margin: auto; */
+                    /* max-width: 90%; */
+                    height: 100%
+                    width: 90%
+                    object-fit: contain
+                    object-position: center
+                    margin: 0 auto
+
+
+
                     @media ( min-width: 2340px )
-                        max-width: 55% 
+                        max-width: 100% 
 
                     @media (max-width: 2339px) and ( min-width: 1441px)
                         max-width: 90% 

@@ -33,9 +33,9 @@ export function Footer() {
                 <img src={youtube} alt="discord" />
               </a>
 
-              <a>
+              {/* <a>
                 <img src={discord} alt="discord" className="discord" />
-              </a>
+              </a> */}
             </div>
 
             {/* <a>

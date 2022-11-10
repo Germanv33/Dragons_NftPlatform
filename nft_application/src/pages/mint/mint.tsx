@@ -10,6 +10,7 @@ import change_island from "../../assets/mint/island_change.webm";
 import change_island_mov from "../../assets/mint/change_islands2-1.mov";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { Sidebar } from "../../components/mint/sidebar/sidebar";
 
 export function Mint() {
   const [active, setActive] = useState("");
@@ -31,6 +32,7 @@ export function Mint() {
   return (
     <>
       <div className="full_mint_container">
+        <Sidebar pageWrapId={"full_mint_container"} outerContainerId={"root"} />
         <section className="mint">
           <img src={island4} alt="right island" className="right-island" />
           <img src={island2} alt="left top island" className="left-island" />
@@ -90,6 +92,7 @@ export function Mint() {
                   >
                     <img src={mini_logo} alt="img-logo" />
                     One land
+                    <span>(0.3 BNB)</span>
                   </button>
                   <button
                     className={active == "2" ? "active" : "inactive"}
@@ -97,6 +100,7 @@ export function Mint() {
                   >
                     <img src={mini_logo} alt="img-logo" />
                     Two lands
+                    <span>(0.6 BNB)</span>
                   </button>
                   <button
                     className={active == "3" ? "active" : "inactive"}
@@ -104,6 +108,7 @@ export function Mint() {
                   >
                     <img src={mini_logo} alt="img-logo" />
                     Three lands
+                    <span>(0.9 BNB)</span>
                   </button>
                   <button
                     className={active == "4" ? "active" : "inactive"}
@@ -111,6 +116,7 @@ export function Mint() {
                   >
                     <img src={mini_logo} alt="img-logo" />
                     Four lands
+                    <span>(1.2 BNB)</span>
                   </button>
                 </div>
                 <div className="nets">
